@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { useState } from "react";
-import icon from "../../public/icon.svg";
+import icon from "../assets/icon.svg";
 import { useLanguage } from "../context/LanguageContext";
 
 const pages = ["Norsk", "English"];
