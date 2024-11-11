@@ -7,9 +7,11 @@ import React, {
 } from 'react';
 import i18n from 'i18next';
 
+type Language = 'Norsk' | 'English';
+
 interface LanguageContextType {
-  language: 'Norsk' | 'English';
-  setLanguage: (language: 'Norsk' | 'English') => void;
+  language: Language;
+  setLanguage: (language: Language) => void;
 }
 
 interface LanguageProviderProps {
@@ -29,7 +31,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({
   children,
 }) => {
   const storedLanguage = localStorage.getItem('language');
-  const [language, setLanguage] = useState<'Norsk' | 'English'>(
+  const [language, setLanguage] = useState<Language>(
     storedLanguage === 'Norsk' || storedLanguage === 'English'
       ? storedLanguage
       : 'Norsk'
