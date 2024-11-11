@@ -1,9 +1,9 @@
-import IconButton from "@mui/material/IconButton";
-import { ThemeProvider } from "@mui/material/styles";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
+import IconButton from '@mui/material/IconButton';
+import { ThemeProvider } from '@mui/material/styles';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
 
-import useTheme from "../../hooks/useTheme";
+import useTheme from '../../hooks/useTheme';
 
 interface ToggleThemeModeProps {
   darkMode: boolean;
@@ -20,7 +20,10 @@ interface ToggleThemeModeProps {
  * @returns A button that toggles the theme between light and dark modes.
  */
 
-const ToggleThemeMode: React.FC<ToggleThemeModeProps> = ({ darkMode, setDarkMode }) => {
+const ToggleThemeMode: React.FC<ToggleThemeModeProps> = ({
+  darkMode,
+  setDarkMode,
+}) => {
   const theme = useTheme();
   const handleThemeChange = () => {
     setDarkMode(!darkMode);
@@ -29,7 +32,11 @@ const ToggleThemeMode: React.FC<ToggleThemeModeProps> = ({ darkMode, setDarkMode
   return (
     <ThemeProvider theme={theme}>
       <IconButton onClick={handleThemeChange} color="inherit">
-        {theme.palette.mode === "dark" ? <Brightness7Icon /> : <Brightness4Icon />}
+        {theme.palette.mode === 'dark' ? (
+          <Brightness7Icon />
+        ) : (
+          <Brightness4Icon />
+        )}
       </IconButton>
     </ThemeProvider>
   );
