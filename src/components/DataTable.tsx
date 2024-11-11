@@ -233,6 +233,7 @@ const DataTable = () => {
         <Box display="flex" alignItems="center" justifyContent="center" gap={2}>
           <Typography
             textAlign="center"
+            textTransform={'capitalize'}
             variant="h5"
             gutterBottom
             mt={5}
@@ -244,7 +245,7 @@ const DataTable = () => {
 
           {/* Go-to-top arrow icon */}
           <HtmlTooltip
-            title="gå til toppen"
+            title={t('scroll to top')}
             placement="right"
             TransitionComponent={Zoom}
           >
