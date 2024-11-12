@@ -21,10 +21,26 @@ body {
 }
 
 /* Apply the same font to other elements if needed */
-html, p, h1, h2, h3, h4, h5, h6, a, button, input, textarea, ul, li, span, Typography, ListItemText {
+html,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button,
+input,
+textarea,
+ul,
+li,
+span,
+Typography,
+ListItemText {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
