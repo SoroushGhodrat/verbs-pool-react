@@ -500,7 +500,6 @@ const F: Verb[] = [
     presens: 'faller',
     preteritum: 'falt',
     perfektum: 'har falt',
-
     meaning: 'Fall',
   },
   {
@@ -508,7 +507,6 @@ const F: Verb[] = [
     presens: 'feirer',
     preteritum: 'feiret',
     perfektum: 'har feiret',
-
     meaning: 'Celebrate',
   },
   {
@@ -523,7 +521,6 @@ const F: Verb[] = [
     presens: 'fisker',
     preteritum: 'fisket',
     perfektum: 'har fisket',
-
     meaning: 'Fish',
   },
   {
@@ -531,7 +528,6 @@ const F: Verb[] = [
     presens: 'fleiper',
     preteritum: 'fleipte',
     perfektum: 'har fleipt',
-
     meaning: 'Joke',
   },
   {
@@ -539,7 +535,6 @@ const F: Verb[] = [
     presens: 'flyr',
     preteritum: 'fløy',
     perfektum: 'har fløyet',
-
     meaning: 'Fly',
   },
   {
@@ -547,7 +542,6 @@ const F: Verb[] = [
     presens: 'flykter',
     preteritum: 'flyktet',
     perfektum: 'har flyktet',
-
     meaning: 'Flee',
   },
   {
@@ -555,7 +549,6 @@ const F: Verb[] = [
     presens: 'flyter',
     preteritum: 'fløt',
     perfektum: 'har flytt',
-
     meaning: 'Float',
   },
   {
@@ -563,7 +556,6 @@ const F: Verb[] = [
     presens: 'flytter',
     preteritum: 'flyttet',
     perfektum: 'har flyttet',
-
     meaning: 'Move',
   },
   {
@@ -571,7 +563,6 @@ const F: Verb[] = [
     presens: 'forener',
     preteritum: 'forente',
     perfektum: 'har forent',
-
     meaning: 'Unite',
   },
   {
@@ -579,7 +570,6 @@ const F: Verb[] = [
     presens: 'foreslår',
     preteritum: 'foreslo',
     perfektum: 'har foreslått',
-
     meaning: 'Suggest',
   },
   {
@@ -587,7 +577,6 @@ const F: Verb[] = [
     presens: 'foretar',
     preteritum: 'foretok',
     perfektum: 'har foretatt',
-
     meaning: 'Undertake',
   },
   {
@@ -595,7 +584,6 @@ const F: Verb[] = [
     presens: 'forkjøler seg',
     preteritum: 'forkjølet seg',
     perfektum: 'har forkjølt seg',
-
     meaning: 'Catch a Cold',
   },
   {
@@ -603,7 +591,6 @@ const F: Verb[] = [
     presens: 'forklarer',
     preteritum: 'forklarte',
     perfektum: 'har forklart',
-
     meaning: 'Explain',
   },
   {
@@ -611,7 +598,6 @@ const F: Verb[] = [
     presens: 'forlater',
     preteritum: 'forlot',
     perfektum: 'har forlatt',
-
     meaning: 'Forgive',
   },
   {
@@ -619,7 +605,6 @@ const F: Verb[] = [
     presens: 'fornyer',
     preteritum: 'fornyet',
     perfektum: 'har fornyet',
-
     meaning: 'Renew',
   },
   {
@@ -627,7 +612,6 @@ const F: Verb[] = [
     presens: 'forstår',
     preteritum: 'forstod',
     perfektum: 'har forstått',
-
     meaning: 'Understand',
   },
   {
@@ -635,7 +619,6 @@ const F: Verb[] = [
     presens: 'forsvinner',
     preteritum: 'forsvant',
     perfektum: 'har forsvunnet',
-
     meaning: 'Disappear',
   },
   {
@@ -643,7 +626,6 @@ const F: Verb[] = [
     presens: 'forteller',
     preteritum: 'fortalte',
     perfektum: 'har fortalt',
-
     meaning: 'Tell',
   },
   {
@@ -651,7 +633,6 @@ const F: Verb[] = [
     presens: 'fortsetter',
     preteritum: 'fortsatte',
     perfektum: 'har fortsatt',
-
     meaning: 'Continue',
   },
   {
@@ -659,7 +640,6 @@ const F: Verb[] = [
     presens: 'fosser',
     preteritum: 'fosset',
     perfektum: 'har fosset',
-
     meaning: 'Gush',
   },
   {
@@ -667,7 +647,6 @@ const F: Verb[] = [
     presens: 'fotograferer',
     preteritum: 'fotograferte',
     perfektum: 'har fotografert',
-
     meaning: 'Photograph',
   },
   {
@@ -675,7 +654,6 @@ const F: Verb[] = [
     presens: 'fryser',
     preteritum: 'frøs',
     perfektum: 'har frosset',
-
     meaning: 'Freeze',
   },
   {
@@ -683,7 +661,6 @@ const F: Verb[] = [
     presens: 'fyller',
     preteritum: 'fylte',
     perfektum: 'har fylt',
-
     meaning: 'Fill',
   },
   {
@@ -691,7 +668,6 @@ const F: Verb[] = [
     presens: 'føder',
     preteritum: 'fødte',
     perfektum: 'har født',
-
     meaning: 'Bear, Give birth to',
   },
   {
@@ -699,7 +675,6 @@ const F: Verb[] = [
     presens: 'føler seg',
     preteritum: 'følte seg',
     perfektum: 'har følt seg',
-
     meaning: 'Be, Feel',
   },
   {
@@ -714,7 +689,6 @@ const F: Verb[] = [
     presens: 'føner',
     preteritum: 'fønte',
     perfektum: 'har fønt',
-
     meaning: 'Blow Dry',
   },
   {
@@ -723,6 +697,13 @@ const F: Verb[] = [
     preteritum: 'fikk',
     perfektum: 'har fått',
     meaning: 'Get',
+  },
+  {
+    infinitiv: 'å fullføre',
+    presens: 'fullfører',
+    preteritum: 'fullførte',
+    perfektum: 'har fullført',
+    meaning: 'Complete',
   },
 ];
 

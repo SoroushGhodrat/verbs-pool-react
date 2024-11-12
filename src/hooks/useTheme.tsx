@@ -25,6 +25,9 @@ const useTheme = () => {
         default: '#f5f5f5', // default background color
       },
     },
+    typography: {
+      fontFamily: 'Segoe UI Web, Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
+    },
     components: {
       MuiTypography: {
         styleOverrides: {
