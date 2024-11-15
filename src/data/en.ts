@@ -1857,21 +1857,221 @@ const C: VerbEN[] = [
     presentSimple3rdPersonSingular: 'consults',
     presentParticiple: 'consulting',
   },
-  { baseForm: 'contain', pastForm: 'contained', pastParticipleForm: 'contained', presentPerfectForm: 'has contained', presentSimple3rdPersonSingular: 'contains', presentParticiple: 'containing', },
-  { baseForm: 'contemn', pastForm: 'contemned', pastParticipleForm: 'contemned', presentPerfectForm: 'has contemned', presentSimple3rdPersonSingular: 'contemns', presentParticiple: 'contemning', },
-  { baseForm: 'contend', pastForm: 'contended', pastParticipleForm: 'contended', presentPerfectForm: 'has contended', presentSimple3rdPersonSingular: 'contends', presentParticiple: 'contending', },
-  { baseForm: 'contest', pastForm: 'contested', pastParticipleForm: 'contested', presentPerfectForm: 'has contested', presentSimple3rdPersonSingular: 'contests', presentParticiple: 'contesting', },
-  { baseForm: 'continue', pastForm: 'continued', pastParticipleForm: 'continued', presentPerfectForm: 'has continued', presentSimple3rdPersonSingular: 'continues', presentParticiple: 'continuing', },
-  { baseForm: 'contract', pastForm: 'contracted', pastParticipleForm: 'contracted', presentPerfectForm: 'has contracted', presentSimple3rdPersonSingular: 'contracts', presentParticiple: 'contracting', },
-  { baseForm: 'contradict', pastForm: 'contradicted', pastParticipleForm: 'contradicted', presentPerfectForm: 'has contradicted', presentSimple3rdPersonSingular: 'contradicts', presentParticiple: 'contradicting', }, { baseForm: 'contrast', pastForm: 'contrasted', pastParticipleForm: 'contrasted', presentPerfectForm: 'has contrasted', presentSimple3rdPersonSingular: 'contrasts', presentParticiple: 'contrasting', }, { baseForm: 'contribute', pastForm: 'contributed', pastParticipleForm: 'contributed', presentPerfectForm: 'has contributed', presentSimple3rdPersonSingular: 'contributes', presentParticiple: 'contributing', }, { baseForm: 'contrive', pastForm: 'contrived', pastParticipleForm: 'contrived', presentPerfectForm: 'has contrived', presentSimple3rdPersonSingular: 'contrives', presentParticiple: 'contriving', }, { baseForm: 'control', pastForm: 'controlled', pastParticipleForm: 'controlled', presentPerfectForm: 'has controlled', presentSimple3rdPersonSingular: 'controls', presentParticiple: 'controlling', }, { baseForm: 'convene', pastForm: 'convened', pastParticipleForm: 'convened', presentPerfectForm: 'has convened', presentSimple3rdPersonSingular: 'convenes', presentParticiple: 'convening', }, { baseForm: 'converge', pastForm: 'converged', pastParticipleForm: 'converged', presentPerfectForm: 'has converged', presentSimple3rdPersonSingular: 'converges', presentParticiple: 'converging', }, { baseForm: 'converse', pastForm: 'conversed', pastParticipleForm: 'conversed', presentPerfectForm: 'has conversed', presentSimple3rdPersonSingular: 'converses', presentParticiple: 'conversing', }, { baseForm: 'convert', pastForm: 'converted', pastParticipleForm: 'converted', presentPerfectForm: 'has converted', presentSimple3rdPersonSingular: 'converts', presentParticiple: 'converting', }, { baseForm: 'convey', pastForm: 'conveyed', pastParticipleForm: 'conveyed', presentPerfectForm: 'has conveyed', presentSimple3rdPersonSingular: 'conveys', presentParticiple: 'conveying', }, { baseForm: 'convict', pastForm: 'convicted', pastParticipleForm: 'convicted', presentPerfectForm: 'has convicted', presentSimple3rdPersonSingular: 'convicts', presentParticiple: 'convicting', }, { baseForm: 'convince', pastForm: 'convinced', pastParticipleForm: 'convinced', presentPerfectForm: 'has convinced', presentSimple3rdPersonSingular: 'convinces', presentParticiple: 'convincing', }, { baseForm: 'coo', pastForm: 'cooed', pastParticipleForm: 'cooed', presentPerfectForm: 'has cooed', presentSimple3rdPersonSingular: 'coos', presentParticiple: 'cooing', }, { baseForm: 'cook', pastForm: 'cooked', pastParticipleForm: 'cooked', presentPerfectForm: 'has cooked', presentSimple3rdPersonSingular: 'cooks', presentParticiple: 'cooking', }, { baseForm: 'cool', pastForm: 'cooled', pastParticipleForm: 'cooled', presentPerfectForm: 'has cooled', presentSimple3rdPersonSingular: 'cools', presentParticiple: 'cooling', }, { baseForm: 'co-operate', pastForm: 'co-operated', pastParticipleForm: 'co-operated', presentPerfectForm: 'has co-operated', presentSimple3rdPersonSingular: 'co-operates', presentParticiple: 'co-operating', }, { baseForm: 'cope', pastForm: 'coped', pastParticipleForm: 'coped', presentPerfectForm: 'has coped', presentSimple3rdPersonSingular: 'copes', presentParticiple: 'coping', }, { baseForm: 'copy', pastForm: 'copied', pastParticipleForm: 'copied', presentPerfectForm: 'has copied', presentSimple3rdPersonSingular: 'copies', presentParticiple: 'copying', }, { baseForm: 'correct', pastForm: 'corrected', pastParticipleForm: 'corrected', presentPerfectForm: 'has corrected', presentSimple3rdPersonSingular: 'corrects', presentParticiple: 'correcting', }, { baseForm: 'correspond', pastForm: 'corresponded', pastParticipleForm: 'corresponded', presentPerfectForm: 'has corresponded', presentSimple3rdPersonSingular: 'corresponds', presentParticiple: 'corresponding' }
-  ,
+  {
+    baseForm: 'contain',
+    pastForm: 'contained',
+    pastParticipleForm: 'contained',
+    presentPerfectForm: 'has contained',
+    presentSimple3rdPersonSingular: 'contains',
+    presentParticiple: 'containing',
+  },
+  {
+    baseForm: 'contemn',
+    pastForm: 'contemned',
+    pastParticipleForm: 'contemned',
+    presentPerfectForm: 'has contemned',
+    presentSimple3rdPersonSingular: 'contemns',
+    presentParticiple: 'contemning',
+  },
+  {
+    baseForm: 'contend',
+    pastForm: 'contended',
+    pastParticipleForm: 'contended',
+    presentPerfectForm: 'has contended',
+    presentSimple3rdPersonSingular: 'contends',
+    presentParticiple: 'contending',
+  },
+  {
+    baseForm: 'contest',
+    pastForm: 'contested',
+    pastParticipleForm: 'contested',
+    presentPerfectForm: 'has contested',
+    presentSimple3rdPersonSingular: 'contests',
+    presentParticiple: 'contesting',
+  },
+  {
+    baseForm: 'continue',
+    pastForm: 'continued',
+    pastParticipleForm: 'continued',
+    presentPerfectForm: 'has continued',
+    presentSimple3rdPersonSingular: 'continues',
+    presentParticiple: 'continuing',
+  },
+  {
+    baseForm: 'contract',
+    pastForm: 'contracted',
+    pastParticipleForm: 'contracted',
+    presentPerfectForm: 'has contracted',
+    presentSimple3rdPersonSingular: 'contracts',
+    presentParticiple: 'contracting',
+  },
+  {
+    baseForm: 'contradict',
+    pastForm: 'contradicted',
+    pastParticipleForm: 'contradicted',
+    presentPerfectForm: 'has contradicted',
+    presentSimple3rdPersonSingular: 'contradicts',
+    presentParticiple: 'contradicting',
+  },
+  {
+    baseForm: 'contrast',
+    pastForm: 'contrasted',
+    pastParticipleForm: 'contrasted',
+    presentPerfectForm: 'has contrasted',
+    presentSimple3rdPersonSingular: 'contrasts',
+    presentParticiple: 'contrasting',
+  },
+  {
+    baseForm: 'contribute',
+    pastForm: 'contributed',
+    pastParticipleForm: 'contributed',
+    presentPerfectForm: 'has contributed',
+    presentSimple3rdPersonSingular: 'contributes',
+    presentParticiple: 'contributing',
+  },
+  {
+    baseForm: 'contrive',
+    pastForm: 'contrived',
+    pastParticipleForm: 'contrived',
+    presentPerfectForm: 'has contrived',
+    presentSimple3rdPersonSingular: 'contrives',
+    presentParticiple: 'contriving',
+  },
+  {
+    baseForm: 'control',
+    pastForm: 'controlled',
+    pastParticipleForm: 'controlled',
+    presentPerfectForm: 'has controlled',
+    presentSimple3rdPersonSingular: 'controls',
+    presentParticiple: 'controlling',
+  },
+  {
+    baseForm: 'convene',
+    pastForm: 'convened',
+    pastParticipleForm: 'convened',
+    presentPerfectForm: 'has convened',
+    presentSimple3rdPersonSingular: 'convenes',
+    presentParticiple: 'convening',
+  },
+  {
+    baseForm: 'converge',
+    pastForm: 'converged',
+    pastParticipleForm: 'converged',
+    presentPerfectForm: 'has converged',
+    presentSimple3rdPersonSingular: 'converges',
+    presentParticiple: 'converging',
+  },
+  {
+    baseForm: 'converse',
+    pastForm: 'conversed',
+    pastParticipleForm: 'conversed',
+    presentPerfectForm: 'has conversed',
+    presentSimple3rdPersonSingular: 'converses',
+    presentParticiple: 'conversing',
+  },
+  {
+    baseForm: 'convert',
+    pastForm: 'converted',
+    pastParticipleForm: 'converted',
+    presentPerfectForm: 'has converted',
+    presentSimple3rdPersonSingular: 'converts',
+    presentParticiple: 'converting',
+  },
+  {
+    baseForm: 'convey',
+    pastForm: 'conveyed',
+    pastParticipleForm: 'conveyed',
+    presentPerfectForm: 'has conveyed',
+    presentSimple3rdPersonSingular: 'conveys',
+    presentParticiple: 'conveying',
+  },
+  {
+    baseForm: 'convict',
+    pastForm: 'convicted',
+    pastParticipleForm: 'convicted',
+    presentPerfectForm: 'has convicted',
+    presentSimple3rdPersonSingular: 'convicts',
+    presentParticiple: 'convicting',
+  },
+  {
+    baseForm: 'convince',
+    pastForm: 'convinced',
+    pastParticipleForm: 'convinced',
+    presentPerfectForm: 'has convinced',
+    presentSimple3rdPersonSingular: 'convinces',
+    presentParticiple: 'convincing',
+  },
+  {
+    baseForm: 'coo',
+    pastForm: 'cooed',
+    pastParticipleForm: 'cooed',
+    presentPerfectForm: 'has cooed',
+    presentSimple3rdPersonSingular: 'coos',
+    presentParticiple: 'cooing',
+  },
+  {
+    baseForm: 'cook',
+    pastForm: 'cooked',
+    pastParticipleForm: 'cooked',
+    presentPerfectForm: 'has cooked',
+    presentSimple3rdPersonSingular: 'cooks',
+    presentParticiple: 'cooking',
+  },
+  {
+    baseForm: 'cool',
+    pastForm: 'cooled',
+    pastParticipleForm: 'cooled',
+    presentPerfectForm: 'has cooled',
+    presentSimple3rdPersonSingular: 'cools',
+    presentParticiple: 'cooling',
+  },
+  {
+    baseForm: 'co-operate',
+    pastForm: 'co-operated',
+    pastParticipleForm: 'co-operated',
+    presentPerfectForm: 'has co-operated',
+    presentSimple3rdPersonSingular: 'co-operates',
+    presentParticiple: 'co-operating',
+  },
+  {
+    baseForm: 'cope',
+    pastForm: 'coped',
+    pastParticipleForm: 'coped',
+    presentPerfectForm: 'has coped',
+    presentSimple3rdPersonSingular: 'copes',
+    presentParticiple: 'coping',
+  },
+  {
+    baseForm: 'copy',
+    pastForm: 'copied',
+    pastParticipleForm: 'copied',
+    presentPerfectForm: 'has copied',
+    presentSimple3rdPersonSingular: 'copies',
+    presentParticiple: 'copying',
+  },
+  {
+    baseForm: 'correct',
+    pastForm: 'corrected',
+    pastParticipleForm: 'corrected',
+    presentPerfectForm: 'has corrected',
+    presentSimple3rdPersonSingular: 'corrects',
+    presentParticiple: 'correcting',
+  },
+  {
+    baseForm: 'correspond',
+    pastForm: 'corresponded',
+    pastParticipleForm: 'corresponded',
+    presentPerfectForm: 'has corresponded',
+    presentSimple3rdPersonSingular: 'corresponds',
+    presentParticiple: 'corresponding',
+  },
   {
     baseForm: 'corrode',
     pastForm: 'corroded',
     pastParticipleForm: 'corroded',
     presentPerfectForm: 'has corroded',
     presentSimple3rdPersonSingular: 'corrodes',
-    presentParticiple: 'corroding'
+    presentParticiple: 'corroding',
   },
   {
     baseForm: 'corrupt',
@@ -1879,7 +2079,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'corrupted',
     presentPerfectForm: 'has corrupted',
     presentSimple3rdPersonSingular: 'corrupts',
-    presentParticiple: 'corrupting'
+    presentParticiple: 'corrupting',
   },
   {
     baseForm: 'cost',
@@ -1887,7 +2087,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'cost',
     presentPerfectForm: 'has cost',
     presentSimple3rdPersonSingular: 'costs',
-    presentParticiple: 'costing'
+    presentParticiple: 'costing',
   },
   {
     baseForm: 'cough',
@@ -1895,7 +2095,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'coughed',
     presentPerfectForm: 'has coughed',
     presentSimple3rdPersonSingular: 'coughs',
-    presentParticiple: 'coughing'
+    presentParticiple: 'coughing',
   },
   {
     baseForm: 'counsel',
@@ -1903,7 +2103,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'counselled',
     presentPerfectForm: 'has counselled',
     presentSimple3rdPersonSingular: 'counsels',
-    presentParticiple: 'counselling'
+    presentParticiple: 'counselling',
   },
   {
     baseForm: 'count',
@@ -1911,7 +2111,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'counted',
     presentPerfectForm: 'has counted',
     presentSimple3rdPersonSingular: 'counts',
-    presentParticiple: 'counting'
+    presentParticiple: 'counting',
   },
   {
     baseForm: 'course',
@@ -1919,7 +2119,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'coursed',
     presentPerfectForm: 'has coursed',
     presentSimple3rdPersonSingular: 'courses',
-    presentParticiple: 'coursing'
+    presentParticiple: 'coursing',
   },
   {
     baseForm: 'cover',
@@ -1927,7 +2127,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'covered',
     presentPerfectForm: 'has covered',
     presentSimple3rdPersonSingular: 'covers',
-    presentParticiple: 'covering'
+    presentParticiple: 'covering',
   },
   {
     baseForm: 'cower',
@@ -1935,7 +2135,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'cowered',
     presentPerfectForm: 'has cowered',
     presentSimple3rdPersonSingular: 'cowers',
-    presentParticiple: 'cowering'
+    presentParticiple: 'cowering',
   },
   {
     baseForm: 'crack',
@@ -1943,7 +2143,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'cracked',
     presentPerfectForm: 'has cracked',
     presentSimple3rdPersonSingular: 'cracks',
-    presentParticiple: 'cracking'
+    presentParticiple: 'cracking',
   },
   {
     baseForm: 'crackle',
@@ -1951,7 +2151,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'crackled',
     presentPerfectForm: 'has crackled',
     presentSimple3rdPersonSingular: 'crackles',
-    presentParticiple: 'crackling'
+    presentParticiple: 'crackling',
   },
   {
     baseForm: 'crash',
@@ -1959,7 +2159,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'crashed',
     presentPerfectForm: 'has crashed',
     presentSimple3rdPersonSingular: 'crashes',
-    presentParticiple: 'crashing'
+    presentParticiple: 'crashing',
   },
   {
     baseForm: 'crave',
@@ -1967,7 +2167,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'craved',
     presentPerfectForm: 'has craved',
     presentSimple3rdPersonSingular: 'craves',
-    presentParticiple: 'craving'
+    presentParticiple: 'craving',
   },
   {
     baseForm: 'create',
@@ -1975,7 +2175,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'created',
     presentPerfectForm: 'has created',
     presentSimple3rdPersonSingular: 'creates',
-    presentParticiple: 'creating'
+    presentParticiple: 'creating',
   },
   {
     baseForm: 'creep',
@@ -1983,7 +2183,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'crept',
     presentPerfectForm: 'has crept',
     presentSimple3rdPersonSingular: 'creeps',
-    presentParticiple: 'creeping'
+    presentParticiple: 'creeping',
   },
   {
     baseForm: 'crib',
@@ -1991,7 +2191,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'cribbed',
     presentPerfectForm: 'has cribbed',
     presentSimple3rdPersonSingular: 'cribs',
-    presentParticiple: 'cribbing'
+    presentParticiple: 'cribbing',
   },
   {
     baseForm: 'cross',
@@ -1999,7 +2199,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'crossed',
     presentPerfectForm: 'has crossed',
     presentSimple3rdPersonSingular: 'crosses',
-    presentParticiple: 'crossing'
+    presentParticiple: 'crossing',
   },
   {
     baseForm: 'crowd',
@@ -2007,7 +2207,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'crowded',
     presentPerfectForm: 'has crowded',
     presentSimple3rdPersonSingular: 'crowds',
-    presentParticiple: 'crowding'
+    presentParticiple: 'crowding',
   },
   {
     baseForm: 'crush',
@@ -2015,7 +2215,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'crushed',
     presentPerfectForm: 'has crushed',
     presentSimple3rdPersonSingular: 'crushes',
-    presentParticiple: 'crushing'
+    presentParticiple: 'crushing',
   },
   {
     baseForm: 'cry',
@@ -2023,7 +2223,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'cried',
     presentPerfectForm: 'has cried',
     presentSimple3rdPersonSingular: 'cries',
-    presentParticiple: 'crying'
+    presentParticiple: 'crying',
   },
   {
     baseForm: 'curb',
@@ -2031,7 +2231,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'curbed',
     presentPerfectForm: 'has curbed',
     presentSimple3rdPersonSingular: 'curbs',
-    presentParticiple: 'curbing'
+    presentParticiple: 'curbing',
   },
   {
     baseForm: 'cure',
@@ -2039,7 +2239,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'cured',
     presentPerfectForm: 'has cured',
     presentSimple3rdPersonSingular: 'cures',
-    presentParticiple: 'curing'
+    presentParticiple: 'curing',
   },
   {
     baseForm: 'curve',
@@ -2047,7 +2247,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'curved',
     presentPerfectForm: 'has curved',
     presentSimple3rdPersonSingular: 'curves',
-    presentParticiple: 'curving'
+    presentParticiple: 'curving',
   },
   {
     baseForm: 'cut',
@@ -2055,7 +2255,7 @@ const C: VerbEN[] = [
     pastParticipleForm: 'cut',
     presentPerfectForm: 'has cut',
     presentSimple3rdPersonSingular: 'cuts',
-    presentParticiple: 'cutting'
+    presentParticiple: 'cutting',
   },
   {
     baseForm: 'cycle',
@@ -2063,8 +2263,8 @@ const C: VerbEN[] = [
     pastParticipleForm: 'cycled',
     presentPerfectForm: 'has cycled',
     presentSimple3rdPersonSingular: 'cycles',
-    presentParticiple: 'cycling'
-  }
+    presentParticiple: 'cycling',
+  },
 ];
 
 const D: VerbsEN = [
@@ -5519,7 +5719,7 @@ const P: VerbEN[] = [
     presentPerfectForm: 'has pretended',
     presentSimple3rdPersonSingular: 'pretends',
     presentParticiple: 'pretending',
-  }
+  },
 ];
 
 const Q: VerbEN[] = [
@@ -6065,14 +6265,13 @@ const R: VerbEN[] = [
 ];
 
 const S: VerbsEN = [
-
   {
     baseForm: 'sabotage',
     pastForm: 'sabotaged',
     pastParticipleForm: 'sabotaged',
     presentPerfectForm: 'has sabotaged',
     presentSimple3rdPersonSingular: 'sabotages',
-    presentParticiple: 'sabotaging'
+    presentParticiple: 'sabotaging',
   },
   {
     baseForm: 'sack',
@@ -6080,7 +6279,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'sacked',
     presentPerfectForm: 'has sacked',
     presentSimple3rdPersonSingular: 'sacks',
-    presentParticiple: 'sacking'
+    presentParticiple: 'sacking',
   },
   {
     baseForm: 'sacrifice',
@@ -6088,7 +6287,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'sacrificed',
     presentPerfectForm: 'has sacrificed',
     presentSimple3rdPersonSingular: 'sacrifices',
-    presentParticiple: 'sacrificing'
+    presentParticiple: 'sacrificing',
   },
   {
     baseForm: 'sadden',
@@ -6096,7 +6295,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'saddened',
     presentPerfectForm: 'has saddened',
     presentSimple3rdPersonSingular: 'saddens',
-    presentParticiple: 'saddening'
+    presentParticiple: 'saddening',
   },
   {
     baseForm: 'saddle',
@@ -6104,7 +6303,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'saddled',
     presentPerfectForm: 'has saddled',
     presentSimple3rdPersonSingular: 'saddles',
-    presentParticiple: 'saddling'
+    presentParticiple: 'saddling',
   },
   {
     baseForm: 'sag',
@@ -6112,7 +6311,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'sagged',
     presentPerfectForm: 'has sagged',
     presentSimple3rdPersonSingular: 'sags',
-    presentParticiple: 'sagging'
+    presentParticiple: 'sagging',
   },
   {
     baseForm: 'sail',
@@ -6120,7 +6319,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'sailed',
     presentPerfectForm: 'has sailed',
     presentSimple3rdPersonSingular: 'sails',
-    presentParticiple: 'sailing'
+    presentParticiple: 'sailing',
   },
   {
     baseForm: 'sally',
@@ -6128,7 +6327,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'sallied',
     presentPerfectForm: 'has sallied',
     presentSimple3rdPersonSingular: 'sallies',
-    presentParticiple: 'sallying'
+    presentParticiple: 'sallying',
   },
   {
     baseForm: 'salute',
@@ -6136,7 +6335,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'saluted',
     presentPerfectForm: 'has saluted',
     presentSimple3rdPersonSingular: 'salutes',
-    presentParticiple: 'saluting'
+    presentParticiple: 'saluting',
   },
   {
     baseForm: 'salvage',
@@ -6144,7 +6343,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'salvaged',
     presentPerfectForm: 'has salvaged',
     presentSimple3rdPersonSingular: 'salvages',
-    presentParticiple: 'salvaging'
+    presentParticiple: 'salvaging',
   },
   {
     baseForm: 'salve',
@@ -6152,7 +6351,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'salved',
     presentPerfectForm: 'has salved',
     presentSimple3rdPersonSingular: 'salves',
-    presentParticiple: 'salving'
+    presentParticiple: 'salving',
   },
   {
     baseForm: 'sample',
@@ -6160,7 +6359,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'sampled',
     presentPerfectForm: 'has sampled',
     presentSimple3rdPersonSingular: 'samples',
-    presentParticiple: 'sampling'
+    presentParticiple: 'sampling',
   },
   {
     baseForm: 'sanctify',
@@ -6168,7 +6367,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'sanctified',
     presentPerfectForm: 'has sanctified',
     presentSimple3rdPersonSingular: 'sanctifies',
-    presentParticiple: 'sanctifying'
+    presentParticiple: 'sanctifying',
   },
   {
     baseForm: 'sanction',
@@ -6176,7 +6375,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'sanctioned',
     presentPerfectForm: 'has sanctioned',
     presentSimple3rdPersonSingular: 'sanctions',
-    presentParticiple: 'sanctioning'
+    presentParticiple: 'sanctioning',
   },
   {
     baseForm: 'sap',
@@ -6184,7 +6383,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'sapped',
     presentPerfectForm: 'has sapped',
     presentSimple3rdPersonSingular: 'saps',
-    presentParticiple: 'sapping'
+    presentParticiple: 'sapping',
   },
   {
     baseForm: 'saponify',
@@ -6192,7 +6391,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'saponified',
     presentPerfectForm: 'has saponified',
     presentSimple3rdPersonSingular: 'saponifies',
-    presentParticiple: 'saponifying'
+    presentParticiple: 'saponifying',
   },
   {
     baseForm: 'sash',
@@ -6200,7 +6399,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'sashed',
     presentPerfectForm: 'has sashed',
     presentSimple3rdPersonSingular: 'sashes',
-    presentParticiple: 'sashing'
+    presentParticiple: 'sashing',
   },
   {
     baseForm: 'sashay',
@@ -6208,7 +6407,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'sashayed',
     presentPerfectForm: 'has sashayed',
     presentSimple3rdPersonSingular: 'sashays',
-    presentParticiple: 'sashaying'
+    presentParticiple: 'sashaying',
   },
   {
     baseForm: 'sass',
@@ -6216,7 +6415,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'sassed',
     presentPerfectForm: 'has sassed',
     presentSimple3rdPersonSingular: 'sasses',
-    presentParticiple: 'sassing'
+    presentParticiple: 'sassing',
   },
   {
     baseForm: 'sate',
@@ -6224,7 +6423,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'sated',
     presentPerfectForm: 'has sated',
     presentSimple3rdPersonSingular: 'sates',
-    presentParticiple: 'sating'
+    presentParticiple: 'sating',
   },
   {
     baseForm: 'satiate',
@@ -6232,7 +6431,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'satiated',
     presentPerfectForm: 'has satiated',
     presentSimple3rdPersonSingular: 'satiates',
-    presentParticiple: 'satiating'
+    presentParticiple: 'satiating',
   },
   {
     baseForm: 'satirise',
@@ -6240,7 +6439,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'satirised',
     presentPerfectForm: 'has satirised',
     presentSimple3rdPersonSingular: 'satirises',
-    presentParticiple: 'satirising'
+    presentParticiple: 'satirising',
   },
   {
     baseForm: 'satisfy',
@@ -6248,7 +6447,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'satisfied',
     presentPerfectForm: 'has satisfied',
     presentSimple3rdPersonSingular: 'satisfies',
-    presentParticiple: 'satisfying'
+    presentParticiple: 'satisfying',
   },
   {
     baseForm: 'saturate',
@@ -6256,7 +6455,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'saturated',
     presentPerfectForm: 'has saturated',
     presentSimple3rdPersonSingular: 'saturates',
-    presentParticiple: 'saturating'
+    presentParticiple: 'saturating',
   },
   {
     baseForm: 'saunter',
@@ -6264,7 +6463,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'sauntered',
     presentPerfectForm: 'has sauntered',
     presentSimple3rdPersonSingular: 'saunters',
-    presentParticiple: 'sauntering'
+    presentParticiple: 'sauntering',
   },
   {
     baseForm: 'save',
@@ -6272,7 +6471,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'saved',
     presentPerfectForm: 'has saved',
     presentSimple3rdPersonSingular: 'saves',
-    presentParticiple: 'saving'
+    presentParticiple: 'saving',
   },
   {
     baseForm: 'savor',
@@ -6280,7 +6479,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'savored',
     presentPerfectForm: 'has savored',
     presentSimple3rdPersonSingular: 'savors',
-    presentParticiple: 'savoring'
+    presentParticiple: 'savoring',
   },
   {
     baseForm: 'savvy',
@@ -6288,7 +6487,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'savvied',
     presentPerfectForm: 'has savvied',
     presentSimple3rdPersonSingular: 'savvies',
-    presentParticiple: 'savvying'
+    presentParticiple: 'savvying',
   },
   {
     baseForm: 'saw',
@@ -6296,7 +6495,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'sawn',
     presentPerfectForm: 'has sawn',
     presentSimple3rdPersonSingular: 'saws',
-    presentParticiple: 'sawing'
+    presentParticiple: 'sawing',
   },
   {
     baseForm: 'say',
@@ -6304,7 +6503,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'said',
     presentPerfectForm: 'has said',
     presentSimple3rdPersonSingular: 'says',
-    presentParticiple: 'saying'
+    presentParticiple: 'saying',
   },
   {
     baseForm: 'scab',
@@ -6312,7 +6511,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scabbed',
     presentPerfectForm: 'has scabbed',
     presentSimple3rdPersonSingular: 'scabs',
-    presentParticiple: 'scabbing'
+    presentParticiple: 'scabbing',
   },
   {
     baseForm: 'scabble',
@@ -6320,7 +6519,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scabbled',
     presentPerfectForm: 'has scabbled',
     presentSimple3rdPersonSingular: 'scabbles',
-    presentParticiple: 'scabbling'
+    presentParticiple: 'scabbling',
   },
   {
     baseForm: 'scald',
@@ -6328,7 +6527,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scalded',
     presentPerfectForm: 'has scalded',
     presentSimple3rdPersonSingular: 'scalds',
-    presentParticiple: 'scalding'
+    presentParticiple: 'scalding',
   },
   {
     baseForm: 'scale',
@@ -6336,7 +6535,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scaled',
     presentPerfectForm: 'has scaled',
     presentSimple3rdPersonSingular: 'scales',
-    presentParticiple: 'scaling'
+    presentParticiple: 'scaling',
   },
   {
     baseForm: 'scam',
@@ -6344,7 +6543,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scammed',
     presentPerfectForm: 'has scammed',
     presentSimple3rdPersonSingular: 'scams',
-    presentParticiple: 'scamming'
+    presentParticiple: 'scamming',
   },
   {
     baseForm: 'scan',
@@ -6352,7 +6551,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scanned',
     presentPerfectForm: 'has scanned',
     presentSimple3rdPersonSingular: 'scans',
-    presentParticiple: 'scanning'
+    presentParticiple: 'scanning',
   },
   {
     baseForm: 'scant',
@@ -6360,7 +6559,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scanted',
     presentPerfectForm: 'has scanted',
     presentSimple3rdPersonSingular: 'scants',
-    presentParticiple: 'scanting'
+    presentParticiple: 'scanting',
   },
   {
     baseForm: 'scar',
@@ -6368,7 +6567,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scarred',
     presentPerfectForm: 'has scarred',
     presentSimple3rdPersonSingular: 'scars',
-    presentParticiple: 'scarring'
+    presentParticiple: 'scarring',
   },
   {
     baseForm: 'scare',
@@ -6376,7 +6575,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scared',
     presentPerfectForm: 'has scared',
     presentSimple3rdPersonSingular: 'scares',
-    presentParticiple: 'scaring'
+    presentParticiple: 'scaring',
   },
   {
     baseForm: 'scarify',
@@ -6384,7 +6583,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scarified',
     presentPerfectForm: 'has scarified',
     presentSimple3rdPersonSingular: 'scarifies',
-    presentParticiple: 'scarifying'
+    presentParticiple: 'scarifying',
   },
   {
     baseForm: 'scarp',
@@ -6392,7 +6591,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scarped',
     presentPerfectForm: 'has scarped',
     presentSimple3rdPersonSingular: 'scarps',
-    presentParticiple: 'scarping'
+    presentParticiple: 'scarping',
   },
   {
     baseForm: 'scat',
@@ -6400,7 +6599,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scatted',
     presentPerfectForm: 'has scatted',
     presentSimple3rdPersonSingular: 'scats',
-    presentParticiple: 'scatting'
+    presentParticiple: 'scatting',
   },
   {
     baseForm: 'scatter',
@@ -6408,7 +6607,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scattered',
     presentPerfectForm: 'has scattered',
     presentSimple3rdPersonSingular: 'scatters',
-    presentParticiple: 'scattering'
+    presentParticiple: 'scattering',
   },
   {
     baseForm: 'scold',
@@ -6416,7 +6615,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scolded',
     presentPerfectForm: 'has scolded',
     presentSimple3rdPersonSingular: 'scolds',
-    presentParticiple: 'scolding'
+    presentParticiple: 'scolding',
   },
   {
     baseForm: 'scorch',
@@ -6424,7 +6623,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scorched',
     presentPerfectForm: 'has scorched',
     presentSimple3rdPersonSingular: 'scorches',
-    presentParticiple: 'scorching'
+    presentParticiple: 'scorching',
   },
   {
     baseForm: 'scowl',
@@ -6432,7 +6631,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scowled',
     presentPerfectForm: 'has scowled',
     presentSimple3rdPersonSingular: 'scowls',
-    presentParticiple: 'scowling'
+    presentParticiple: 'scowling',
   },
   {
     baseForm: 'scrawl',
@@ -6440,7 +6639,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'scrawled',
     presentPerfectForm: 'has scrawled',
     presentSimple3rdPersonSingular: 'scrawls',
-    presentParticiple: 'scrawling'
+    presentParticiple: 'scrawling',
   },
   {
     baseForm: 'scream',
@@ -6448,7 +6647,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'screamed',
     presentPerfectForm: 'has screamed',
     presentSimple3rdPersonSingular: 'screams',
-    presentParticiple: 'screaming'
+    presentParticiple: 'screaming',
   },
   {
     baseForm: 'screw',
@@ -6456,7 +6655,7 @@ const S: VerbsEN = [
     pastParticipleForm: 'screwed',
     presentPerfectForm: 'has screwed',
     presentSimple3rdPersonSingular: 'screws',
-    presentParticiple: 'screwing'
+    presentParticiple: 'screwing',
   },
 
   {
@@ -8350,7 +8549,6 @@ const Z: VerbEN[] = [
     presentParticiple: 'zooming',
   },
 ];
-
 
 export {
   A,

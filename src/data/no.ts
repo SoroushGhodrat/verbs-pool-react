@@ -1,4 +1,4 @@
-import { VerbNO } from "../types/types";
+import { VerbNO } from '../types/types';
 
 type VerbsNO = VerbNO[];
 
