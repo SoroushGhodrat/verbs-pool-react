@@ -12,16 +12,11 @@ import { en_verbs } from '../data/en'; // import your Verb type
 import { HtmlTooltip } from '../styled/Styled';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from 'react-i18next';
-type Verb = {
-  infinitiv?: string;
-  presens?: string;
-  preteritum?: string;
-  perfektum?: string;
-  imperative?: string;
-  meaning?: string;
-};
+import { VerbEN, VerbNO } from '../types/types';
+
+type UnionVerbs = VerbNO | VerbEN;
 interface DataTableSearchBoxProps {
-  onSearch: (filteredVerbs: Verb[], value: string) => void;
+  onSearch: (filteredVerbs: UnionVerbs[], value: string) => void;
 }
 
 // Extract TextField into its own function
