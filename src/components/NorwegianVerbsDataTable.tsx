@@ -53,102 +53,38 @@ import {
   Z as NorskZ,
   Ø as NorskØ,
 } from '../data/no';
-import {
-  A as EnglishA,
-  B as EnglishB,
-  C as EnglishC,
-  D as EnglishD,
-  E as EnglishE,
-  F as EnglishF,
-  G as EnglishG,
-  H as EnglishH,
-  I as EnglishI,
-  J as EnglishJ,
-  K as EnglishK,
-  L as EnglishL,
-  M as EnglishM,
-  N as EnglishN,
-  O as EnglishO,
-  P as EnglishP,
-  Q as EnglishQ,
-  R as EnglishR,
-  S as EnglishS,
-  T as EnglishT,
-  U as EnglishU,
-  V as EnglishV,
-  W as EnglishW,
-  // X as EnglishX,
-  Y as EnglishY,
-  Z as EnglishZ,
-} from '../data/en';
+
 import DataTableAlphabetsBox from './DataTableAlphabetsBox';
 import { HtmlTooltip } from '../styled/Styled';
 import DataTableSearchBox from './DataTableSearchBox';
-import { useLanguage } from '../context/LanguageContext';
+
 import { useTranslation } from 'react-i18next';
 import { VerbEN, VerbNO } from '../types/types';
 
 type UnionVerbs = VerbNO | VerbEN;
 
-type Headers = {
-  Norsk: string[];
-  English: string[];
-};
-
-const DataTable = () => {
-  const { language } = useLanguage();
+const NorwegianVerbsDataTable = () => {
   const { t } = useTranslation();
 
-  const table_headers: Headers = {
-    Norsk: [
-      'Infinitiv',
-      'Presens',
-      'Preteritum',
-      'Presens Perfektum',
-      'Engelsk',
-    ],
-    English: [
-      'Base',
-      'Past',
-      'Past Participle',
-      'Present Perfect',
-      'Present Simple 3rd Person Singular',
-      'Present Participle',
-    ],
-  };
-
-  const tableCells = {
-    Norsk: [
-      { key: 'infinitivForm', label: 'Infinitive' },
-      { key: 'presensForm', label: 'Present' },
-      { key: 'preteritumForm', label: 'Past' },
-      { key: 'perfektumForm', label: 'Perfect' },
-      { key: 'betydning', label: 'Meaning' },
-    ],
-    English: [
-      { key: 'baseForm', label: 'Base' },
-      { key: 'pastForm', label: 'Past' },
-      { key: 'pastParticipleForm', label: 'Past Participle' },
-      { key: 'presentPerfectForm', label: 'Present Perfect' },
-      {
-        key: 'presentSimple3rdPersonSingular',
-        label: 'Present Simple 3rd Person Singular',
-      },
-      { key: 'presentParticiple', label: 'Present Participle' },
-    ],
-  };
-
-  const theme = useTheme();
-  const isMobile = useMediaQuery((theme: Theme) =>
-    theme.breakpoints.down('sm')
-  );
-
-  const currentTableHeaders = table_headers[language];
-
-  const [filteredVerbs, setFilteredVerbs] = useState<UnionVerbs[]>([]);
+  const [filteredVerbs, setFilteredVerbs] = useState<VerbNO[]>([]);
   const [inputValue, setInputValue] = useState('');
 
-  // Define groups for both languages
+  const tableHeaders: string[] = [
+    'Infinitiv',
+    'Presens',
+    'Preteritum',
+    'Presens Perfektum',
+    'Engelsk',
+  ];
+
+  const tableCells = [
+    { key: 'infinitivForm', label: 'Infinitive' },
+    { key: 'presensForm', label: 'Present' },
+    { key: 'preteritumForm', label: 'Past' },
+    { key: 'perfektumForm', label: 'Perfect' },
+    { key: 'betydning', label: 'Meaning' },
+  ];
+
   const norwegianGroups = [
     { data: NorskA, label: 'A' },
     { data: NorskB, label: 'B' },
@@ -179,45 +115,20 @@ const DataTable = () => {
     { data: NorskØ, label: 'Ø' },
   ];
 
-  const englishGroups = [
-    { data: EnglishA, label: 'A' },
-    { data: EnglishB, label: 'B' },
-    { data: EnglishC, label: 'C' },
-    { data: EnglishD, label: 'D' },
-    { data: EnglishE, label: 'E' },
-    { data: EnglishF, label: 'F' },
-    { data: EnglishG, label: 'G' },
-    { data: EnglishH, label: 'H' },
-    { data: EnglishI, label: 'I' },
-    { data: EnglishJ, label: 'J' },
-    { data: EnglishK, label: 'K' },
-    { data: EnglishL, label: 'L' },
-    { data: EnglishM, label: 'M' },
-    { data: EnglishN, label: 'N' },
-    { data: EnglishO, label: 'O' },
-    { data: EnglishP, label: 'P' },
-    { data: EnglishQ, label: 'Q' },
-    { data: EnglishR, label: 'R' },
-    { data: EnglishS, label: 'S' },
-    { data: EnglishT, label: 'T' },
-    { data: EnglishU, label: 'U' },
-    { data: EnglishV, label: 'V' },
-    { data: EnglishW, label: 'W' },
-    // { data: EnglishX, label: "X" },
-    { data: EnglishY, label: 'Y' },
-    { data: EnglishZ, label: 'Z' },
-  ];
+  const theme = useTheme();
+  const isMobile = useMediaQuery((theme: Theme) =>
+    theme.breakpoints.down('sm')
+  );
 
-  // const handleSearch = (filtered: Verb[], value: string) => {
   const handleSearch = (filtered: UnionVerbs[], value: string) => {
-    setFilteredVerbs(filtered);
+    const filteredNO = filtered.filter((verb): verb is VerbNO => {
+      return (verb as VerbNO).infinitivForm !== undefined;
+    });
+    setFilteredVerbs(filteredNO);
     setInputValue(value);
   };
 
-  // Select the appropriate group based on the current language
-  const groups = language === 'Norsk' ? norwegianGroups : englishGroups;
-
-  const renderTable = (verbs: UnionVerbs[], letter: string) => {
+  const renderTable = (verbs: VerbNO[], letter: string) => {
     return (
       <>
         {/* Letters group header */}
@@ -264,7 +175,7 @@ const DataTable = () => {
               >
                 {/* Table headers present, past, ... */}
                 <TableRow>
-                  {currentTableHeaders?.map((header: string) => (
+                  {tableHeaders?.map((header: string) => (
                     <TableCell key={uuidv4()}>
                       <Typography variant="h6">{header}</Typography>
                     </TableCell>
@@ -273,36 +184,8 @@ const DataTable = () => {
               </TableHead>
 
               <TableBody>
-                {verbs.map((row: any) => {
-                  return language === 'Norsk' ? (
-                    _.isEmpty(row.infinitivForm) ? (
-                      <StyledTableRow key={uuidv4()}>
-                        <TableCell colSpan={5}>
-                          <Typography
-                            variant="body2"
-                            textAlign="center"
-                            gutterBottom
-                          >
-                            {t('this group has no verb!')}
-                          </Typography>
-                        </TableCell>
-                      </StyledTableRow>
-                    ) : (
-                      <StyledTableRow key={uuidv4()}>
-                        {tableCells[language].map(({ key }) => (
-                          <TableCell key={key}>
-                            <Typography
-                              variant="subtitle1"
-                              gutterBottom
-                              sx={{ textTransform: 'capitalize' }}
-                            >
-                              {row[key as keyof VerbNO]}
-                            </Typography>
-                          </TableCell>
-                        ))}
-                      </StyledTableRow>
-                    )
-                  ) : _.isEmpty(row.baseForm) ? (
+                {verbs.map((row: VerbNO) =>
+                  _.isEmpty(row.infinitivForm) ? (
                     <StyledTableRow key={uuidv4()}>
                       <TableCell colSpan={5}>
                         <Typography
@@ -316,20 +199,20 @@ const DataTable = () => {
                     </StyledTableRow>
                   ) : (
                     <StyledTableRow key={uuidv4()}>
-                      {tableCells[language].map(({ key }) => (
+                      {tableCells.map(({ key }) => (
                         <TableCell key={key}>
                           <Typography
                             variant="subtitle1"
                             gutterBottom
                             sx={{ textTransform: 'capitalize' }}
                           >
-                            {row[key as keyof VerbEN]}
+                            {row[key as keyof VerbNO]}
                           </Typography>
                         </TableCell>
                       ))}
                     </StyledTableRow>
-                  );
-                })}
+                  )
+                )}
               </TableBody>
             </Table>
           </TableContainer>
@@ -345,7 +228,9 @@ const DataTable = () => {
           <DataTableAlphabetsBox />
           <DataTableSearchBox onSearch={handleSearch} />
           {inputValue.length === 0
-            ? groups.map((group) => renderTable(group.data, `${group.label}`))
+            ? norwegianGroups.map((group) =>
+                renderTable(group.data, `${group.label}`)
+              )
             : filteredVerbs.length > 0 &&
               renderTable(
                 filteredVerbs,
@@ -374,4 +259,4 @@ const DataTable = () => {
   );
 };
 
-export default DataTable;
+export default NorwegianVerbsDataTable;
