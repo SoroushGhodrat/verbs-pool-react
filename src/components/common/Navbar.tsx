@@ -12,13 +12,16 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { useState } from 'react';
-import icon from '../assets/icon.svg';
-import { useLanguage } from '../context/LanguageContext';
+import icon from '../../assets/icon.svg';
+import { useLanguage } from '../../context/LanguageContext';
+import { useNavigate } from 'react-router-dom';
 
-const pages = ['Norsk', 'English'];
+const pages = ['Norwegian Verbs', 'English Verbs', 'English Grammar'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
+  const navigate = useNavigate();
+
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
   const { setLanguage } = useLanguage();
@@ -31,11 +34,16 @@ function ResponsiveAppBar() {
   };
 
   const handleCloseNavMenu = (page: string) => () => {
-    if (page === 'English') {
-      setLanguage(page);
+    if (page === 'English Verbs') {
+      setLanguage('English');
+      navigate('/english-verbs');
     }
-    if (page === 'Norsk') {
-      setLanguage(page);
+    if (page === 'Norwegian Verbs') {
+      setLanguage('Norsk');
+      navigate('/norwegian-verbs');
+    }
+    if (page === 'English Grammar') {
+      navigate('/english-grammar');
     }
     setAnchorElNav(null);
   };

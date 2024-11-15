@@ -7,8 +7,8 @@ import {
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react';
-import { no_verbs } from '../data/no'; // import your Verb type
-import { en_verbs } from '../data/en'; // import your Verb type
+import { no_verbs } from '../data/no';
+import { en_verbs } from '../data/en';
 import { HtmlTooltip } from '../styled/Styled';
 import { useLanguage } from '../context/LanguageContext';
 import { useTranslation } from 'react-i18next';
