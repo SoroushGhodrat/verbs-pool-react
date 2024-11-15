@@ -1,3057 +1,3053 @@
-type Verb = {
-  infinitiv: string;
-  presens: string;
-  preteritum: string;
-  perfektum: string;
-  meaning: string;
-};
+import { VerbNO } from "../types/types";
 
-const A: Verb[] = [
-  {
-    infinitiv: 'å adlyde',
-    presens: 'adlyder',
-    preteritum: 'adlød',
-    perfektum: 'har adlydt',
-    meaning: 'Obey',
-  },
-  {
-    infinitiv: 'å anbefale',
-    presens: 'anbefaler',
-    preteritum: 'anbefalte',
-    perfektum: 'har anbefalt',
-    meaning: 'Recommend',
-  },
-  {
-    infinitiv: 'å ansette',
-    presens: 'ansetter',
-    preteritum: 'ansatte',
-    perfektum: 'har ansatt',
-    meaning: 'Employ',
-  },
-  {
-    infinitiv: 'å arbeide',
-    presens: 'arbeider',
-    preteritum: 'arbeidet',
-    perfektum: 'har arbeidet',
-    meaning: 'Work',
-  },
-  {
-    infinitiv: 'å avslå',
-    presens: 'avslår',
-    preteritum: 'avslo',
-    perfektum: 'har avslått',
-    meaning: 'Repulse',
-  },
-  {
-    infinitiv: 'å avstå',
-    presens: 'avstår',
-    preteritum: 'avstod',
-    perfektum: 'har avstatt',
+type VerbsNO = VerbNO[];
 
-    meaning: 'Cede',
+const A: VerbsNO = [
+  {
+    infinitivForm: 'å adlyde',
+    presensForm: 'adlyder',
+    preteritumForm: 'adlød',
+    perfektumForm: 'har adlydt',
+    betydning: 'Obey',
+  },
+  {
+    infinitivForm: 'å anbefale',
+    presensForm: 'anbefaler',
+    preteritumForm: 'anbefalte',
+    perfektumForm: 'har anbefalt',
+    betydning: 'Recommend',
+  },
+  {
+    infinitivForm: 'å ansette',
+    presensForm: 'ansetter',
+    preteritumForm: 'ansatte',
+    perfektumForm: 'har ansatt',
+    betydning: 'Employ',
+  },
+  {
+    infinitivForm: 'å arbeide',
+    presensForm: 'arbeider',
+    preteritumForm: 'arbeidet',
+    perfektumForm: 'har arbeidet',
+    betydning: 'Work',
+  },
+  {
+    infinitivForm: 'å avslå',
+    presensForm: 'avslår',
+    preteritumForm: 'avslo',
+    perfektumForm: 'har avslått',
+    betydning: 'Repulse',
+  },
+  {
+    infinitivForm: 'å avstå',
+    presensForm: 'avstår',
+    preteritumForm: 'avstod',
+    perfektumForm: 'har avstatt',
+
+    betydning: 'Cede',
   },
 ];
 
-const B: Verb[] = [
+const B: VerbsNO = [
   {
-    infinitiv: 'å bade',
-    presens: 'bader',
-    preteritum: 'badet',
-    perfektum: 'har badet',
-    meaning: 'Bath',
+    infinitivForm: 'å bade',
+    presensForm: 'bader',
+    preteritumForm: 'badet',
+    perfektumForm: 'har badet',
+    betydning: 'Bath',
   },
   {
-    infinitiv: 'å banke',
-    presens: 'banker',
-    preteritum: 'banket',
-    perfektum: 'har banket',
+    infinitivForm: 'å banke',
+    presensForm: 'banker',
+    preteritumForm: 'banket',
+    perfektumForm: 'har banket',
 
-    meaning: 'Beat, Hit',
+    betydning: 'Beat, Hit',
   },
   {
-    infinitiv: 'å barbere',
-    presens: 'barberer',
-    preteritum: 'barberte',
-    perfektum: 'har barbert',
+    infinitivForm: 'å barbere',
+    presensForm: 'barberer',
+    preteritumForm: 'barberte',
+    perfektumForm: 'har barbert',
 
-    meaning: 'Shave',
+    betydning: 'Shave',
   },
   {
-    infinitiv: 'å be',
-    presens: 'ber',
-    preteritum: 'ba(d)',
-    perfektum: 'har bedt',
-    meaning: 'Ask',
+    infinitivForm: 'å be',
+    presensForm: 'ber',
+    preteritumForm: 'ba(d)',
+    perfektumForm: 'har bedt',
+    betydning: 'Ask',
   },
   {
-    infinitiv: 'å bearbeide',
-    presens: 'bearbeider',
-    preteritum: 'bearbeidet',
-    perfektum: 'har bearbeidet',
+    infinitivForm: 'å bearbeide',
+    presensForm: 'bearbeider',
+    preteritumForm: 'bearbeidet',
+    perfektumForm: 'har bearbeidet',
 
-    meaning: 'Adapt',
+    betydning: 'Adapt',
   },
   {
-    infinitiv: 'å bedra',
-    presens: 'bedrar',
-    preteritum: 'bedro',
-    perfektum: 'har bedratt',
+    infinitivForm: 'å bedra',
+    presensForm: 'bedrar',
+    preteritumForm: 'bedro',
+    perfektumForm: 'har bedratt',
 
-    meaning: 'Cheat',
+    betydning: 'Cheat',
   },
   {
-    infinitiv: 'å bedøve',
-    presens: 'bedøver',
-    preteritum: 'bedøvet',
-    perfektum: 'har bedøvet',
+    infinitivForm: 'å bedøve',
+    presensForm: 'bedøver',
+    preteritumForm: 'bedøvet',
+    perfektumForm: 'har bedøvet',
 
-    meaning: 'Drug',
+    betydning: 'Drug',
   },
   {
-    infinitiv: 'å bedøve',
-    presens: 'bedøver',
-    preteritum: 'bedøvde',
-    perfektum: 'har bedøvd',
+    infinitivForm: 'å bedøve',
+    presensForm: 'bedøver',
+    preteritumForm: 'bedøvde',
+    perfektumForm: 'har bedøvd',
 
-    meaning: 'Anaesthetise',
+    betydning: 'Anaesthetise',
   },
   {
-    infinitiv: 'å begynne',
-    presens: 'begynner',
-    preteritum: 'begynte',
-    perfektum: 'har begynt',
+    infinitivForm: 'å begynne',
+    presensForm: 'begynner',
+    preteritumForm: 'begynte',
+    perfektumForm: 'har begynt',
 
-    meaning: 'Begin',
+    betydning: 'Begin',
   },
   {
-    infinitiv: 'å behandle',
-    presens: 'behandler',
-    preteritum: 'behandlet',
-    perfektum: 'har behandlet',
+    infinitivForm: 'å behandle',
+    presensForm: 'behandler',
+    preteritumForm: 'behandlet',
+    perfektumForm: 'har behandlet',
 
-    meaning: 'Handle',
+    betydning: 'Handle',
   },
   {
-    infinitiv: 'å beite',
-    presens: 'beiter',
-    preteritum: 'beitet',
-    perfektum: 'har beitet',
+    infinitivForm: 'å beite',
+    presensForm: 'beiter',
+    preteritumForm: 'beitet',
+    perfektumForm: 'har beitet',
 
-    meaning: 'Graze',
+    betydning: 'Graze',
   },
   {
-    infinitiv: 'å beskrive',
-    presens: 'beskriver',
-    preteritum: 'beskrev',
-    perfektum: 'har beskrevet',
-    meaning: 'Describe',
+    infinitivForm: 'å beskrive',
+    presensForm: 'beskriver',
+    preteritumForm: 'beskrev',
+    perfektumForm: 'har beskrevet',
+    betydning: 'Describe',
   },
   {
-    infinitiv: 'å bestemme',
-    presens: 'bestemmer',
-    preteritum: 'bestemte',
-    perfektum: 'har bestemt',
+    infinitivForm: 'å bestemme',
+    presensForm: 'bestemmer',
+    preteritumForm: 'bestemte',
+    perfektumForm: 'har bestemt',
 
-    meaning: 'Decide',
+    betydning: 'Decide',
   },
   {
-    infinitiv: 'å beslå',
-    presens: 'beslår',
-    preteritum: 'beslo',
-    perfektum: 'har beslått',
+    infinitivForm: 'å beslå',
+    presensForm: 'beslår',
+    preteritumForm: 'beslo',
+    perfektumForm: 'har beslått',
 
-    meaning: 'Mount',
+    betydning: 'Mount',
   },
   {
-    infinitiv: 'å bestille',
-    presens: 'bestiller',
-    preteritum: 'bestilte',
-    perfektum: 'har bestilt',
+    infinitivForm: 'å bestille',
+    presensForm: 'bestiller',
+    preteritumForm: 'bestilte',
+    perfektumForm: 'har bestilt',
 
-    meaning: 'Do, Order',
+    betydning: 'Do, Order',
   },
   {
-    infinitiv: 'å bestå',
-    presens: 'består',
-    preteritum: 'besto(d)',
-    perfektum: 'har bestått',
+    infinitivForm: 'å bestå',
+    presensForm: 'består',
+    preteritumForm: 'besto(d)',
+    perfektumForm: 'har bestått',
 
-    meaning: 'Pass (as in exam)',
+    betydning: 'Pass (as in exam)',
   },
   {
-    infinitiv: 'å besøke',
-    presens: 'besøker',
-    preteritum: 'besøkte',
-    perfektum: 'har besøkt',
+    infinitivForm: 'å besøke',
+    presensForm: 'besøker',
+    preteritumForm: 'besøkte',
+    perfektumForm: 'har besøkt',
 
-    meaning: 'Visit',
+    betydning: 'Visit',
   },
   {
-    infinitiv: 'å betale',
-    presens: 'betaler',
-    preteritum: 'betalte',
-    perfektum: 'har betalt',
+    infinitivForm: 'å betale',
+    presensForm: 'betaler',
+    preteritumForm: 'betalte',
+    perfektumForm: 'har betalt',
 
-    meaning: 'Pay',
+    betydning: 'Pay',
   },
   {
-    infinitiv: 'å bety',
-    presens: 'betyr',
-    preteritum: 'betydde',
-    perfektum: 'har betydd',
+    infinitivForm: 'å bety',
+    presensForm: 'betyr',
+    preteritumForm: 'betydde',
+    perfektumForm: 'har betydd',
 
-    meaning: 'Mean, Signify',
+    betydning: 'Mean, Signify',
   },
   {
-    infinitiv: 'å binde',
-    presens: 'binder',
-    preteritum: 'bandt',
-    perfektum: 'har bundet',
+    infinitivForm: 'å binde',
+    presensForm: 'binder',
+    preteritumForm: 'bandt',
+    perfektumForm: 'har bundet',
 
-    meaning: 'Bind',
+    betydning: 'Bind',
   },
   {
-    infinitiv: 'å bite',
-    presens: 'biter',
-    preteritum: 'betalte',
-    perfektum: 'har bit',
+    infinitivForm: 'å bite',
+    presensForm: 'biter',
+    preteritumForm: 'betalte',
+    perfektumForm: 'har bit',
 
-    meaning: 'Bite',
+    betydning: 'Bite',
   },
   {
-    infinitiv: 'å bjeffe',
-    presens: 'bjeffer',
-    preteritum: 'bjeffet',
-    perfektum: 'har bjeffet',
+    infinitivForm: 'å bjeffe',
+    presensForm: 'bjeffer',
+    preteritumForm: 'bjeffet',
+    perfektumForm: 'har bjeffet',
 
-    meaning: 'Bark, Yap',
+    betydning: 'Bark, Yap',
   },
   {
-    infinitiv: 'å blande',
-    presens: 'blander',
-    preteritum: 'blandet',
-    perfektum: 'har blandet',
+    infinitivForm: 'å blande',
+    presensForm: 'blander',
+    preteritumForm: 'blandet',
+    perfektumForm: 'har blandet',
 
-    meaning: 'Blend, Mix',
+    betydning: 'Blend, Mix',
   },
   {
-    infinitiv: 'å bli',
-    presens: 'blir',
-    preteritum: 'ble',
-    perfektum: 'har blitt',
-    meaning: 'Be',
+    infinitivForm: 'å bli',
+    presensForm: 'blir',
+    preteritumForm: 'ble',
+    perfektumForm: 'har blitt',
+    betydning: 'Be',
   },
   {
-    infinitiv: 'å blø',
-    presens: 'blør',
-    preteritum: 'blødde',
-    perfektum: 'har blødd',
-    meaning: 'Bleed',
+    infinitivForm: 'å blø',
+    presensForm: 'blør',
+    preteritumForm: 'blødde',
+    perfektumForm: 'har blødd',
+    betydning: 'Bleed',
   },
   {
-    infinitiv: 'å blåse',
-    presens: 'blåser',
-    preteritum: 'blåste',
-    perfektum: 'har blåst',
+    infinitivForm: 'å blåse',
+    presensForm: 'blåser',
+    preteritumForm: 'blåste',
+    perfektumForm: 'har blåst',
 
-    meaning: 'Blow',
+    betydning: 'Blow',
   },
   {
-    infinitiv: 'å bo',
-    presens: 'bor',
-    preteritum: 'bordde',
-    perfektum: 'har bordd',
-    meaning: 'Live, Reside',
+    infinitivForm: 'å bo',
+    presensForm: 'bor',
+    preteritumForm: 'bordde',
+    perfektumForm: 'har bordd',
+    betydning: 'Live, Reside',
   },
   {
-    infinitiv: 'å brekke',
-    presens: 'brekker',
-    preteritum: 'brakk',
-    perfektum: 'har brukket',
+    infinitivForm: 'å brekke',
+    presensForm: 'brekker',
+    preteritumForm: 'brakk',
+    perfektumForm: 'har brukket',
 
-    meaning: 'Break',
+    betydning: 'Break',
   },
   {
-    infinitiv: 'å brenne',
-    presens: 'brenner',
-    preteritum: 'brente',
-    perfektum: 'har brent',
+    infinitivForm: 'å brenne',
+    presensForm: 'brenner',
+    preteritumForm: 'brente',
+    perfektumForm: 'har brent',
 
-    meaning: 'Burn',
+    betydning: 'Burn',
   },
   {
-    infinitiv: 'å bringe',
-    presens: 'bringer',
-    preteritum: 'brakte',
-    perfektum: 'har brakt',
+    infinitivForm: 'å bringe',
+    presensForm: 'bringer',
+    preteritumForm: 'brakte',
+    perfektumForm: 'har brakt',
 
-    meaning: 'Bring',
+    betydning: 'Bring',
   },
   {
-    infinitiv: 'å briste',
-    presens: 'brister',
-    preteritum: 'brast',
-    perfektum: 'har bristet',
+    infinitivForm: 'å briste',
+    presensForm: 'brister',
+    preteritumForm: 'brast',
+    perfektumForm: 'har bristet',
 
-    meaning: 'Burst',
+    betydning: 'Burst',
   },
   {
-    infinitiv: 'å bruke',
-    presens: 'bruker',
-    preteritum: 'brukte',
-    perfektum: 'har brukt',
-    meaning: 'Use',
+    infinitivForm: 'å bruke',
+    presensForm: 'bruker',
+    preteritumForm: 'brukte',
+    perfektumForm: 'har brukt',
+    betydning: 'Use',
   },
   {
-    infinitiv: 'å bry',
-    presens: 'bryr',
-    preteritum: 'brydde',
-    perfektum: 'har brydd',
+    infinitivForm: 'å bry',
+    presensForm: 'bryr',
+    preteritumForm: 'brydde',
+    perfektumForm: 'har brydd',
 
-    meaning: 'Bother',
+    betydning: 'Bother',
   },
   {
-    infinitiv: 'å bryte',
-    presens: 'bryter',
-    preteritum: 'brøt',
-    perfektum: 'har brutt',
+    infinitivForm: 'å bryte',
+    presensForm: 'bryter',
+    preteritumForm: 'brøt',
+    perfektumForm: 'har brutt',
 
-    meaning: 'Violate, Break',
+    betydning: 'Violate, Break',
   },
   {
-    infinitiv: 'å burde',
-    presens: 'bør',
-    preteritum: 'burde',
-    perfektum: 'har burdet',
+    infinitivForm: 'å burde',
+    presensForm: 'bør',
+    preteritumForm: 'burde',
+    perfektumForm: 'har burdet',
 
-    meaning: 'Ought to',
+    betydning: 'Ought to',
   },
   {
-    infinitiv: 'å by',
-    presens: 'byr',
-    preteritum: 'bød',
-    perfektum: 'har budt',
+    infinitivForm: 'å by',
+    presensForm: 'byr',
+    preteritumForm: 'bød',
+    perfektumForm: 'har budt',
 
-    meaning: 'Offer, Bid',
+    betydning: 'Offer, Bid',
   },
   {
-    infinitiv: 'å bygge',
-    presens: 'bygger',
-    preteritum: 'bygde',
-    perfektum: 'har bygd',
+    infinitivForm: 'å bygge',
+    presensForm: 'bygger',
+    preteritumForm: 'bygde',
+    perfektumForm: 'har bygd',
 
-    meaning: 'Build',
+    betydning: 'Build',
   },
   {
-    infinitiv: 'å bytte',
-    presens: 'bytter',
-    preteritum: 'byttet',
-    perfektum: 'har byttet',
+    infinitivForm: 'å bytte',
+    presensForm: 'bytter',
+    preteritumForm: 'byttet',
+    perfektumForm: 'har byttet',
 
-    meaning: 'Change, Exchange',
+    betydning: 'Change, Exchange',
   },
   {
-    infinitiv: 'å bære',
-    presens: 'bærer',
-    preteritum: 'bar',
-    perfektum: 'har båret',
+    infinitivForm: 'å bære',
+    presensForm: 'bærer',
+    preteritumForm: 'bar',
+    perfektumForm: 'har båret',
 
-    meaning: 'Bear, Endure',
-  },
-];
-
-const C: Verb[] = [
-  {
-    infinitiv: '',
-    presens: '',
-    preteritum: '',
-    perfektum: '',
-
-    meaning: '',
+    betydning: 'Bear, Endure',
   },
 ];
 
-const D: Verb[] = [
+const C: VerbsNO = [
   {
-    infinitiv: 'å danse',
-    presens: 'danser',
-    preteritum: 'danset',
-    perfektum: 'har danset',
-    meaning: 'Dance',
-  },
-  {
-    infinitiv: 'å dele',
-    presens: 'deler',
-    preteritum: 'delte',
-    perfektum: 'har delt',
+    infinitivForm: '',
+    presensForm: '',
+    preteritumForm: '',
+    perfektumForm: '',
 
-    meaning: 'Divide',
-  },
-  {
-    infinitiv: 'å demokratisere',
-    presens: 'demokratiserer',
-    preteritum: 'demokratiserte',
-    perfektum: 'har demokratisert',
-
-    meaning: 'Democratize',
-  },
-  {
-    infinitiv: 'å diskutere',
-    presens: 'diskuterer',
-    preteritum: 'diskuterte',
-    perfektum: 'har diskutert',
-
-    meaning: 'Discuss',
-  },
-  {
-    infinitiv: 'å dra',
-    presens: 'drar',
-    preteritum: 'drog',
-    perfektum: 'har dradd/dratt',
-
-    meaning: 'Go / Drag',
-  },
-  {
-    infinitiv: 'å drikke',
-    presens: 'drikker',
-    preteritum: 'drakk',
-    perfektum: 'har drukket',
-    meaning: 'Drink',
-  },
-  {
-    infinitiv: 'å drive',
-    presens: 'driver',
-    preteritum: 'drev',
-    perfektum: 'har drevet',
-
-    meaning: 'Drive, Operate',
-  },
-  {
-    infinitiv: 'å drømme',
-    presens: 'drømmer',
-    preteritum: 'drømte',
-    perfektum: 'har drømt',
-
-    meaning: 'Dream',
-  },
-  {
-    infinitiv: 'å dusje',
-    presens: 'dusjer',
-    preteritum: 'dusjet',
-    perfektum: 'har dusjet',
-
-    meaning: 'Shower',
-  },
-  {
-    infinitiv: 'å dyrke',
-    presens: 'dyrker',
-    preteritum: 'dyrket',
-    perfektum: 'har dyrket',
-
-    meaning: 'Cultivate',
-  },
-  {
-    infinitiv: 'å dytte',
-    presens: 'dytter',
-    preteritum: 'dyttet',
-    perfektum: 'har dyttet',
-    meaning: 'Push',
+    betydning: '',
   },
 ];
 
-const E: Verb[] = [
+const D: VerbsNO = [
   {
-    infinitiv: 'å eie',
-    presens: 'eier',
-    preteritum: 'eide',
-    perfektum: 'har eid',
+    infinitivForm: 'å danse',
+    presensForm: 'danser',
+    preteritumForm: 'danset',
+    perfektumForm: 'har danset',
+    betydning: 'Dance',
+  },
+  {
+    infinitivForm: 'å dele',
+    presensForm: 'deler',
+    preteritumForm: 'delte',
+    perfektumForm: 'har delt',
 
-    meaning: 'Possess',
+    betydning: 'Divide',
   },
   {
-    infinitiv: 'å ese',
-    presens: 'eser',
-    preteritum: 'este',
-    perfektum: 'har est',
+    infinitivForm: 'å demokratisere',
+    presensForm: 'demokratiserer',
+    preteritumForm: 'demokratiserte',
+    perfektumForm: 'har demokratisert',
 
-    meaning: 'Rise',
+    betydning: 'Democratize',
   },
   {
-    infinitiv: 'å ete',
-    presens: 'eter',
-    preteritum: 'åt',
-    perfektum: 'har ett',
+    infinitivForm: 'å diskutere',
+    presensForm: 'diskuterer',
+    preteritumForm: 'diskuterte',
+    perfektumForm: 'har diskutert',
 
-    meaning: 'Eat Greedily',
+    betydning: 'Discuss',
   },
   {
-    infinitiv: 'å evangelisere',
-    presens: 'evangeliserer',
-    preteritum: 'evangeliserte',
-    perfektum: 'har evangelisert',
+    infinitivForm: 'å dra',
+    presensForm: 'drar',
+    preteritumForm: 'drog',
+    perfektumForm: 'har dradd/dratt',
 
-    meaning: 'Evangelize',
+    betydning: 'Go / Drag',
   },
-];
+  {
+    infinitivForm: 'å drikke',
+    presensForm: 'drikker',
+    preteritumForm: 'drakk',
+    perfektumForm: 'har drukket',
+    betydning: 'Drink',
+  },
+  {
+    infinitivForm: 'å drive',
+    presensForm: 'driver',
+    preteritumForm: 'drev',
+    perfektumForm: 'har drevet',
 
-const F: Verb[] = [
-  {
-    infinitiv: 'å falle',
-    presens: 'faller',
-    preteritum: 'falt',
-    perfektum: 'har falt',
-    meaning: 'Fall',
+    betydning: 'Drive, Operate',
   },
   {
-    infinitiv: 'å feire',
-    presens: 'feirer',
-    preteritum: 'feiret',
-    perfektum: 'har feiret',
-    meaning: 'Celebrate',
+    infinitivForm: 'å drømme',
+    presensForm: 'drømmer',
+    preteritumForm: 'drømte',
+    perfektumForm: 'har drømt',
+
+    betydning: 'Dream',
   },
   {
-    infinitiv: 'å finne',
-    presens: 'finner',
-    preteritum: 'fant',
-    perfektum: 'har funnet',
-    meaning: 'Find',
+    infinitivForm: 'å dusje',
+    presensForm: 'dusjer',
+    preteritumForm: 'dusjet',
+    perfektumForm: 'har dusjet',
+
+    betydning: 'Shower',
   },
   {
-    infinitiv: 'å fiske',
-    presens: 'fisker',
-    preteritum: 'fisket',
-    perfektum: 'har fisket',
-    meaning: 'Fish',
+    infinitivForm: 'å dyrke',
+    presensForm: 'dyrker',
+    preteritumForm: 'dyrket',
+    perfektumForm: 'har dyrket',
+
+    betydning: 'Cultivate',
   },
   {
-    infinitiv: 'å fleipe',
-    presens: 'fleiper',
-    preteritum: 'fleipte',
-    perfektum: 'har fleipt',
-    meaning: 'Joke',
-  },
-  {
-    infinitiv: 'å fly',
-    presens: 'flyr',
-    preteritum: 'fløy',
-    perfektum: 'har fløyet',
-    meaning: 'Fly',
-  },
-  {
-    infinitiv: 'å flykte',
-    presens: 'flykter',
-    preteritum: 'flyktet',
-    perfektum: 'har flyktet',
-    meaning: 'Flee',
-  },
-  {
-    infinitiv: 'å flyte',
-    presens: 'flyter',
-    preteritum: 'fløt',
-    perfektum: 'har flytt',
-    meaning: 'Float',
-  },
-  {
-    infinitiv: 'flytte',
-    presens: 'flytter',
-    preteritum: 'flyttet',
-    perfektum: 'har flyttet',
-    meaning: 'Move',
-  },
-  {
-    infinitiv: 'å forene',
-    presens: 'forener',
-    preteritum: 'forente',
-    perfektum: 'har forent',
-    meaning: 'Unite',
-  },
-  {
-    infinitiv: 'å foreslå',
-    presens: 'foreslår',
-    preteritum: 'foreslo',
-    perfektum: 'har foreslått',
-    meaning: 'Suggest',
-  },
-  {
-    infinitiv: 'å foreta',
-    presens: 'foretar',
-    preteritum: 'foretok',
-    perfektum: 'har foretatt',
-    meaning: 'Undertake',
-  },
-  {
-    infinitiv: 'å forkjøle seg',
-    presens: 'forkjøler seg',
-    preteritum: 'forkjølet seg',
-    perfektum: 'har forkjølt seg',
-    meaning: 'Catch a Cold',
-  },
-  {
-    infinitiv: 'å forklare',
-    presens: 'forklarer',
-    preteritum: 'forklarte',
-    perfektum: 'har forklart',
-    meaning: 'Explain',
-  },
-  {
-    infinitiv: 'å forlate',
-    presens: 'forlater',
-    preteritum: 'forlot',
-    perfektum: 'har forlatt',
-    meaning: 'Forgive',
-  },
-  {
-    infinitiv: 'å fornye',
-    presens: 'fornyer',
-    preteritum: 'fornyet',
-    perfektum: 'har fornyet',
-    meaning: 'Renew',
-  },
-  {
-    infinitiv: 'å forstå',
-    presens: 'forstår',
-    preteritum: 'forstod',
-    perfektum: 'har forstått',
-    meaning: 'Understand',
-  },
-  {
-    infinitiv: 'å forsvinne',
-    presens: 'forsvinner',
-    preteritum: 'forsvant',
-    perfektum: 'har forsvunnet',
-    meaning: 'Disappear',
-  },
-  {
-    infinitiv: 'å fortelle',
-    presens: 'forteller',
-    preteritum: 'fortalte',
-    perfektum: 'har fortalt',
-    meaning: 'Tell',
-  },
-  {
-    infinitiv: 'å fortsette',
-    presens: 'fortsetter',
-    preteritum: 'fortsatte',
-    perfektum: 'har fortsatt',
-    meaning: 'Continue',
-  },
-  {
-    infinitiv: 'å fosse',
-    presens: 'fosser',
-    preteritum: 'fosset',
-    perfektum: 'har fosset',
-    meaning: 'Gush',
-  },
-  {
-    infinitiv: 'å fotografere',
-    presens: 'fotograferer',
-    preteritum: 'fotograferte',
-    perfektum: 'har fotografert',
-    meaning: 'Photograph',
-  },
-  {
-    infinitiv: 'å fryse',
-    presens: 'fryser',
-    preteritum: 'frøs',
-    perfektum: 'har frosset',
-    meaning: 'Freeze',
-  },
-  {
-    infinitiv: 'å fylle',
-    presens: 'fyller',
-    preteritum: 'fylte',
-    perfektum: 'har fylt',
-    meaning: 'Fill',
-  },
-  {
-    infinitiv: 'å føde',
-    presens: 'føder',
-    preteritum: 'fødte',
-    perfektum: 'har født',
-    meaning: 'Bear, Give birth to',
-  },
-  {
-    infinitiv: 'å føle seg',
-    presens: 'føler seg',
-    preteritum: 'følte seg',
-    perfektum: 'har følt seg',
-    meaning: 'Be, Feel',
-  },
-  {
-    infinitiv: 'å følge',
-    presens: 'følger',
-    preteritum: 'fulgte',
-    perfektum: 'har fulgt',
-    meaning: 'Follow',
-  },
-  {
-    infinitiv: 'å føne',
-    presens: 'føner',
-    preteritum: 'fønte',
-    perfektum: 'har fønt',
-    meaning: 'Blow Dry',
-  },
-  {
-    infinitiv: 'å få',
-    presens: 'får',
-    preteritum: 'fikk',
-    perfektum: 'har fått',
-    meaning: 'Get',
-  },
-  {
-    infinitiv: 'å fullføre',
-    presens: 'fullfører',
-    preteritum: 'fullførte',
-    perfektum: 'har fullført',
-    meaning: 'Complete',
+    infinitivForm: 'å dytte',
+    presensForm: 'dytter',
+    preteritumForm: 'dyttet',
+    perfektumForm: 'har dyttet',
+    betydning: 'Push',
   },
 ];
 
-const G: Verb[] = [
+const E: VerbsNO = [
   {
-    infinitiv: 'å gale',
-    presens: 'galer',
-    preteritum: 'gol',
-    perfektum: 'har galt',
+    infinitivForm: 'å eie',
+    presensForm: 'eier',
+    preteritumForm: 'eide',
+    perfektumForm: 'har eid',
 
-    meaning: 'Crow',
+    betydning: 'Possess',
   },
   {
-    infinitiv: 'å gape',
-    presens: 'gaper',
-    preteritum: 'gapte',
-    perfektum: 'har gapt',
+    infinitivForm: 'å ese',
+    presensForm: 'eser',
+    preteritumForm: 'este',
+    perfektumForm: 'har est',
 
-    meaning: 'Gape',
+    betydning: 'Rise',
   },
   {
-    infinitiv: 'å gi',
-    presens: 'gir',
-    preteritum: 'gav',
-    perfektum: 'har gitt',
-    meaning: 'Give',
-  },
-  {
-    infinitiv: 'å gidde',
-    presens: 'gidder',
-    preteritum: 'gadd',
-    perfektum: 'har giddet',
+    infinitivForm: 'å ete',
+    presensForm: 'eter',
+    preteritumForm: 'åt',
+    perfektumForm: 'har ett',
 
-    meaning: 'Take the trouble',
+    betydning: 'Eat Greedily',
   },
   {
-    infinitiv: 'å gifte',
-    presens: 'gifter',
-    preteritum: 'giftet',
-    perfektum: 'har giftet',
+    infinitivForm: 'å evangelisere',
+    presensForm: 'evangeliserer',
+    preteritumForm: 'evangeliserte',
+    perfektumForm: 'har evangelisert',
 
-    meaning: 'Marry',
-  },
-  {
-    infinitiv: 'å gjelde',
-    presens: 'gjelder',
-    preteritum: 'gjaldt',
-    perfektum: 'har gjeldt',
-
-    meaning: 'To be worth',
-  },
-  {
-    infinitiv: 'å gjenta',
-    presens: 'gjentar',
-    preteritum: 'gjentok',
-    perfektum: 'har gjentatt',
-
-    meaning: 'Repeat',
-  },
-  {
-    infinitiv: 'å gjette',
-    presens: 'gjetter',
-    preteritum: 'gjettet',
-    perfektum: 'har gjettet',
-
-    meaning: 'Guess',
-  },
-  {
-    infinitiv: 'å gjøre',
-    presens: 'gjør',
-    preteritum: 'gjorde',
-    perfektum: 'har gjort',
-    meaning: 'Do',
-  },
-  {
-    infinitiv: 'å glede seg',
-    presens: 'gleder seg',
-    preteritum: 'gledet seg',
-    perfektum: 'har gledet seg',
-
-    meaning: 'Look forward',
-  },
-  {
-    infinitiv: 'å glemme',
-    presens: 'glemmer',
-    preteritum: 'glemte',
-    perfektum: 'har glemt',
-    meaning: 'Forget',
-  },
-  {
-    infinitiv: 'å gli',
-    presens: 'glir',
-    preteritum: 'glei/gled',
-    perfektum: 'har glidd',
-
-    meaning: 'Slide, Glide',
-  },
-  {
-    infinitiv: 'å gnage',
-    presens: 'gnager',
-    preteritum: 'gnog',
-    perfektum: 'har gnaget',
-
-    meaning: 'Gnaw',
-  },
-  {
-    infinitiv: 'å gni',
-    presens: 'gnir',
-    preteritum: 'gned',
-    perfektum: 'har gnidd',
-
-    meaning: 'Rub',
-  },
-  {
-    infinitiv: 'å gratulere',
-    presens: 'gratulerer',
-    preteritum: 'gratulerte',
-    perfektum: 'har gratulert',
-
-    meaning: 'Congratulate',
-  },
-  {
-    infinitiv: 'å grave',
-    presens: 'graver',
-    preteritum: 'grov',
-    perfektum: 'har gravd',
-
-    meaning: 'Dig',
-  },
-  {
-    infinitiv: 'å gre',
-    presens: 'grer',
-    preteritum: 'gredde',
-    perfektum: 'har gredd',
-    meaning: 'Comb',
-  },
-  {
-    infinitiv: 'å greie',
-    presens: 'greier',
-    preteritum: 'greide',
-    perfektum: 'har greid',
-
-    meaning: 'Manage, Cope with',
-  },
-  {
-    infinitiv: 'å grense',
-    presens: 'grenser',
-    preteritum: 'grenset',
-    perfektum: 'har grenset',
-
-    meaning: 'Border',
-  },
-  {
-    infinitiv: 'å grille',
-    presens: 'griller',
-    preteritum: 'grillet',
-    perfektum: 'har grillet',
-
-    meaning: 'Grill',
-  },
-  {
-    infinitiv: 'å grine',
-    presens: 'griner',
-    preteritum: 'grein',
-    perfektum: 'har grint',
-
-    meaning: 'Fret',
-  },
-  {
-    infinitiv: 'å gripe',
-    presens: 'griper',
-    preteritum: 'grep',
-    perfektum: 'har grepet',
-
-    meaning: 'Grip',
-  },
-  {
-    infinitiv: 'å grue seg',
-    presens: 'gruer seg',
-    preteritum: 'grudde seg',
-    perfektum: 'har gruet',
-
-    meaning: 'Dread',
-  },
-  {
-    infinitiv: 'å gråte',
-    presens: 'gråter',
-    preteritum: 'gråt',
-    perfektum: 'har grått',
-
-    meaning: 'Cry',
-  },
-  {
-    infinitiv: 'å gyse',
-    presens: 'gyser',
-    preteritum: 'gjøs',
-    perfektum: 'har gyst',
-
-    meaning: 'Shudder',
-  },
-  {
-    infinitiv: 'å gyte',
-    presens: 'gyter',
-    preteritum: 'gjøt',
-    perfektum: 'har gytt',
-
-    meaning: 'Spawn',
-  },
-  {
-    infinitiv: 'å gyve',
-    presens: 'gyver',
-    preteritum: 'gjøv',
-    perfektum: 'har gjøvet',
-
-    meaning: 'Fly',
-  },
-  {
-    infinitiv: 'å gå',
-    presens: 'går',
-    preteritum: 'gikk',
-    perfektum: 'har gått',
-    meaning: 'Go, Walk',
+    betydning: 'Evangelize',
   },
 ];
 
-const H: Verb[] = [
+const F: VerbsNO = [
   {
-    infinitiv: 'å ha',
-    presens: 'har',
-    preteritum: 'hadde',
-    perfektum: 'har hatt',
-    meaning: 'Have',
+    infinitivForm: 'å falle',
+    presensForm: 'faller',
+    preteritumForm: 'falt',
+    perfektumForm: 'har falt',
+    betydning: 'Fall',
   },
   {
-    infinitiv: 'å handle',
-    presens: 'handler',
-    preteritum: 'handlet',
-    perfektum: 'har handlet',
-
-    meaning: 'Deal, Act',
+    infinitivForm: 'å feire',
+    presensForm: 'feirer',
+    preteritumForm: 'feiret',
+    perfektumForm: 'har feiret',
+    betydning: 'Celebrate',
   },
   {
-    infinitiv: 'å hende',
-    presens: 'hender',
-    preteritum: 'hendte',
-    perfektum: 'har hendt',
-
-    meaning: 'Occur',
+    infinitivForm: 'å finne',
+    presensForm: 'finner',
+    preteritumForm: 'fant',
+    perfektumForm: 'har funnet',
+    betydning: 'Find',
   },
   {
-    infinitiv: 'å henge',
-    presens: 'henger',
-    preteritum: 'hang/hengte',
-    perfektum: 'har hengt',
-
-    meaning: 'Hang',
+    infinitivForm: 'å fiske',
+    presensForm: 'fisker',
+    preteritumForm: 'fisket',
+    perfektumForm: 'har fisket',
+    betydning: 'Fish',
   },
   {
-    infinitiv: 'å hente',
-    presens: 'henter',
-    preteritum: 'hentet',
-    perfektum: 'har hentet',
-    meaning: 'Get',
+    infinitivForm: 'å fleipe',
+    presensForm: 'fleiper',
+    preteritumForm: 'fleipte',
+    perfektumForm: 'har fleipt',
+    betydning: 'Joke',
   },
   {
-    infinitiv: 'å hete',
-    presens: 'heter',
-    preteritum: 'het',
-    perfektum: 'har hett',
-
-    meaning: 'Name',
+    infinitivForm: 'å fly',
+    presensForm: 'flyr',
+    preteritumForm: 'fløy',
+    perfektumForm: 'har fløyet',
+    betydning: 'Fly',
   },
   {
-    infinitiv: 'å hilse',
-    presens: 'hilser',
-    preteritum: 'hilste',
-    perfektum: 'har hilst',
-
-    meaning: 'Greet',
+    infinitivForm: 'å flykte',
+    presensForm: 'flykter',
+    preteritumForm: 'flyktet',
+    perfektumForm: 'har flyktet',
+    betydning: 'Flee',
   },
   {
-    infinitiv: 'å hindre',
-    presens: 'hindrer',
-    preteritum: 'hindret',
-    perfektum: 'har hindret',
-
-    meaning: 'Prevent',
+    infinitivForm: 'å flyte',
+    presensForm: 'flyter',
+    preteritumForm: 'fløt',
+    perfektumForm: 'har flytt',
+    betydning: 'Float',
   },
   {
-    infinitiv: 'å hive',
-    presens: 'hiver',
-    preteritum: 'hev',
-    perfektum: 'har hevet',
-
-    meaning: 'Heave',
+    infinitivForm: 'flytte',
+    presensForm: 'flytter',
+    preteritumForm: 'flyttet',
+    perfektumForm: 'har flyttet',
+    betydning: 'Move',
   },
   {
-    infinitiv: 'å hjelpe',
-    presens: 'hjelper',
-    preteritum: 'hjalp',
-    perfektum: 'har hjulpet',
-    meaning: 'Help',
+    infinitivForm: 'å forene',
+    presensForm: 'forener',
+    preteritumForm: 'forente',
+    perfektumForm: 'har forent',
+    betydning: 'Unite',
   },
   {
-    infinitiv: 'å holde',
-    presens: 'holder',
-    preteritum: 'holdt',
-    perfektum: 'har holdt',
-
-    meaning: 'Hold',
+    infinitivForm: 'å foreslå',
+    presensForm: 'foreslår',
+    preteritumForm: 'foreslo',
+    perfektumForm: 'har foreslått',
+    betydning: 'Suggest',
   },
   {
-    infinitiv: 'å hogge',
-    presens: 'hogger',
-    preteritum: 'hogg',
-    perfektum: 'har hogd',
-
-    meaning: 'Cut, Chop',
+    infinitivForm: 'å foreta',
+    presensForm: 'foretar',
+    preteritumForm: 'foretok',
+    perfektumForm: 'har foretatt',
+    betydning: 'Undertake',
   },
   {
-    infinitiv: 'å hoppe',
-    presens: 'hopper',
-    preteritum: 'hoppet',
-    perfektum: 'har hoppet',
-
-    meaning: 'Jump',
+    infinitivForm: 'å forkjøle seg',
+    presensForm: 'forkjøler seg',
+    preteritumForm: 'forkjølet seg',
+    perfektumForm: 'har forkjølt seg',
+    betydning: 'Catch a Cold',
   },
   {
-    infinitiv: 'å hoste',
-    presens: 'hoster',
-    preteritum: 'hostet',
-    perfektum: 'har hostet',
-
-    meaning: 'Cough',
+    infinitivForm: 'å forklare',
+    presensForm: 'forklarer',
+    preteritumForm: 'forklarte',
+    perfektumForm: 'har forklart',
+    betydning: 'Explain',
   },
   {
-    infinitiv: 'å huske',
-    presens: 'husker',
-    preteritum: 'husket',
-    perfektum: 'har husket',
-
-    meaning: 'Remember',
+    infinitivForm: 'å forlate',
+    presensForm: 'forlater',
+    preteritumForm: 'forlot',
+    perfektumForm: 'har forlatt',
+    betydning: 'Forgive',
   },
   {
-    infinitiv: 'å hvile',
-    presens: 'hviler',
-    preteritum: 'hvilte',
-    perfektum: 'har hvilt',
-
-    meaning: 'Rest',
+    infinitivForm: 'å fornye',
+    presensForm: 'fornyer',
+    preteritumForm: 'fornyet',
+    perfektumForm: 'har fornyet',
+    betydning: 'Renew',
   },
   {
-    infinitiv: 'å hygge',
-    presens: 'hygger',
-    preteritum: 'hygget',
-    perfektum: 'har hygget',
-
-    meaning: 'Comfort',
+    infinitivForm: 'å forstå',
+    presensForm: 'forstår',
+    preteritumForm: 'forstod',
+    perfektumForm: 'har forstått',
+    betydning: 'Understand',
   },
   {
-    infinitiv: 'å høre',
-    presens: 'hører',
-    preteritum: 'hørte',
-    perfektum: 'har hørt',
-    meaning: 'Hear',
+    infinitivForm: 'å forsvinne',
+    presensForm: 'forsvinner',
+    preteritumForm: 'forsvant',
+    perfektumForm: 'har forsvunnet',
+    betydning: 'Disappear',
   },
   {
-    infinitiv: 'å høste',
-    presens: 'høster',
-    preteritum: 'høstet',
-    perfektum: 'har høstet',
-
-    meaning: 'Harvest',
+    infinitivForm: 'å fortelle',
+    presensForm: 'forteller',
+    preteritumForm: 'fortalte',
+    perfektumForm: 'har fortalt',
+    betydning: 'Tell',
   },
   {
-    infinitiv: 'å håpe',
-    presens: 'håper',
-    preteritum: 'håpet',
-    perfektum: 'har håpet',
-
-    meaning: 'Hope',
-  },
-];
-
-const I: Verb[] = [
-  {
-    infinitiv: 'å invitere',
-    presens: 'inviterer',
-    preteritum: 'inviterte',
-    perfektum: 'har invitert',
-
-    meaning: 'Invite',
-  },
-];
-
-const J: Verb[] = [
-  {
-    infinitiv: 'å jobbe',
-    presens: 'jobber',
-    preteritum: 'jobbet',
-    perfektum: 'har jobbet',
-
-    meaning: 'Work',
-  },
-];
-
-const K: Verb[] = [
-  {
-    infinitiv: 'å kalkulere',
-    presens: 'kalkulerer',
-    preteritum: 'kalkulerte',
-    perfektum: 'har kalkulert',
-
-    meaning: 'Calculate',
+    infinitivForm: 'å fortsette',
+    presensForm: 'fortsetter',
+    preteritumForm: 'fortsatte',
+    perfektumForm: 'har fortsatt',
+    betydning: 'Continue',
   },
   {
-    infinitiv: 'å kaste',
-    presens: 'kaster',
-    preteritum: 'kastet',
-    perfektum: 'har kastet',
-
-    meaning: 'Cast',
+    infinitivForm: 'å fosse',
+    presensForm: 'fosser',
+    preteritumForm: 'fosset',
+    perfektumForm: 'har fosset',
+    betydning: 'Gush',
   },
   {
-    infinitiv: 'å kjenne',
-    presens: 'kjenner',
-    preteritum: 'kjente',
-    perfektum: 'har kjent',
-
-    meaning: 'Feel',
+    infinitivForm: 'å fotografere',
+    presensForm: 'fotograferer',
+    preteritumForm: 'fotograferte',
+    perfektumForm: 'har fotografert',
+    betydning: 'Photograph',
   },
   {
-    infinitiv: 'å kjøpe',
-    presens: 'kjøper',
-    preteritum: 'kjøpte',
-    perfektum: 'har kjøpt',
-    meaning: 'Buy',
+    infinitivForm: 'å fryse',
+    presensForm: 'fryser',
+    preteritumForm: 'frøs',
+    perfektumForm: 'har frosset',
+    betydning: 'Freeze',
   },
   {
-    infinitiv: 'å kjøre',
-    presens: 'kjører',
-    preteritum: 'kjørte',
-    perfektum: 'har kjørt',
-    meaning: 'Drive',
+    infinitivForm: 'å fylle',
+    presensForm: 'fyller',
+    preteritumForm: 'fylte',
+    perfektumForm: 'har fylt',
+    betydning: 'Fill',
   },
   {
-    infinitiv: 'å klappe',
-    presens: 'klapper',
-    preteritum: 'klappet',
-    perfektum: 'har klappet',
-
-    meaning: 'Clap',
+    infinitivForm: 'å føde',
+    presensForm: 'føder',
+    preteritumForm: 'fødte',
+    perfektumForm: 'har født',
+    betydning: 'Bear, Give birth to',
   },
   {
-    infinitiv: 'å klare',
-    presens: 'klarer',
-    preteritum: 'klarte',
-    perfektum: 'har klart',
-    meaning: 'Manage',
+    infinitivForm: 'å føle seg',
+    presensForm: 'føler seg',
+    preteritumForm: 'følte seg',
+    perfektumForm: 'har følt seg',
+    betydning: 'Be, Feel',
   },
   {
-    infinitiv: 'å kle',
-    presens: 'kler',
-    preteritum: 'kledde',
-    perfektum: 'har kledd',
-    meaning: 'Dress, Clothe',
+    infinitivForm: 'å følge',
+    presensForm: 'følger',
+    preteritumForm: 'fulgte',
+    perfektumForm: 'har fulgt',
+    betydning: 'Follow',
   },
   {
-    infinitiv: 'å klinge',
-    presens: 'klinger',
-    preteritum: 'klingte',
-    perfektum: 'har klingt',
-
-    meaning: 'Sound',
+    infinitivForm: 'å føne',
+    presensForm: 'føner',
+    preteritumForm: 'fønte',
+    perfektumForm: 'har fønt',
+    betydning: 'Blow Dry',
   },
   {
-    infinitiv: 'å klippe',
-    presens: 'klipper',
-    preteritum: 'klipte',
-    perfektum: 'har klipt',
-    meaning: 'Cut, Clip',
+    infinitivForm: 'å få',
+    presensForm: 'får',
+    preteritumForm: 'fikk',
+    perfektumForm: 'har fått',
+    betydning: 'Get',
   },
   {
-    infinitiv: 'å klype',
-    presens: 'klyper',
-    preteritum: 'kløp',
-    perfektum: 'har kløpet',
-
-    meaning: 'Pinch',
-  },
-  {
-    infinitiv: 'å klyve',
-    presens: 'klyver',
-    preteritum: 'kløv',
-    perfektum: 'har kløvet',
-
-    meaning: 'Climb',
-  },
-  {
-    infinitiv: 'å knekke',
-    presens: 'knekker',
-    preteritum: 'knakk',
-    perfektum: 'har knekt',
-
-    meaning: 'Crack',
-  },
-  {
-    infinitiv: 'å knipe',
-    presens: 'kniper',
-    preteritum: 'knep',
-    perfektum: 'har knepet',
-
-    meaning: 'Pinch',
-  },
-  {
-    infinitiv: 'å knyte',
-    presens: 'knyter',
-    preteritum: 'knytet/knøt',
-    perfektum: 'har knytet/knytt',
-
-    meaning: 'Tie',
-  },
-  {
-    infinitiv: 'å koke',
-    presens: 'koker',
-    preteritum: 'kokte',
-    perfektum: 'har kokt',
-    meaning: 'Cook',
-  },
-  {
-    infinitiv: 'å komme',
-    presens: 'kommer',
-    preteritum: 'kom',
-    perfektum: 'har kommet',
-    meaning: 'Come',
-  },
-  {
-    infinitiv: 'å kontakte',
-    presens: 'kontakter',
-    preteritum: 'kontakterte',
-    perfektum: 'har kontaktert',
-
-    meaning: 'Contact',
-  },
-  {
-    infinitiv: 'å kontrollere',
-    presens: 'kontrollerer',
-    preteritum: 'kontrollerte',
-    perfektum: 'har kontrollert',
-
-    meaning: 'Control',
-  },
-  {
-    infinitiv: 'å kopiere',
-    presens: 'kopierer',
-    preteritum: 'kopierte',
-    perfektum: 'har kopiert',
-
-    meaning: 'Copy',
-  },
-  {
-    infinitiv: 'å korrigere',
-    presens: 'korrigerer',
-    preteritum: 'korrigerte',
-    perfektum: 'har korrigert',
-
-    meaning: 'Correct',
-  },
-  {
-    infinitiv: 'å kose seg',
-    presens: 'koser seg',
-    preteritum: 'koste seg',
-    perfektum: 'har kost seg',
-
-    meaning: 'Enjoy yourself',
-  },
-  {
-    infinitiv: 'å koste',
-    presens: 'koster',
-    preteritum: 'kostet',
-    perfektum: 'har kostet',
-
-    meaning: 'Cost',
-  },
-  {
-    infinitiv: 'å kunne',
-    presens: 'kan',
-    preteritum: 'kunne',
-    perfektum: 'har kunnet',
-
-    meaning: 'Could',
-  },
-  {
-    infinitiv: 'å krype',
-    presens: 'kryper',
-    preteritum: 'krøp',
-    perfektum: 'har krøpet',
-
-    meaning: 'Creep',
-  },
-  {
-    infinitiv: 'å kvele',
-    presens: 'kveler',
-    preteritum: 'kvalte',
-    perfektum: 'har kvalt',
-
-    meaning: 'Choke, Strangle',
+    infinitivForm: 'å fullføre',
+    presensForm: 'fullfører',
+    preteritumForm: 'fullførte',
+    perfektumForm: 'har fullført',
+    betydning: 'Complete',
   },
 ];
 
-const L: Verb[] = [
+const G: VerbsNO = [
   {
-    infinitiv: 'å la',
-    presens: 'lar',
-    preteritum: 'lot',
-    perfektum: 'har latt',
+    infinitivForm: 'å gale',
+    presensForm: 'galer',
+    preteritumForm: 'gol',
+    perfektumForm: 'har galt',
 
-    meaning: 'Let, Allow',
+    betydning: 'Crow',
   },
   {
-    infinitiv: 'å lage',
-    presens: 'lager',
-    preteritum: 'laget',
-    perfektum: 'har laget',
+    infinitivForm: 'å gape',
+    presensForm: 'gaper',
+    preteritumForm: 'gapte',
+    perfektumForm: 'har gapt',
 
-    meaning: 'Prepare',
+    betydning: 'Gape',
   },
   {
-    infinitiv: 'å le',
-    presens: 'ler',
-    preteritum: 'lot',
-    perfektum: 'har ledd',
-    meaning: 'Laugh',
+    infinitivForm: 'å gi',
+    presensForm: 'gir',
+    preteritumForm: 'gav',
+    perfektumForm: 'har gitt',
+    betydning: 'Give',
   },
   {
-    infinitiv: 'å legge',
-    presens: 'legger',
-    preteritum: 'la',
-    perfektum: 'har lagt',
+    infinitivForm: 'å gidde',
+    presensForm: 'gidder',
+    preteritumForm: 'gadd',
+    perfektumForm: 'har giddet',
 
-    meaning: 'Lay',
+    betydning: 'Take the trouble',
   },
   {
-    infinitiv: 'å leie',
-    presens: 'leier',
-    preteritum: 'leide',
-    perfektum: 'har leid',
+    infinitivForm: 'å gifte',
+    presensForm: 'gifter',
+    preteritumForm: 'giftet',
+    perfektumForm: 'har giftet',
 
-    meaning: 'Hire',
+    betydning: 'Marry',
   },
   {
-    infinitiv: 'å leke',
-    presens: 'leker',
-    preteritum: 'lekte',
-    perfektum: 'har lekt',
-    meaning: 'Play',
-  },
-  {
-    infinitiv: 'å lese',
-    presens: 'leser',
-    preteritum: 'leste',
-    perfektum: 'har lest',
+    infinitivForm: 'å gjelde',
+    presensForm: 'gjelder',
+    preteritumForm: 'gjaldt',
+    perfektumForm: 'har gjeldt',
 
-    meaning: 'Read',
+    betydning: 'To be worth',
   },
   {
-    infinitiv: 'å lete',
-    presens: 'leter',
-    preteritum: 'lette',
-    perfektum: 'har lett',
-    meaning: 'Search',
-  },
-  {
-    infinitiv: 'å leve',
-    presens: 'lever',
-    preteritum: 'levde',
-    perfektum: 'har levd',
+    infinitivForm: 'å gjenta',
+    presensForm: 'gjentar',
+    preteritumForm: 'gjentok',
+    perfektumForm: 'har gjentatt',
 
-    meaning: 'Live, Be alive',
+    betydning: 'Repeat',
   },
   {
-    infinitiv: 'å levere',
-    presens: 'leverer',
-    preteritum: 'leverte',
-    perfektum: 'har levert',
+    infinitivForm: 'å gjette',
+    presensForm: 'gjetter',
+    preteritumForm: 'gjettet',
+    perfektumForm: 'har gjettet',
 
-    meaning: 'Give up',
+    betydning: 'Guess',
   },
   {
-    infinitiv: 'å lide',
-    presens: 'lider',
-    preteritum: 'led',
-    perfektum: 'har lidd',
-
-    meaning: 'Suffer',
+    infinitivForm: 'å gjøre',
+    presensForm: 'gjør',
+    preteritumForm: 'gjorde',
+    perfektumForm: 'har gjort',
+    betydning: 'Do',
   },
   {
-    infinitiv: 'å ligge',
-    presens: 'ligger',
-    preteritum: 'lå',
-    perfektum: 'har ligget',
+    infinitivForm: 'å glede seg',
+    presensForm: 'gleder seg',
+    preteritumForm: 'gledet seg',
+    perfektumForm: 'har gledet seg',
 
-    meaning: 'Lie',
+    betydning: 'Look forward',
   },
   {
-    infinitiv: 'å like',
-    presens: 'liker',
-    preteritum: 'likte',
-    perfektum: 'har likt',
-
-    meaning: 'Like',
+    infinitivForm: 'å glemme',
+    presensForm: 'glemmer',
+    preteritumForm: 'glemte',
+    perfektumForm: 'har glemt',
+    betydning: 'Forget',
   },
   {
-    infinitiv: 'å love',
-    presens: 'lover',
-    preteritum: 'lovet',
-    perfektum: 'har lovet',
+    infinitivForm: 'å gli',
+    presensForm: 'glir',
+    preteritumForm: 'glei/gled',
+    perfektumForm: 'har glidd',
 
-    meaning: 'Promise',
+    betydning: 'Slide, Glide',
   },
   {
-    infinitiv: 'å lufte',
-    presens: 'lufter',
-    preteritum: 'luftet',
-    perfektum: 'har luftet',
+    infinitivForm: 'å gnage',
+    presensForm: 'gnager',
+    preteritumForm: 'gnog',
+    perfektumForm: 'har gnaget',
 
-    meaning: 'Air',
+    betydning: 'Gnaw',
   },
   {
-    infinitiv: 'å lukte',
-    presens: 'lukter',
-    preteritum: 'luktet',
-    perfektum: 'har luktet',
+    infinitivForm: 'å gni',
+    presensForm: 'gnir',
+    preteritumForm: 'gned',
+    perfektumForm: 'har gnidd',
 
-    meaning: 'Smell',
+    betydning: 'Rub',
   },
   {
-    infinitiv: 'å lyde',
-    presens: 'lyder',
-    preteritum: 'lød',
-    perfektum: 'har lydt',
+    infinitivForm: 'å gratulere',
+    presensForm: 'gratulerer',
+    preteritumForm: 'gratulerte',
+    perfektumForm: 'har gratulert',
 
-    meaning: 'Sound',
+    betydning: 'Congratulate',
   },
   {
-    infinitiv: 'å lyge',
-    presens: 'lyger',
-    preteritum: 'løy',
-    perfektum: 'har løyet',
+    infinitivForm: 'å grave',
+    presensForm: 'graver',
+    preteritumForm: 'grov',
+    perfektumForm: 'har gravd',
 
-    meaning: 'Tell a lie',
+    betydning: 'Dig',
   },
   {
-    infinitiv: 'å lytte',
-    presens: 'lytter',
-    preteritum: 'lyttet',
-    perfektum: 'har lyttet',
-
-    meaning: 'Listen',
+    infinitivForm: 'å gre',
+    presensForm: 'grer',
+    preteritumForm: 'gredde',
+    perfektumForm: 'har gredd',
+    betydning: 'Comb',
   },
   {
-    infinitiv: 'å lyve',
-    presens: 'lyver',
-    preteritum: 'løy',
-    perfektum: 'har løyet',
+    infinitivForm: 'å greie',
+    presensForm: 'greier',
+    preteritumForm: 'greide',
+    perfektumForm: 'har greid',
 
-    meaning: 'Tell a lie',
+    betydning: 'Manage, Cope with',
   },
   {
-    infinitiv: 'å lære',
-    presens: 'lærer',
-    preteritum: 'lærte',
-    perfektum: 'har lært',
+    infinitivForm: 'å grense',
+    presensForm: 'grenser',
+    preteritumForm: 'grenset',
+    perfektumForm: 'har grenset',
 
-    meaning: 'Teach, Learn',
+    betydning: 'Border',
   },
   {
-    infinitiv: 'å løfte',
-    presens: 'løfter',
-    preteritum: 'løftet',
-    perfektum: 'har løftet',
+    infinitivForm: 'å grille',
+    presensForm: 'griller',
+    preteritumForm: 'grillet',
+    perfektumForm: 'har grillet',
 
-    meaning: 'Lift',
+    betydning: 'Grill',
   },
   {
-    infinitiv: 'å løpe',
-    presens: 'løper',
-    preteritum: 'løp',
-    perfektum: 'har løpt',
+    infinitivForm: 'å grine',
+    presensForm: 'griner',
+    preteritumForm: 'grein',
+    perfektumForm: 'har grint',
 
-    meaning: 'Run',
-  },
-
-  {
-    infinitiv: 'å løse',
-    presens: 'løser',
-    preteritum: 'løste',
-    perfektum: 'har løst',
-    meaning: 'Loosen',
+    betydning: 'Fret',
   },
   {
-    infinitiv: 'å låne',
-    presens: 'låner',
-    preteritum: 'lånte',
-    perfektum: 'har lånt',
+    infinitivForm: 'å gripe',
+    presensForm: 'griper',
+    preteritumForm: 'grep',
+    perfektumForm: 'har grepet',
 
-    meaning: 'Loan',
+    betydning: 'Grip',
   },
   {
-    infinitiv: 'å låse',
-    presens: 'låser',
-    preteritum: 'låste',
-    perfektum: 'har låst',
+    infinitivForm: 'å grue seg',
+    presensForm: 'gruer seg',
+    preteritumForm: 'grudde seg',
+    perfektumForm: 'har gruet',
 
-    meaning: 'Lock',
-  },
-];
-
-const M: Verb[] = [
-  {
-    infinitiv: 'å mase',
-    presens: 'maser',
-    preteritum: 'maste',
-    perfektum: 'har mast',
-    meaning: 'Bother',
+    betydning: 'Dread',
   },
   {
-    infinitiv: 'å merke',
-    presens: 'merker',
-    preteritum: 'merket',
-    perfektum: 'har merket',
+    infinitivForm: 'å gråte',
+    presensForm: 'gråter',
+    preteritumForm: 'gråt',
+    perfektumForm: 'har grått',
 
-    meaning: 'Mark',
+    betydning: 'Cry',
   },
   {
-    infinitiv: 'å minke',
-    presens: 'minker',
-    preteritum: 'minket',
-    perfektum: 'har minket',
+    infinitivForm: 'å gyse',
+    presensForm: 'gyser',
+    preteritumForm: 'gjøs',
+    perfektumForm: 'har gyst',
 
-    meaning: 'Decrease',
+    betydning: 'Shudder',
   },
   {
-    infinitiv: 'å miste',
-    presens: 'mister',
-    preteritum: 'mistet',
-    perfektum: 'har mistet',
+    infinitivForm: 'å gyte',
+    presensForm: 'gyter',
+    preteritumForm: 'gjøt',
+    perfektumForm: 'har gytt',
 
-    meaning: 'Lose',
+    betydning: 'Spawn',
   },
   {
-    infinitiv: 'å møte',
-    presens: 'møter',
-    preteritum: 'møtte',
-    perfektum: 'har møtt',
+    infinitivForm: 'å gyve',
+    presensForm: 'gyver',
+    preteritumForm: 'gjøv',
+    perfektumForm: 'har gjøvet',
 
-    meaning: 'Meet',
+    betydning: 'Fly',
   },
   {
-    infinitiv: 'å måle',
-    presens: 'måler',
-    preteritum: 'målte',
-    perfektum: 'har målt',
-
-    meaning: 'Measure',
-  },
-];
-const N: Verb[] = [
-  {
-    infinitiv: 'å neke',
-    presens: 'neker',
-    preteritum: 'nekte',
-    perfektum: 'har nekt',
-
-    meaning: '',
-  },
-  {
-    infinitiv: 'å nekte',
-    presens: 'nekter',
-    preteritum: 'nektet',
-    perfektum: 'har nektet',
-
-    meaning: 'Deny',
-  },
-  {
-    infinitiv: 'å nyse',
-    presens: 'nyser',
-    preteritum: 'nøs',
-    perfektum: 'har nyst',
-
-    meaning: 'Sneeze',
-  },
-  {
-    infinitiv: 'å nyte',
-    presens: 'nyter',
-    preteritum: 'nøt',
-    perfektum: 'har nytt',
-
-    meaning: '',
-  },
-];
-const O: Verb[] = [
-  {
-    infinitiv: 'å omarbeide',
-    presens: 'omarbeider',
-    preteritum: 'omarbeidet',
-    perfektum: 'har omarbeidet',
-
-    meaning: 'Revise',
-  },
-  {
-    infinitiv: 'å oppsøke',
-    presens: 'oppsøker',
-    preteritum: 'oppsøkte',
-    perfektum: 'har oppsøkt',
-
-    meaning: 'Look up',
-  },
-  {
-    infinitiv: 'å overdrive',
-    presens: 'overdriver',
-    preteritum: 'overdrev',
-    perfektum: 'har overdrevet',
-
-    meaning: 'Exaggerate',
-  },
-  {
-    infinitiv: 'å overnatte',
-    presens: 'overnatter',
-    preteritum: 'overnattet',
-    perfektum: 'har overnattet',
-
-    meaning: 'Spend the night',
-  },
-  {
-    infinitiv: 'å overskrive',
-    presens: 'overskriver',
-    preteritum: 'overskrev',
-    perfektum: 'har overskrevet',
-
-    meaning: 'Sign',
-  },
-  {
-    infinitiv: 'å overta',
-    presens: 'overtar',
-    preteritum: 'overtok',
-    perfektum: 'har overtatt',
-
-    meaning: 'Take over',
-  },
-  {
-    infinitiv: 'å overtale',
-    presens: 'overtaler',
-    preteritum: 'overtalte',
-    perfektum: 'har overtalt',
-
-    meaning: 'Persuade',
+    infinitivForm: 'å gå',
+    presensForm: 'går',
+    preteritumForm: 'gikk',
+    perfektumForm: 'har gått',
+    betydning: 'Go, Walk',
   },
 ];
 
-const P: Verb[] = [
+const H: VerbsNO = [
   {
-    infinitiv: 'å pakke',
-    presens: 'pakker',
-    preteritum: 'pakket',
-    perfektum: 'har pakket',
+    infinitivForm: 'å ha',
+    presensForm: 'har',
+    preteritumForm: 'hadde',
+    perfektumForm: 'har hatt',
+    betydning: 'Have',
+  },
+  {
+    infinitivForm: 'å handle',
+    presensForm: 'handler',
+    preteritumForm: 'handlet',
+    perfektumForm: 'har handlet',
 
-    meaning: 'Pack',
+    betydning: 'Deal, Act',
   },
   {
-    infinitiv: 'å parkere',
-    presens: 'parkerer',
-    preteritum: 'parkerte',
-    perfektum: 'har parkert',
-    meaning: 'Park',
-  },
-  {
-    infinitiv: 'å passe',
-    presens: 'passer',
-    preteritum: 'passert',
-    perfektum: 'har passert',
+    infinitivForm: 'å hende',
+    presensForm: 'hender',
+    preteritumForm: 'hendte',
+    perfektumForm: 'har hendt',
 
-    meaning: 'Fit',
+    betydning: 'Occur',
   },
   {
-    infinitiv: 'å peke',
-    presens: 'peker',
-    preteritum: 'pekte',
-    perfektum: 'har pekt',
+    infinitivForm: 'å henge',
+    presensForm: 'henger',
+    preteritumForm: 'hang/hengte',
+    perfektumForm: 'har hengt',
 
-    meaning: 'Point',
+    betydning: 'Hang',
   },
   {
-    infinitiv: 'å pipe',
-    presens: 'piper',
-    preteritum: 'pe(i)p',
-    perfektum: 'har pepet',
+    infinitivForm: 'å hente',
+    presensForm: 'henter',
+    preteritumForm: 'hentet',
+    perfektumForm: 'har hentet',
+    betydning: 'Get',
+  },
+  {
+    infinitivForm: 'å hete',
+    presensForm: 'heter',
+    preteritumForm: 'het',
+    perfektumForm: 'har hett',
 
-    meaning: 'Wheeze',
+    betydning: 'Name',
   },
   {
-    infinitiv: 'å pleie',
-    presens: 'pleier',
-    preteritum: 'pleide',
-    perfektum: 'har pleid',
+    infinitivForm: 'å hilse',
+    presensForm: 'hilser',
+    preteritumForm: 'hilste',
+    perfektumForm: 'har hilst',
 
-    meaning: 'Look after',
+    betydning: 'Greet',
   },
   {
-    infinitiv: 'å plombere',
-    presens: 'plomberer',
-    preteritum: 'plomberte',
-    perfektum: 'har plombert',
+    infinitivForm: 'å hindre',
+    presensForm: 'hindrer',
+    preteritumForm: 'hindret',
+    perfektumForm: 'har hindret',
 
-    meaning: 'Stop, Seal',
+    betydning: 'Prevent',
   },
   {
-    infinitiv: 'å plystre',
-    presens: 'plystrer',
-    preteritum: 'plystret',
-    perfektum: 'har plystret',
+    infinitivForm: 'å hive',
+    presensForm: 'hiver',
+    preteritumForm: 'hev',
+    perfektumForm: 'har hevet',
 
-    meaning: 'Whistle',
+    betydning: 'Heave',
   },
   {
-    infinitiv: 'å preke',
-    presens: 'preker',
-    preteritum: 'prekte',
-    perfektum: 'har prekt',
+    infinitivForm: 'å hjelpe',
+    presensForm: 'hjelper',
+    preteritumForm: 'hjalp',
+    perfektumForm: 'har hjulpet',
+    betydning: 'Help',
+  },
+  {
+    infinitivForm: 'å holde',
+    presensForm: 'holder',
+    preteritumForm: 'holdt',
+    perfektumForm: 'har holdt',
 
-    meaning: 'Preach',
+    betydning: 'Hold',
   },
   {
-    infinitiv: 'å prøve',
-    presens: 'prøver',
-    preteritum: 'prøvde',
-    perfektum: 'har prøvd',
+    infinitivForm: 'å hogge',
+    presensForm: 'hogger',
+    preteritumForm: 'hogg',
+    perfektumForm: 'har hogd',
 
-    meaning: 'Try, Test',
+    betydning: 'Cut, Chop',
   },
   {
-    infinitiv: 'å pusse',
-    presens: 'pusser',
-    preteritum: 'pusset',
-    perfektum: 'har pusset',
+    infinitivForm: 'å hoppe',
+    presensForm: 'hopper',
+    preteritumForm: 'hoppet',
+    perfektumForm: 'har hoppet',
 
-    meaning: 'Clean, Polish',
+    betydning: 'Jump',
   },
   {
-    infinitiv: 'å putte',
-    presens: 'putter',
-    preteritum: 'puttet',
-    perfektum: 'har puttet',
+    infinitivForm: 'å hoste',
+    presensForm: 'hoster',
+    preteritumForm: 'hostet',
+    perfektumForm: 'har hostet',
 
-    meaning: 'Put',
+    betydning: 'Cough',
   },
   {
-    infinitiv: 'å pynte',
-    presens: 'pynter',
-    preteritum: 'pyntet',
-    perfektum: 'har pyntet',
+    infinitivForm: 'å huske',
+    presensForm: 'husker',
+    preteritumForm: 'husket',
+    perfektumForm: 'har husket',
 
-    meaning: 'Decorate, Trim',
+    betydning: 'Remember',
   },
   {
-    infinitiv: 'å pågripe',
-    presens: 'pågriper',
-    preteritum: 'pågripet',
-    perfektum: 'har pågripet',
+    infinitivForm: 'å hvile',
+    presensForm: 'hviler',
+    preteritumForm: 'hvilte',
+    perfektumForm: 'har hvilt',
 
-    meaning: 'Arrest',
+    betydning: 'Rest',
   },
-];
+  {
+    infinitivForm: 'å hygge',
+    presensForm: 'hygger',
+    preteritumForm: 'hygget',
+    perfektumForm: 'har hygget',
 
-const Q: Verb[] = [
+    betydning: 'Comfort',
+  },
   {
-    infinitiv: '',
-    presens: '',
-    preteritum: '',
-    perfektum: '',
+    infinitivForm: 'å høre',
+    presensForm: 'hører',
+    preteritumForm: 'hørte',
+    perfektumForm: 'har hørt',
+    betydning: 'Hear',
+  },
+  {
+    infinitivForm: 'å høste',
+    presensForm: 'høster',
+    preteritumForm: 'høstet',
+    perfektumForm: 'har høstet',
 
-    meaning: '',
+    betydning: 'Harvest',
   },
-];
+  {
+    infinitivForm: 'å håpe',
+    presensForm: 'håper',
+    preteritumForm: 'håpet',
+    perfektumForm: 'har håpet',
 
-const R: Verb[] = [
-  {
-    infinitiv: 'å regne',
-    presens: 'regner',
-    preteritum: 'regnet',
-    perfektum: 'har renget',
-
-    meaning: 'Rain',
-  },
-  {
-    infinitiv: 'å reise',
-    presens: 'reiser',
-    preteritum: 'reiste',
-    perfektum: 'har reist',
-
-    meaning: 'Travel',
-  },
-  {
-    infinitiv: 'å rekke',
-    presens: 'rekker',
-    preteritum: 'rakk',
-    perfektum: 'har rukket',
-
-    meaning: 'Reach',
-  },
-  {
-    infinitiv: 'å rekommandere',
-    presens: 'rekommanderer',
-    preteritum: 'rekommanderte',
-    perfektum: 'har rekommandert',
-
-    meaning: 'Register',
-  },
-  {
-    infinitiv: 'å rense',
-    presens: 'renser',
-    preteritum: 'renset',
-    perfektum: 'har renset',
-
-    meaning: 'Clean',
-  },
-  {
-    infinitiv: 'å reparere',
-    presens: 'reparerer',
-    preteritum: 'reparerte',
-    perfektum: 'har reparert',
-
-    meaning: 'Repair',
-  },
-  {
-    infinitiv: 'å repetere',
-    presens: 'repeterer',
-    preteritum: 'repeterte',
-    perfektum: 'har repetert',
-
-    meaning: 'Repeat, Revise',
-  },
-  {
-    infinitiv: 'å representere',
-    presens: 'representerer',
-    preteritum: 'representerte',
-    perfektum: 'har representert',
-
-    meaning: 'Represent',
-  },
-  {
-    infinitiv: 'å rette',
-    presens: 'retter',
-    preteritum: 'rettet',
-    perfektum: 'har rettet',
-
-    meaning: 'Straighten, Align',
-  },
-  {
-    infinitiv: 'å ri',
-    presens: 'rir',
-    preteritum: 'red',
-    perfektum: 'har ridd',
-
-    meaning: 'Ride',
-  },
-  {
-    infinitiv: 'å ringe',
-    presens: 'ringer',
-    preteritum: 'ringte',
-    perfektum: 'har ringt',
-    meaning: 'Ring',
-  },
-  {
-    infinitiv: 'å rive',
-    presens: 'river',
-    preteritum: 'rev',
-    perfektum: 'har revet',
-
-    meaning: 'Grate',
-  },
-  {
-    infinitiv: 'å ro',
-    presens: 'ror',
-    preteritum: 'rodde',
-    perfektum: 'har rodd',
-    meaning: 'Row',
-  },
-  {
-    infinitiv: 'å rope',
-    presens: 'roper',
-    preteritum: 'ropte',
-    perfektum: 'har ropt',
-    meaning: 'Call, Shout',
-  },
-  {
-    infinitiv: 'å ruske',
-    presens: 'rusker',
-    preteritum: 'rusket',
-    perfektum: 'har rusket',
-
-    meaning: 'Pull',
-  },
-  {
-    infinitiv: 'å rydde',
-    presens: 'rydder',
-    preteritum: 'ryddet',
-    perfektum: 'har ryddet',
-
-    meaning: 'Tidy',
-  },
-  {
-    infinitiv: 'å rydde av',
-    presens: 'rydder av',
-    preteritum: 'ryddet av',
-    perfektum: 'har ryddet av',
-
-    meaning: 'Clear away, Remove',
-  },
-  {
-    infinitiv: 'å ryke',
-    presens: 'ryker',
-    preteritum: 'røk',
-    perfektum: 'har røket',
-
-    meaning: 'Smoke',
-  },
-  {
-    infinitiv: 'å røre',
-    presens: 'rører',
-    preteritum: 'rørte',
-    perfektum: 'har rørt',
-    meaning: 'Stir',
-  },
-  {
-    infinitiv: 'å røyke',
-    presens: 'røyker',
-    preteritum: 'røykte',
-    perfektum: 'har røykt',
-
-    meaning: 'Smoke',
-  },
-  {
-    infinitiv: 'å råde',
-    presens: 'råder',
-    preteritum: 'rådet',
-    perfektum: 'har rådet',
-
-    meaning: 'Recommend',
+    betydning: 'Hope',
   },
 ];
 
-const S: Verb[] = [
+const I: VerbsNO = [
   {
-    infinitiv: 'å sage',
-    presens: 'sager',
-    preteritum: 'saget',
-    perfektum: 'har saget',
-    meaning: 'Saw',
-  },
-  {
-    infinitiv: 'å samarbeide',
-    presens: 'samarbeider',
-    preteritum: 'samarbeidet',
-    perfektum: 'har samarbeidet',
-
-    meaning: 'Work together',
-  },
-  {
-    infinitiv: 'å sammenlikne',
-    presens: 'sammenlikner',
-    preteritum: 'sammenliknet',
-    perfektum: 'har sammenliknet',
-
-    meaning: 'Compare',
-  },
-  {
-    infinitiv: 'å savne',
-    presens: 'savner',
-    preteritum: 'savnet',
-    perfektum: 'har savnet',
-
-    meaning: 'Lack',
-  },
-  {
-    infinitiv: 'å se',
-    presens: 'ser',
-    preteritum: 'så',
-    perfektum: 'har sett',
-    meaning: 'See, Look',
-  },
-  {
-    infinitiv: 'å selge',
-    presens: 'selger',
-    preteritum: 'solgte',
-    perfektum: 'har solgt',
-
-    meaning: 'Sell',
-  },
-  {
-    infinitiv: 'å sende',
-    presens: 'sender',
-    preteritum: 'sendte',
-    perfektum: 'har sendt',
-
-    meaning: 'Send',
-  },
-  {
-    infinitiv: 'å servere',
-    presens: 'serverer',
-    preteritum: 'serverte',
-    perfektum: 'har servert',
-
-    meaning: 'Serve',
-  },
-  {
-    infinitiv: 'å sette',
-    presens: 'setter',
-    preteritum: 'satte',
-    perfektum: 'har satt',
-    meaning: 'Set',
-  },
-  {
-    infinitiv: 'å si',
-    presens: 'sier',
-    preteritum: 'sa',
-    perfektum: 'har sagt',
-
-    meaning: 'Say',
-  },
-  {
-    infinitiv: 'å sige',
-    presens: 'siger',
-    preteritum: 'seg',
-    perfektum: 'har seget',
-
-    meaning: 'Ooze, Seep',
-  },
-  {
-    infinitiv: 'å sikte',
-    presens: 'sikter',
-    preteritum: 'siktet',
-    perfektum: 'har siktet',
-    meaning: 'Aim',
-  },
-  {
-    infinitiv: 'å sitte',
-    presens: 'sitter',
-    preteritum: 'satt',
-    perfektum: 'har sittet',
-
-    meaning: 'Sit',
-  },
-  {
-    infinitiv: 'å skifte',
-    presens: 'skifter',
-    preteritum: 'skiftet',
-    perfektum: 'har skiftet',
-
-    meaning: 'Change, Switch',
-  },
-  {
-    infinitiv: 'å skje',
-    presens: 'skjer',
-    preteritum: 'skjedde',
-    perfektum: 'har skjedd',
-
-    meaning: 'Happen',
-  },
-  {
-    infinitiv: 'å skjelve',
-    presens: 'skjelver',
-    preteritum: 'skalv',
-    perfektum: 'har skjelvet',
-
-    meaning: 'Tremble',
-  },
-  {
-    infinitiv: 'å skjære',
-    presens: 'skjærer',
-    preteritum: 'skar',
-    perfektum: 'har skåret',
-
-    meaning: 'Cut',
-  },
-  {
-    infinitiv: 'å skjønne',
-    presens: 'skjønner',
-    preteritum: 'skjønte',
-    perfektum: 'har skjønt',
-
-    meaning: 'Understand',
-  },
-  {
-    infinitiv: 'å skride',
-    presens: 'skrider',
-    preteritum: 'skred',
-    perfektum: 'har skredet',
-
-    meaning: 'Proceed',
-  },
-  {
-    infinitiv: 'å skrive',
-    presens: 'skriver',
-    preteritum: 'skrev',
-    perfektum: 'har skrevet',
-    meaning: 'Write',
-  },
-  {
-    infinitiv: 'å skru',
-    presens: 'skrur',
-    preteritum: 'skrudde',
-    perfektum: 'har skrudd',
-    meaning: 'Screw',
-  },
-  {
-    infinitiv: 'å skryte',
-    presens: 'skryter',
-    preteritum: 'skrøt',
-    perfektum: 'har skrytt',
-
-    meaning: 'Boast',
-  },
-  {
-    infinitiv: 'å skulle',
-    presens: 'skal',
-    preteritum: 'skulle',
-    perfektum: 'har skullet',
-
-    meaning: 'Shall, Have to',
-  },
-  {
-    infinitiv: 'å skvette',
-    presens: 'skvetter',
-    preteritum: 'skvettet',
-    perfektum: 'har skvettet',
-
-    meaning: 'Splash',
-  },
-  {
-    infinitiv: 'å skylle',
-    presens: 'skyller',
-    preteritum: 'skylte',
-    perfektum: 'har skylt',
-
-    meaning: 'Wash',
-  },
-  {
-    infinitiv: 'å skynde',
-    presens: 'skynder',
-    preteritum: 'skyndte',
-    perfektum: 'har skyndet',
-
-    meaning: 'Hasten',
-  },
-  {
-    infinitiv: 'å skyte',
-    presens: 'skyter',
-    preteritum: 'skjøt',
-    perfektum: 'har skutt',
-
-    meaning: 'Shoot',
-  },
-  {
-    infinitiv: 'å skyve',
-    presens: 'skyver',
-    preteritum: 'skøv',
-    perfektum: 'har skutt',
-
-    meaning: 'Push, Shove',
-  },
-  {
-    infinitiv: 'å slenge',
-    presens: 'slenger',
-    preteritum: 'slengte',
-    perfektum: 'har slengt',
-
-    meaning: 'Throw',
-  },
-  {
-    infinitiv: 'å slippe',
-    presens: 'slipper',
-    preteritum: 'slapp',
-    perfektum: 'har sluppet',
-
-    meaning: 'Drop',
-  },
-  {
-    infinitiv: 'å slite',
-    presens: 'sliter',
-    preteritum: 'slet',
-    perfektum: 'har slitt',
-
-    meaning: 'Toil',
-  },
-  {
-    infinitiv: 'å slutte',
-    presens: 'slutter',
-    preteritum: 'sluttet',
-    perfektum: 'har sluttet',
-
-    meaning: 'End, Close',
-  },
-  {
-    infinitiv: 'å slå',
-    presens: 'slår',
-    preteritum: 'slo',
-    perfektum: 'har slått',
-
-    meaning: 'Hit',
-  },
-  {
-    infinitiv: 'å slåss',
-    presens: 'slåss',
-    preteritum: 'sloss',
-    perfektum: 'har slåss',
-
-    meaning: 'Fight',
-  },
-  {
-    infinitiv: 'å smake',
-    presens: 'smaker',
-    preteritum: 'smaket',
-    perfektum: 'har smaket',
-    meaning: 'Taste',
-  },
-  {
-    infinitiv: 'å smelle',
-    presens: 'smeller',
-    preteritum: 'smelte',
-    perfektum: 'har smelt',
-
-    meaning: 'Bang, Smack',
-  },
-  {
-    infinitiv: 'å smile',
-    presens: 'smiler',
-    preteritum: 'smilte',
-    perfektum: 'har smilt',
-
-    meaning: 'Smile',
-  },
-  {
-    infinitiv: 'å smitte',
-    presens: 'smitter',
-    preteritum: 'smittet',
-    perfektum: 'har smittet',
-
-    meaning: 'Infect',
-  },
-  {
-    infinitiv: 'å sminke',
-    presens: 'sminker',
-    preteritum: 'sminket',
-    perfektum: 'har sminket',
-
-    meaning: 'Apply make up',
-  },
-  {
-    infinitiv: 'å smøre',
-    presens: 'smører',
-    preteritum: 'smurte',
-    perfektum: 'har smurt',
-
-    meaning: 'Oil, Lubricate',
-  },
-  {
-    infinitiv: 'å snakke',
-    presens: 'snakker',
-    preteritum: 'snakket',
-    perfektum: 'har snakket',
-    meaning: 'Speak, Talk',
-  },
-  {
-    infinitiv: 'å snegle',
-    presens: 'snegler',
-    preteritum: 'sneglet',
-    perfektum: 'har sneglet',
-
-    meaning: 'Move slowly',
-  },
-  {
-    infinitiv: 'å snike',
-    presens: 'sniker',
-    preteritum: 'snek',
-    perfektum: 'har sneket',
-
-    meaning: 'Sneak',
-  },
-  {
-    infinitiv: 'å snyte',
-    presens: 'snyter',
-    preteritum: 'snøt',
-    perfektum: 'har snytt',
-
-    meaning: 'Cheat',
-  },
-  {
-    infinitiv: 'å snø',
-    presens: 'snør',
-    preteritum: 'snødde',
-    perfektum: 'har snødd',
-
-    meaning: 'Snow',
-  },
-  {
-    infinitiv: 'å sove',
-    presens: 'sover',
-    preteritum: 'sov',
-    perfektum: 'har sovet',
-
-    meaning: 'Sleep',
-  },
-  {
-    infinitiv: 'å sovne',
-    presens: 'sovner',
-    preteritum: 'sovnet',
-    perfektum: 'har sovnet',
-
-    meaning: 'Fall asleep',
-  },
-  {
-    infinitiv: 'å spandere',
-    presens: 'spanderer',
-    preteritum: 'spanderte',
-    perfektum: 'har spandert',
-    meaning: 'Spend',
-  },
-  {
-    infinitiv: 'å spare',
-    presens: 'sparer',
-    preteritum: 'sparte',
-    perfektum: 'har spart',
-    meaning: 'Save, Be economical',
-  },
-  {
-    infinitiv: 'å sparke',
-    presens: 'sparker',
-    preteritum: 'sparket',
-    perfektum: 'har sparket',
-    meaning: 'Kick',
-  },
-  {
-    infinitiv: 'å spikre',
-    presens: 'spikrer',
-    preteritum: 'spikret',
-    perfektum: 'har spikret',
-    meaning: 'Nail',
-  },
-  {
-    infinitiv: 'å spille',
-    presens: 'spiller',
-    preteritum: 'spilte',
-    perfektum: 'har spilt',
-
-    meaning: 'Play',
-  },
-  {
-    infinitiv: 'å spinne',
-    presens: 'spinner',
-    preteritum: 'spant',
-    perfektum: 'har spunnet',
-
-    meaning: 'Spin',
-  },
-  {
-    infinitiv: 'å spise',
-    presens: 'spiser',
-    preteritum: 'spiste',
-    perfektum: 'har spist',
-
-    meaning: 'Eat',
-  },
-  {
-    infinitiv: 'å sprekke',
-    presens: 'sprekker',
-    preteritum: 'sprakk',
-    perfektum: 'har sprukket',
-
-    meaning: 'Crack, Burst',
-  },
-  {
-    infinitiv: 'å sprette',
-    presens: 'spretter',
-    preteritum: 'spratt',
-    perfektum: 'har sprettet',
-
-    meaning: 'Bounce',
-  },
-  {
-    infinitiv: 'å springe',
-    presens: 'springer',
-    preteritum: 'sprang',
-    perfektum: 'har sprunget',
-
-    meaning: 'Spring, Leap',
-  },
-  {
-    infinitiv: 'å spørre',
-    presens: 'spør',
-    preteritum: 'spurte',
-    perfektum: 'har spurt',
-
-    meaning: 'Ask',
-  },
-  {
-    infinitiv: 'å starte',
-    presens: 'starter',
-    preteritum: 'startet',
-    perfektum: 'har startet',
-
-    meaning: 'Start',
-  },
-  {
-    infinitiv: 'å steke',
-    presens: 'steker',
-    preteritum: 'stekte',
-    perfektum: 'har stekt',
-
-    meaning: 'Roast, Fry, Bake',
-  },
-  {
-    infinitiv: 'å stelle',
-    presens: 'steller',
-    preteritum: 'stelte',
-    perfektum: 'har stelt',
-
-    meaning: 'Manage',
-  },
-  {
-    infinitiv: 'å stemme',
-    presens: 'stemmer',
-    preteritum: 'stemte',
-    perfektum: 'har stemt',
-
-    meaning: 'Vote, Agree',
-  },
-  {
-    infinitiv: 'å stevne',
-    presens: 'stevner',
-    preteritum: 'stevnet',
-    perfektum: 'har stevnet',
-
-    meaning: 'Summon',
-  },
-  {
-    infinitiv: 'å stige',
-    presens: 'stiger',
-    preteritum: 'steg',
-    perfektum: 'har steget',
-
-    meaning: 'Climb',
-  },
-  {
-    infinitiv: 'å stikke',
-    presens: 'stikker',
-    preteritum: 'stakk',
-    perfektum: 'har stukket',
-
-    meaning: 'Stick',
-  },
-  {
-    infinitiv: 'å stille',
-    presens: 'stiller',
-    preteritum: 'stilte',
-    perfektum: 'har stilt',
-
-    meaning: 'Put, Place',
-  },
-  {
-    infinitiv: 'å stjele',
-    presens: 'stjeler',
-    preteritum: 'stjal',
-    perfektum: 'har stjålet',
-
-    meaning: 'Steal',
-  },
-  {
-    infinitiv: 'å stoppe',
-    presens: 'stopper',
-    preteritum: 'stoppet',
-    perfektum: 'har stoppet',
-    meaning: 'Stop',
-  },
-  {
-    infinitiv: 'å strekke',
-    presens: 'strekker',
-    preteritum: 'strakk',
-    perfektum: 'har strukket',
-
-    meaning: 'Stretch',
-  },
-  {
-    infinitiv: 'å stri',
-    presens: 'strir',
-    preteritum: 'stred',
-    perfektum: 'har stridd',
-
-    meaning: 'Struggle',
-  },
-  {
-    infinitiv: 'å strikke',
-    presens: 'strikker',
-    preteritum: 'strikket',
-    perfektum: 'har strikket',
-
-    meaning: 'Knit',
-  },
-  {
-    infinitiv: 'å stryke',
-    presens: 'stryker',
-    preteritum: 'strøk',
-    perfektum: 'har strøket',
-
-    meaning: 'Stroke',
-  },
-  {
-    infinitiv: 'å studere',
-    presens: 'studerer',
-    preteritum: 'studerte',
-    perfektum: 'har studert',
-
-    meaning: 'Study',
-  },
-  {
-    infinitiv: 'å stå',
-    presens: 'står',
-    preteritum: 'stod',
-    perfektum: 'har stått',
-    meaning: 'Stand',
-  },
-  {
-    infinitiv: 'å svare',
-    presens: 'svarer',
-    preteritum: 'svarte',
-    perfektum: 'har svart',
-
-    meaning: 'Answer, Reply',
-  },
-  {
-    infinitiv: 'å sverge',
-    presens: 'sverger',
-    preteritum: 'sverget',
-    perfektum: 'har sverget',
-
-    meaning: 'Swear',
-  },
-  {
-    infinitiv: 'å svi',
-    presens: 'svir',
-    preteritum: 'sved',
-    perfektum: 'har svidd',
-
-    meaning: 'Burn',
-  },
-  {
-    infinitiv: 'å svike',
-    presens: 'sviker',
-    preteritum: 'svek',
-    perfektum: 'har sveket',
-
-    meaning: 'Defraud, Deceive',
-  },
-  {
-    infinitiv: 'å svinge',
-    presens: 'svinger',
-    preteritum: 'svingte',
-    perfektum: 'har svingt',
-
-    meaning: 'Swing, Brandish',
-  },
-  {
-    infinitiv: 'å svømme',
-    presens: 'svømmer',
-    preteritum: 'svømte',
-    perfektum: 'har svømt',
-
-    meaning: 'Swim',
-  },
-  {
-    infinitiv: 'å sy',
-    presens: 'syr',
-    preteritum: 'sydde',
-    perfektum: 'har sydd',
-
-    meaning: 'Sew, Make',
-  },
-  {
-    infinitiv: 'å sykle',
-    presens: 'sykler',
-    preteritum: 'syklet',
-    perfektum: 'har syklet',
-    meaning: 'Cycle',
-  },
-  {
-    infinitiv: 'å synes',
-    presens: 'syn(e)s',
-    preteritum: 'syntes',
-    perfektum: 'har syn(e)s',
-
-    meaning: 'Think',
-  },
-  {
-    infinitiv: 'å synge',
-    presens: 'synger',
-    preteritum: 'sang',
-    perfektum: 'har sunget',
-
-    meaning: 'Sing',
-  },
-  {
-    infinitiv: 'å synke',
-    presens: 'synker',
-    preteritum: 'sank',
-    perfektum: 'har sunket',
-
-    meaning: 'Sink',
-  },
-  {
-    infinitiv: 'å søke',
-    presens: 'søker',
-    preteritum: 'søkte',
-    perfektum: 'har søkt',
+    infinitivForm: 'å invitere',
+    presensForm: 'inviterer',
+    preteritumForm: 'inviterte',
+    perfektumForm: 'har invitert',
 
-    meaning: 'Apply, Seek',
+    betydning: 'Invite',
   },
 ];
 
-const T: Verb[] = [
+const J: VerbsNO = [
   {
-    infinitiv: 'å ta',
-    presens: 'tar',
-    preteritum: 'tok',
-    perfektum: 'har tatt',
-    meaning: 'Take',
-  },
-  {
-    infinitiv: 'å takke',
-    presens: 'takker',
-    preteritum: 'takket',
-    perfektum: 'har takket',
+    infinitivForm: 'å jobbe',
+    presensForm: 'jobber',
+    preteritumForm: 'jobbet',
+    perfektumForm: 'har jobbet',
 
-    meaning: 'Thank',
-  },
-  {
-    infinitiv: 'å tape',
-    presens: 'taper',
-    preteritum: 'tapte',
-    perfektum: 'har tapt',
-
-    meaning: 'Lose',
-  },
-  {
-    infinitiv: 'å tappe',
-    presens: 'tapper',
-    preteritum: 'tappet',
-    perfektum: 'har tappet',
-
-    meaning: 'Tap, Draw',
-  },
-  {
-    infinitiv: 'å telle',
-    presens: 'teller',
-    preteritum: 'talte',
-    perfektum: 'har talt',
-
-    meaning: 'Count',
-  },
-  {
-    infinitiv: 'å tenke',
-    presens: 'tenker',
-    preteritum: 'tenkte',
-    perfektum: 'har tenkt',
-
-    meaning: 'Think',
-  },
-  {
-    infinitiv: 'å tenne',
-    presens: 'tenner',
-    preteritum: 'tente',
-    perfektum: 'har tent',
-
-    meaning: 'Light, Ignite',
-  },
-  {
-    infinitiv: 'å tigge',
-    presens: 'tigger',
-    preteritum: 'tagg',
-    perfektum: 'har tigget',
-
-    meaning: 'Beg',
-  },
-  {
-    infinitiv: 'å tilby',
-    presens: 'tilbyr',
-    preteritum: 'tilbød',
-    perfektum: 'har tilbudt',
-
-    meaning: 'Offer',
-  },
-  {
-    infinitiv: 'å tjene',
-    presens: 'tjener',
-    preteritum: 'tjente',
-    perfektum: 'har tjent',
-
-    meaning: 'Earn',
-  },
-  {
-    infinitiv: 'å tore',
-    presens: 'tør',
-    preteritum: 'tord',
-    perfektum: 'har tort',
-
-    meaning: 'Dare',
-  },
-  {
-    infinitiv: 'å torturere',
-    presens: 'torturerer',
-    preteritum: 'torturerte',
-    perfektum: 'har torturert',
-
-    meaning: 'Torture',
-  },
-  {
-    infinitiv: 'å tre',
-    presens: 'trer',
-    preteritum: 'trådte',
-    perfektum: 'har trådt',
-
-    meaning: 'Tread, Step',
-  },
-  {
-    infinitiv: 'å treffe',
-    presens: 'treffer',
-    preteritum: 'traff',
-    perfektum: 'har truffet',
-
-    meaning: 'Meet',
-  },
-  {
-    infinitiv: 'å trene',
-    presens: 'trener',
-    preteritum: 'trente',
-    perfektum: 'har trent',
-
-    meaning: 'Train, Work out',
-  },
-  {
-    infinitiv: 'å trenge',
-    presens: 'trenger',
-    preteritum: 'trengte',
-    perfektum: 'har trengt',
-
-    meaning: 'Need',
-  },
-  {
-    infinitiv: 'å trive',
-    presens: 'triver',
-    preteritum: 'treiv',
-    perfektum: 'har trevet',
-
-    meaning: 'Catch up, Grab',
-  },
-  {
-    infinitiv: 'å trives',
-    presens: 'triv(e)s',
-    preteritum: 'trivdes',
-    perfektum: 'har triv(e)s',
-
-    meaning: 'Thrive, Happy',
-  },
-  {
-    infinitiv: 'å tro',
-    presens: 'tror',
-    preteritum: 'trodde',
-    perfektum: 'har trodd',
-
-    meaning: 'Think',
-  },
-  {
-    infinitiv: 'å tvinge',
-    presens: 'tvinger',
-    preteritum: 'tvang',
-    perfektum: 'har tvunget',
-
-    meaning: 'Force, Compel',
-  },
-  {
-    infinitiv: 'å tørke',
-    presens: 'tørker',
-    preteritum: 'tørket',
-    perfektum: 'har tørket',
-
-    meaning: 'Dry',
+    betydning: 'Work',
   },
 ];
 
-const U: Verb[] = [
+const K: VerbsNO = [
   {
-    infinitiv: 'å underskrive',
-    presens: 'underskriver',
-    preteritum: 'underskrev',
-    perfektum: 'har underskrevet',
+    infinitivForm: 'å kalkulere',
+    presensForm: 'kalkulerer',
+    preteritumForm: 'kalkulerte',
+    perfektumForm: 'har kalkulert',
 
-    meaning: 'Sign',
+    betydning: 'Calculate',
   },
   {
-    infinitiv: 'å undersøke',
-    presens: 'undersøker',
-    preteritum: 'undersøkte',
-    perfektum: 'har undersøkt',
+    infinitivForm: 'å kaste',
+    presensForm: 'kaster',
+    preteritumForm: 'kastet',
+    perfektumForm: 'har kastet',
 
-    meaning: 'Examine',
+    betydning: 'Cast',
   },
   {
-    infinitiv: 'å unnskylde',
-    presens: 'unnskylder',
-    preteritum: 'unnskyldte',
-    perfektum: 'har unnskyldt',
+    infinitivForm: 'å kjenne',
+    presensForm: 'kjenner',
+    preteritumForm: 'kjente',
+    perfektumForm: 'har kjent',
 
-    meaning: 'Excuse',
+    betydning: 'Feel',
   },
   {
-    infinitiv: 'å utarbeide',
-    presens: 'utarbeider',
-    preteritum: 'utarbeidet',
-    perfektum: 'har utarbeidet',
-
-    meaning: 'Prepare, Work out',
+    infinitivForm: 'å kjøpe',
+    presensForm: 'kjøper',
+    preteritumForm: 'kjøpte',
+    perfektumForm: 'har kjøpt',
+    betydning: 'Buy',
   },
   {
-    infinitiv: 'å utføre',
-    presens: 'utfører',
-    preteritum: 'utførte',
-    perfektum: 'har utført',
-
-    meaning: 'Export, Perform',
+    infinitivForm: 'å kjøre',
+    presensForm: 'kjører',
+    preteritumForm: 'kjørte',
+    perfektumForm: 'har kjørt',
+    betydning: 'Drive',
   },
   {
-    infinitiv: 'å utslå',
-    presens: 'utslår',
-    preteritum: 'utslo',
-    perfektum: 'har utslått',
+    infinitivForm: 'å klappe',
+    presensForm: 'klapper',
+    preteritumForm: 'klappet',
+    perfektumForm: 'har klappet',
 
-    meaning: 'Hanging down, Down',
+    betydning: 'Clap',
+  },
+  {
+    infinitivForm: 'å klare',
+    presensForm: 'klarer',
+    preteritumForm: 'klarte',
+    perfektumForm: 'har klart',
+    betydning: 'Manage',
+  },
+  {
+    infinitivForm: 'å kle',
+    presensForm: 'kler',
+    preteritumForm: 'kledde',
+    perfektumForm: 'har kledd',
+    betydning: 'Dress, Clothe',
+  },
+  {
+    infinitivForm: 'å klinge',
+    presensForm: 'klinger',
+    preteritumForm: 'klingte',
+    perfektumForm: 'har klingt',
+
+    betydning: 'Sound',
+  },
+  {
+    infinitivForm: 'å klippe',
+    presensForm: 'klipper',
+    preteritumForm: 'klipte',
+    perfektumForm: 'har klipt',
+    betydning: 'Cut, Clip',
+  },
+  {
+    infinitivForm: 'å klype',
+    presensForm: 'klyper',
+    preteritumForm: 'kløp',
+    perfektumForm: 'har kløpet',
+
+    betydning: 'Pinch',
+  },
+  {
+    infinitivForm: 'å klyve',
+    presensForm: 'klyver',
+    preteritumForm: 'kløv',
+    perfektumForm: 'har kløvet',
+
+    betydning: 'Climb',
+  },
+  {
+    infinitivForm: 'å knekke',
+    presensForm: 'knekker',
+    preteritumForm: 'knakk',
+    perfektumForm: 'har knekt',
+
+    betydning: 'Crack',
+  },
+  {
+    infinitivForm: 'å knipe',
+    presensForm: 'kniper',
+    preteritumForm: 'knep',
+    perfektumForm: 'har knepet',
+
+    betydning: 'Pinch',
+  },
+  {
+    infinitivForm: 'å knyte',
+    presensForm: 'knyter',
+    preteritumForm: 'knytet/knøt',
+    perfektumForm: 'har knytet/knytt',
+
+    betydning: 'Tie',
+  },
+  {
+    infinitivForm: 'å koke',
+    presensForm: 'koker',
+    preteritumForm: 'kokte',
+    perfektumForm: 'har kokt',
+    betydning: 'Cook',
+  },
+  {
+    infinitivForm: 'å komme',
+    presensForm: 'kommer',
+    preteritumForm: 'kom',
+    perfektumForm: 'har kommet',
+    betydning: 'Come',
+  },
+  {
+    infinitivForm: 'å kontakte',
+    presensForm: 'kontakter',
+    preteritumForm: 'kontakterte',
+    perfektumForm: 'har kontaktert',
+
+    betydning: 'Contact',
+  },
+  {
+    infinitivForm: 'å kontrollere',
+    presensForm: 'kontrollerer',
+    preteritumForm: 'kontrollerte',
+    perfektumForm: 'har kontrollert',
+
+    betydning: 'Control',
+  },
+  {
+    infinitivForm: 'å kopiere',
+    presensForm: 'kopierer',
+    preteritumForm: 'kopierte',
+    perfektumForm: 'har kopiert',
+
+    betydning: 'Copy',
+  },
+  {
+    infinitivForm: 'å korrigere',
+    presensForm: 'korrigerer',
+    preteritumForm: 'korrigerte',
+    perfektumForm: 'har korrigert',
+
+    betydning: 'Correct',
+  },
+  {
+    infinitivForm: 'å kose seg',
+    presensForm: 'koser seg',
+    preteritumForm: 'koste seg',
+    perfektumForm: 'har kost seg',
+
+    betydning: 'Enjoy yourself',
+  },
+  {
+    infinitivForm: 'å koste',
+    presensForm: 'koster',
+    preteritumForm: 'kostet',
+    perfektumForm: 'har kostet',
+
+    betydning: 'Cost',
+  },
+  {
+    infinitivForm: 'å kunne',
+    presensForm: 'kan',
+    preteritumForm: 'kunne',
+    perfektumForm: 'har kunnet',
+
+    betydning: 'Could',
+  },
+  {
+    infinitivForm: 'å krype',
+    presensForm: 'kryper',
+    preteritumForm: 'krøp',
+    perfektumForm: 'har krøpet',
+
+    betydning: 'Creep',
+  },
+  {
+    infinitivForm: 'å kvele',
+    presensForm: 'kveler',
+    preteritumForm: 'kvalte',
+    perfektumForm: 'har kvalt',
+
+    betydning: 'Choke, Strangle',
   },
 ];
 
-const V: Verb[] = [
+const L: VerbsNO = [
   {
-    infinitiv: 'å varme',
-    presens: 'varmer',
-    preteritum: 'varmet',
-    perfektum: 'har varmet',
+    infinitivForm: 'å la',
+    presensForm: 'lar',
+    preteritumForm: 'lot',
+    perfektumForm: 'har latt',
 
-    meaning: 'Warm',
+    betydning: 'Let, Allow',
   },
   {
-    infinitiv: 'å vaske',
-    presens: 'vasker',
-    preteritum: 'vasket',
-    perfektum: 'har vasket',
-    meaning: 'Wash',
-  },
-  {
-    infinitiv: 'å veie',
-    presens: 'veier',
-    preteritum: 'veide',
-    perfektum: 'har veid',
+    infinitivForm: 'å lage',
+    presensForm: 'lager',
+    preteritumForm: 'laget',
+    perfektumForm: 'har laget',
 
-    meaning: 'Weigh',
+    betydning: 'Prepare',
   },
   {
-    infinitiv: 'å vekke',
-    presens: 'vekker',
-    preteritum: 'vekket',
-    perfektum: 'har vekket',
+    infinitivForm: 'å le',
+    presensForm: 'ler',
+    preteritumForm: 'lot',
+    perfektumForm: 'har ledd',
+    betydning: 'Laugh',
+  },
+  {
+    infinitivForm: 'å legge',
+    presensForm: 'legger',
+    preteritumForm: 'la',
+    perfektumForm: 'har lagt',
 
-    meaning: 'Wake',
+    betydning: 'Lay',
   },
   {
-    infinitiv: 'å velge',
-    presens: 'velger',
-    preteritum: 'valgte',
-    perfektum: 'har valgt',
+    infinitivForm: 'å leie',
+    presensForm: 'leier',
+    preteritumForm: 'leide',
+    perfektumForm: 'har leid',
 
-    meaning: 'Select',
+    betydning: 'Hire',
   },
   {
-    infinitiv: 'å vente',
-    presens: 'venter',
-    preteritum: 'ventet',
-    perfektum: 'har ventet',
-    meaning: 'Wait',
+    infinitivForm: 'å leke',
+    presensForm: 'leker',
+    preteritumForm: 'lekte',
+    perfektumForm: 'har lekt',
+    betydning: 'Play',
   },
   {
-    infinitiv: 'å verne',
-    presens: 'verner',
-    preteritum: 'vernet',
-    perfektum: 'har vernet',
+    infinitivForm: 'å lese',
+    presensForm: 'leser',
+    preteritumForm: 'leste',
+    perfektumForm: 'har lest',
 
-    meaning: 'Preserve, Defend',
+    betydning: 'Read',
   },
   {
-    infinitiv: 'å vike',
-    presens: 'viker',
-    preteritum: 'vekket',
-    perfektum: 'har veket',
+    infinitivForm: 'å lete',
+    presensForm: 'leter',
+    preteritumForm: 'lette',
+    perfektumForm: 'har lett',
+    betydning: 'Search',
+  },
+  {
+    infinitivForm: 'å leve',
+    presensForm: 'lever',
+    preteritumForm: 'levde',
+    perfektumForm: 'har levd',
 
-    meaning: 'Yield',
+    betydning: 'Live, Be alive',
   },
   {
-    infinitiv: 'å ville',
-    presens: 'vil',
-    preteritum: 'ville',
-    perfektum: 'har villet',
+    infinitivForm: 'å levere',
+    presensForm: 'leverer',
+    preteritumForm: 'leverte',
+    perfektumForm: 'har levert',
 
-    meaning: 'Want to, Will',
+    betydning: 'Give up',
   },
   {
-    infinitiv: 'å vinke',
-    presens: 'vinker',
-    preteritum: 'vinket',
-    perfektum: 'har vinket',
+    infinitivForm: 'å lide',
+    presensForm: 'lider',
+    preteritumForm: 'led',
+    perfektumForm: 'har lidd',
 
-    meaning: 'Wave',
+    betydning: 'Suffer',
   },
   {
-    infinitiv: 'å vinne',
-    presens: 'vinner',
-    preteritum: 'vant',
-    perfektum: 'har vunnet',
+    infinitivForm: 'å ligge',
+    presensForm: 'ligger',
+    preteritumForm: 'lå',
+    perfektumForm: 'har ligget',
 
-    meaning: 'Win',
+    betydning: 'Lie',
   },
   {
-    infinitiv: 'å vise',
-    presens: 'viser',
-    preteritum: 'viste',
-    perfektum: 'har vist',
-    meaning: 'Indicate, Point out',
+    infinitivForm: 'å like',
+    presensForm: 'liker',
+    preteritumForm: 'likte',
+    perfektumForm: 'har likt',
+
+    betydning: 'Like',
   },
   {
-    infinitiv: 'å vite',
-    presens: 'vet',
-    preteritum: 'visste',
-    perfektum: 'har visst',
-    meaning: 'Know',
+    infinitivForm: 'å love',
+    presensForm: 'lover',
+    preteritumForm: 'lovet',
+    perfektumForm: 'har lovet',
+
+    betydning: 'Promise',
   },
   {
-    infinitiv: 'å vokse',
-    presens: 'vokser',
-    preteritum: 'vokste',
-    perfektum: 'har vokst',
-    meaning: 'Grow, Increase',
+    infinitivForm: 'å lufte',
+    presensForm: 'lufter',
+    preteritumForm: 'luftet',
+    perfektumForm: 'har luftet',
+
+    betydning: 'Air',
   },
   {
-    infinitiv: 'å voldta',
-    presens: 'voldtar',
-    preteritum: 'voldtok',
-    perfektum: 'har voldtatt',
-    meaning: 'Rape',
+    infinitivForm: 'å lukte',
+    presensForm: 'lukter',
+    preteritumForm: 'luktet',
+    perfektumForm: 'har luktet',
+
+    betydning: 'Smell',
   },
   {
-    infinitiv: 'å vri',
-    presens: 'vrir',
-    preteritum: 'vred',
-    perfektum: 'har vridd',
-    meaning: 'Twist',
+    infinitivForm: 'å lyde',
+    presensForm: 'lyder',
+    preteritumForm: 'lød',
+    perfektumForm: 'har lydt',
+
+    betydning: 'Sound',
   },
   {
-    infinitiv: 'å være',
-    presens: 'er',
-    preteritum: 'varmet',
-    perfektum: 'har vært',
-    meaning: 'Be, Exist',
+    infinitivForm: 'å lyge',
+    presensForm: 'lyger',
+    preteritumForm: 'løy',
+    perfektumForm: 'har løyet',
+
+    betydning: 'Tell a lie',
   },
   {
-    infinitiv: 'å våkne',
-    presens: 'våkner',
-    preteritum: 'våknet',
-    perfektum: 'har våknet',
-    meaning: 'Wake, Awaken',
+    infinitivForm: 'å lytte',
+    presensForm: 'lytter',
+    preteritumForm: 'lyttet',
+    perfektumForm: 'har lyttet',
+
+    betydning: 'Listen',
+  },
+  {
+    infinitivForm: 'å lyve',
+    presensForm: 'lyver',
+    preteritumForm: 'løy',
+    perfektumForm: 'har løyet',
+
+    betydning: 'Tell a lie',
+  },
+  {
+    infinitivForm: 'å lære',
+    presensForm: 'lærer',
+    preteritumForm: 'lærte',
+    perfektumForm: 'har lært',
+
+    betydning: 'Teach, Learn',
+  },
+  {
+    infinitivForm: 'å løfte',
+    presensForm: 'løfter',
+    preteritumForm: 'løftet',
+    perfektumForm: 'har løftet',
+
+    betydning: 'Lift',
+  },
+  {
+    infinitivForm: 'å løpe',
+    presensForm: 'løper',
+    preteritumForm: 'løp',
+    perfektumForm: 'har løpt',
+
+    betydning: 'Run',
+  },
+
+  {
+    infinitivForm: 'å løse',
+    presensForm: 'løser',
+    preteritumForm: 'løste',
+    perfektumForm: 'har løst',
+    betydning: 'Loosen',
+  },
+  {
+    infinitivForm: 'å låne',
+    presensForm: 'låner',
+    preteritumForm: 'lånte',
+    perfektumForm: 'har lånt',
+
+    betydning: 'Loan',
+  },
+  {
+    infinitivForm: 'å låse',
+    presensForm: 'låser',
+    preteritumForm: 'låste',
+    perfektumForm: 'har låst',
+
+    betydning: 'Lock',
   },
 ];
 
-const W: Verb[] = [
+const M: VerbsNO = [
   {
-    infinitiv: '',
-    presens: '',
-    preteritum: '',
-    perfektum: '',
-    meaning: '',
+    infinitivForm: 'å mase',
+    presensForm: 'maser',
+    preteritumForm: 'maste',
+    perfektumForm: 'har mast',
+    betydning: 'Bother',
+  },
+  {
+    infinitivForm: 'å merke',
+    presensForm: 'merker',
+    preteritumForm: 'merket',
+    perfektumForm: 'har merket',
+
+    betydning: 'Mark',
+  },
+  {
+    infinitivForm: 'å minke',
+    presensForm: 'minker',
+    preteritumForm: 'minket',
+    perfektumForm: 'har minket',
+
+    betydning: 'Decrease',
+  },
+  {
+    infinitivForm: 'å miste',
+    presensForm: 'mister',
+    preteritumForm: 'mistet',
+    perfektumForm: 'har mistet',
+
+    betydning: 'Lose',
+  },
+  {
+    infinitivForm: 'å møte',
+    presensForm: 'møter',
+    preteritumForm: 'møtte',
+    perfektumForm: 'har møtt',
+
+    betydning: 'Meet',
+  },
+  {
+    infinitivForm: 'å måle',
+    presensForm: 'måler',
+    preteritumForm: 'målte',
+    perfektumForm: 'har målt',
+
+    betydning: 'Measure',
+  },
+];
+const N: VerbsNO = [
+  {
+    infinitivForm: 'å neke',
+    presensForm: 'neker',
+    preteritumForm: 'nekte',
+    perfektumForm: 'har nekt',
+
+    betydning: '',
+  },
+  {
+    infinitivForm: 'å nekte',
+    presensForm: 'nekter',
+    preteritumForm: 'nektet',
+    perfektumForm: 'har nektet',
+
+    betydning: 'Deny',
+  },
+  {
+    infinitivForm: 'å nyse',
+    presensForm: 'nyser',
+    preteritumForm: 'nøs',
+    perfektumForm: 'har nyst',
+
+    betydning: 'Sneeze',
+  },
+  {
+    infinitivForm: 'å nyte',
+    presensForm: 'nyter',
+    preteritumForm: 'nøt',
+    perfektumForm: 'har nytt',
+
+    betydning: '',
+  },
+];
+const O: VerbsNO = [
+  {
+    infinitivForm: 'å omarbeide',
+    presensForm: 'omarbeider',
+    preteritumForm: 'omarbeidet',
+    perfektumForm: 'har omarbeidet',
+
+    betydning: 'Revise',
+  },
+  {
+    infinitivForm: 'å oppsøke',
+    presensForm: 'oppsøker',
+    preteritumForm: 'oppsøkte',
+    perfektumForm: 'har oppsøkt',
+
+    betydning: 'Look up',
+  },
+  {
+    infinitivForm: 'å overdrive',
+    presensForm: 'overdriver',
+    preteritumForm: 'overdrev',
+    perfektumForm: 'har overdrevet',
+
+    betydning: 'Exaggerate',
+  },
+  {
+    infinitivForm: 'å overnatte',
+    presensForm: 'overnatter',
+    preteritumForm: 'overnattet',
+    perfektumForm: 'har overnattet',
+
+    betydning: 'Spend the night',
+  },
+  {
+    infinitivForm: 'å overskrive',
+    presensForm: 'overskriver',
+    preteritumForm: 'overskrev',
+    perfektumForm: 'har overskrevet',
+
+    betydning: 'Sign',
+  },
+  {
+    infinitivForm: 'å overta',
+    presensForm: 'overtar',
+    preteritumForm: 'overtok',
+    perfektumForm: 'har overtatt',
+
+    betydning: 'Take over',
+  },
+  {
+    infinitivForm: 'å overtale',
+    presensForm: 'overtaler',
+    preteritumForm: 'overtalte',
+    perfektumForm: 'har overtalt',
+
+    betydning: 'Persuade',
   },
 ];
 
-const X: Verb[] = [
+const P: VerbsNO = [
   {
-    infinitiv: '',
-    presens: '',
-    preteritum: '',
-    perfektum: '',
-    meaning: '',
+    infinitivForm: 'å pakke',
+    presensForm: 'pakker',
+    preteritumForm: 'pakket',
+    perfektumForm: 'har pakket',
+
+    betydning: 'Pack',
+  },
+  {
+    infinitivForm: 'å parkere',
+    presensForm: 'parkerer',
+    preteritumForm: 'parkerte',
+    perfektumForm: 'har parkert',
+    betydning: 'Park',
+  },
+  {
+    infinitivForm: 'å passe',
+    presensForm: 'passer',
+    preteritumForm: 'passert',
+    perfektumForm: 'har passert',
+
+    betydning: 'Fit',
+  },
+  {
+    infinitivForm: 'å peke',
+    presensForm: 'peker',
+    preteritumForm: 'pekte',
+    perfektumForm: 'har pekt',
+
+    betydning: 'Point',
+  },
+  {
+    infinitivForm: 'å pipe',
+    presensForm: 'piper',
+    preteritumForm: 'pe(i)p',
+    perfektumForm: 'har pepet',
+
+    betydning: 'Wheeze',
+  },
+  {
+    infinitivForm: 'å pleie',
+    presensForm: 'pleier',
+    preteritumForm: 'pleide',
+    perfektumForm: 'har pleid',
+
+    betydning: 'Look after',
+  },
+  {
+    infinitivForm: 'å plombere',
+    presensForm: 'plomberer',
+    preteritumForm: 'plomberte',
+    perfektumForm: 'har plombert',
+
+    betydning: 'Stop, Seal',
+  },
+  {
+    infinitivForm: 'å plystre',
+    presensForm: 'plystrer',
+    preteritumForm: 'plystret',
+    perfektumForm: 'har plystret',
+
+    betydning: 'Whistle',
+  },
+  {
+    infinitivForm: 'å preke',
+    presensForm: 'preker',
+    preteritumForm: 'prekte',
+    perfektumForm: 'har prekt',
+
+    betydning: 'Preach',
+  },
+  {
+    infinitivForm: 'å prøve',
+    presensForm: 'prøver',
+    preteritumForm: 'prøvde',
+    perfektumForm: 'har prøvd',
+
+    betydning: 'Try, Test',
+  },
+  {
+    infinitivForm: 'å pusse',
+    presensForm: 'pusser',
+    preteritumForm: 'pusset',
+    perfektumForm: 'har pusset',
+
+    betydning: 'Clean, Polish',
+  },
+  {
+    infinitivForm: 'å putte',
+    presensForm: 'putter',
+    preteritumForm: 'puttet',
+    perfektumForm: 'har puttet',
+
+    betydning: 'Put',
+  },
+  {
+    infinitivForm: 'å pynte',
+    presensForm: 'pynter',
+    preteritumForm: 'pyntet',
+    perfektumForm: 'har pyntet',
+
+    betydning: 'Decorate, Trim',
+  },
+  {
+    infinitivForm: 'å pågripe',
+    presensForm: 'pågriper',
+    preteritumForm: 'pågripet',
+    perfektumForm: 'har pågripet',
+
+    betydning: 'Arrest',
   },
 ];
 
-const Y: Verb[] = [
+const Q: VerbsNO = [
   {
-    infinitiv: '',
-    presens: '',
-    preteritum: '',
-    perfektum: '',
-    meaning: '',
+    infinitivForm: '',
+    presensForm: '',
+    preteritumForm: '',
+    perfektumForm: '',
+
+    betydning: '',
   },
 ];
 
-const Z: Verb[] = [
+const R: VerbsNO = [
   {
-    infinitiv: '',
-    presens: '',
-    preteritum: '',
-    perfektum: '',
-    meaning: '',
+    infinitivForm: 'å regne',
+    presensForm: 'regner',
+    preteritumForm: 'regnet',
+    perfektumForm: 'har renget',
+
+    betydning: 'Rain',
+  },
+  {
+    infinitivForm: 'å reise',
+    presensForm: 'reiser',
+    preteritumForm: 'reiste',
+    perfektumForm: 'har reist',
+
+    betydning: 'Travel',
+  },
+  {
+    infinitivForm: 'å rekke',
+    presensForm: 'rekker',
+    preteritumForm: 'rakk',
+    perfektumForm: 'har rukket',
+
+    betydning: 'Reach',
+  },
+  {
+    infinitivForm: 'å rekommandere',
+    presensForm: 'rekommanderer',
+    preteritumForm: 'rekommanderte',
+    perfektumForm: 'har rekommandert',
+
+    betydning: 'Register',
+  },
+  {
+    infinitivForm: 'å rense',
+    presensForm: 'renser',
+    preteritumForm: 'renset',
+    perfektumForm: 'har renset',
+
+    betydning: 'Clean',
+  },
+  {
+    infinitivForm: 'å reparere',
+    presensForm: 'reparerer',
+    preteritumForm: 'reparerte',
+    perfektumForm: 'har reparert',
+
+    betydning: 'Repair',
+  },
+  {
+    infinitivForm: 'å repetere',
+    presensForm: 'repeterer',
+    preteritumForm: 'repeterte',
+    perfektumForm: 'har repetert',
+
+    betydning: 'Repeat, Revise',
+  },
+  {
+    infinitivForm: 'å representere',
+    presensForm: 'representerer',
+    preteritumForm: 'representerte',
+    perfektumForm: 'har representert',
+
+    betydning: 'Represent',
+  },
+  {
+    infinitivForm: 'å rette',
+    presensForm: 'retter',
+    preteritumForm: 'rettet',
+    perfektumForm: 'har rettet',
+
+    betydning: 'Straighten, Align',
+  },
+  {
+    infinitivForm: 'å ri',
+    presensForm: 'rir',
+    preteritumForm: 'red',
+    perfektumForm: 'har ridd',
+
+    betydning: 'Ride',
+  },
+  {
+    infinitivForm: 'å ringe',
+    presensForm: 'ringer',
+    preteritumForm: 'ringte',
+    perfektumForm: 'har ringt',
+    betydning: 'Ring',
+  },
+  {
+    infinitivForm: 'å rive',
+    presensForm: 'river',
+    preteritumForm: 'rev',
+    perfektumForm: 'har revet',
+
+    betydning: 'Grate',
+  },
+  {
+    infinitivForm: 'å ro',
+    presensForm: 'ror',
+    preteritumForm: 'rodde',
+    perfektumForm: 'har rodd',
+    betydning: 'Row',
+  },
+  {
+    infinitivForm: 'å rope',
+    presensForm: 'roper',
+    preteritumForm: 'ropte',
+    perfektumForm: 'har ropt',
+    betydning: 'Call, Shout',
+  },
+  {
+    infinitivForm: 'å ruske',
+    presensForm: 'rusker',
+    preteritumForm: 'rusket',
+    perfektumForm: 'har rusket',
+
+    betydning: 'Pull',
+  },
+  {
+    infinitivForm: 'å rydde',
+    presensForm: 'rydder',
+    preteritumForm: 'ryddet',
+    perfektumForm: 'har ryddet',
+
+    betydning: 'Tidy',
+  },
+  {
+    infinitivForm: 'å rydde av',
+    presensForm: 'rydder av',
+    preteritumForm: 'ryddet av',
+    perfektumForm: 'har ryddet av',
+
+    betydning: 'Clear away, Remove',
+  },
+  {
+    infinitivForm: 'å ryke',
+    presensForm: 'ryker',
+    preteritumForm: 'røk',
+    perfektumForm: 'har røket',
+
+    betydning: 'Smoke',
+  },
+  {
+    infinitivForm: 'å røre',
+    presensForm: 'rører',
+    preteritumForm: 'rørte',
+    perfektumForm: 'har rørt',
+    betydning: 'Stir',
+  },
+  {
+    infinitivForm: 'å røyke',
+    presensForm: 'røyker',
+    preteritumForm: 'røykte',
+    perfektumForm: 'har røykt',
+
+    betydning: 'Smoke',
+  },
+  {
+    infinitivForm: 'å råde',
+    presensForm: 'råder',
+    preteritumForm: 'rådet',
+    perfektumForm: 'har rådet',
+
+    betydning: 'Recommend',
   },
 ];
 
-const Ø: Verb[] = [
+const S: VerbsNO = [
   {
-    infinitiv: 'å øke',
-    presens: 'øker',
-    preteritum: 'økte',
-    perfektum: 'har økt',
-    meaning: 'Increase',
+    infinitivForm: 'å sage',
+    presensForm: 'sager',
+    preteritumForm: 'saget',
+    perfektumForm: 'har saget',
+    betydning: 'Saw',
   },
   {
-    infinitiv: 'å ønske',
-    presens: 'ønsker',
-    preteritum: 'ønsket',
-    perfektum: 'har ønsket',
-    meaning: 'Wish',
+    infinitivForm: 'å samarbeide',
+    presensForm: 'samarbeider',
+    preteritumForm: 'samarbeidet',
+    perfektumForm: 'har samarbeidet',
+
+    betydning: 'Work together',
   },
   {
-    infinitiv: 'å øve',
-    presens: 'øver',
-    preteritum: 'øvde',
-    perfektum: 'har øvd',
-    meaning: 'Practice',
+    infinitivForm: 'å sammenlikne',
+    presensForm: 'sammenlikner',
+    preteritumForm: 'sammenliknet',
+    perfektumForm: 'har sammenliknet',
+
+    betydning: 'Compare',
+  },
+  {
+    infinitivForm: 'å savne',
+    presensForm: 'savner',
+    preteritumForm: 'savnet',
+    perfektumForm: 'har savnet',
+
+    betydning: 'Lack',
+  },
+  {
+    infinitivForm: 'å se',
+    presensForm: 'ser',
+    preteritumForm: 'så',
+    perfektumForm: 'har sett',
+    betydning: 'See, Look',
+  },
+  {
+    infinitivForm: 'å selge',
+    presensForm: 'selger',
+    preteritumForm: 'solgte',
+    perfektumForm: 'har solgt',
+
+    betydning: 'Sell',
+  },
+  {
+    infinitivForm: 'å sende',
+    presensForm: 'sender',
+    preteritumForm: 'sendte',
+    perfektumForm: 'har sendt',
+
+    betydning: 'Send',
+  },
+  {
+    infinitivForm: 'å servere',
+    presensForm: 'serverer',
+    preteritumForm: 'serverte',
+    perfektumForm: 'har servert',
+
+    betydning: 'Serve',
+  },
+  {
+    infinitivForm: 'å sette',
+    presensForm: 'setter',
+    preteritumForm: 'satte',
+    perfektumForm: 'har satt',
+    betydning: 'Set',
+  },
+  {
+    infinitivForm: 'å si',
+    presensForm: 'sier',
+    preteritumForm: 'sa',
+    perfektumForm: 'har sagt',
+
+    betydning: 'Say',
+  },
+  {
+    infinitivForm: 'å sige',
+    presensForm: 'siger',
+    preteritumForm: 'seg',
+    perfektumForm: 'har seget',
+
+    betydning: 'Ooze, Seep',
+  },
+  {
+    infinitivForm: 'å sikte',
+    presensForm: 'sikter',
+    preteritumForm: 'siktet',
+    perfektumForm: 'har siktet',
+    betydning: 'Aim',
+  },
+  {
+    infinitivForm: 'å sitte',
+    presensForm: 'sitter',
+    preteritumForm: 'satt',
+    perfektumForm: 'har sittet',
+
+    betydning: 'Sit',
+  },
+  {
+    infinitivForm: 'å skifte',
+    presensForm: 'skifter',
+    preteritumForm: 'skiftet',
+    perfektumForm: 'har skiftet',
+
+    betydning: 'Change, Switch',
+  },
+  {
+    infinitivForm: 'å skje',
+    presensForm: 'skjer',
+    preteritumForm: 'skjedde',
+    perfektumForm: 'har skjedd',
+
+    betydning: 'Happen',
+  },
+  {
+    infinitivForm: 'å skjelve',
+    presensForm: 'skjelver',
+    preteritumForm: 'skalv',
+    perfektumForm: 'har skjelvet',
+
+    betydning: 'Tremble',
+  },
+  {
+    infinitivForm: 'å skjære',
+    presensForm: 'skjærer',
+    preteritumForm: 'skar',
+    perfektumForm: 'har skåret',
+
+    betydning: 'Cut',
+  },
+  {
+    infinitivForm: 'å skjønne',
+    presensForm: 'skjønner',
+    preteritumForm: 'skjønte',
+    perfektumForm: 'har skjønt',
+
+    betydning: 'Understand',
+  },
+  {
+    infinitivForm: 'å skride',
+    presensForm: 'skrider',
+    preteritumForm: 'skred',
+    perfektumForm: 'har skredet',
+
+    betydning: 'Proceed',
+  },
+  {
+    infinitivForm: 'å skrive',
+    presensForm: 'skriver',
+    preteritumForm: 'skrev',
+    perfektumForm: 'har skrevet',
+    betydning: 'Write',
+  },
+  {
+    infinitivForm: 'å skru',
+    presensForm: 'skrur',
+    preteritumForm: 'skrudde',
+    perfektumForm: 'har skrudd',
+    betydning: 'Screw',
+  },
+  {
+    infinitivForm: 'å skryte',
+    presensForm: 'skryter',
+    preteritumForm: 'skrøt',
+    perfektumForm: 'har skrytt',
+
+    betydning: 'Boast',
+  },
+  {
+    infinitivForm: 'å skulle',
+    presensForm: 'skal',
+    preteritumForm: 'skulle',
+    perfektumForm: 'har skullet',
+
+    betydning: 'Shall, Have to',
+  },
+  {
+    infinitivForm: 'å skvette',
+    presensForm: 'skvetter',
+    preteritumForm: 'skvettet',
+    perfektumForm: 'har skvettet',
+
+    betydning: 'Splash',
+  },
+  {
+    infinitivForm: 'å skylle',
+    presensForm: 'skyller',
+    preteritumForm: 'skylte',
+    perfektumForm: 'har skylt',
+
+    betydning: 'Wash',
+  },
+  {
+    infinitivForm: 'å skynde',
+    presensForm: 'skynder',
+    preteritumForm: 'skyndte',
+    perfektumForm: 'har skyndet',
+
+    betydning: 'Hasten',
+  },
+  {
+    infinitivForm: 'å skyte',
+    presensForm: 'skyter',
+    preteritumForm: 'skjøt',
+    perfektumForm: 'har skutt',
+
+    betydning: 'Shoot',
+  },
+  {
+    infinitivForm: 'å skyve',
+    presensForm: 'skyver',
+    preteritumForm: 'skøv',
+    perfektumForm: 'har skutt',
+
+    betydning: 'Push, Shove',
+  },
+  {
+    infinitivForm: 'å slenge',
+    presensForm: 'slenger',
+    preteritumForm: 'slengte',
+    perfektumForm: 'har slengt',
+
+    betydning: 'Throw',
+  },
+  {
+    infinitivForm: 'å slippe',
+    presensForm: 'slipper',
+    preteritumForm: 'slapp',
+    perfektumForm: 'har sluppet',
+
+    betydning: 'Drop',
+  },
+  {
+    infinitivForm: 'å slite',
+    presensForm: 'sliter',
+    preteritumForm: 'slet',
+    perfektumForm: 'har slitt',
+
+    betydning: 'Toil',
+  },
+  {
+    infinitivForm: 'å slutte',
+    presensForm: 'slutter',
+    preteritumForm: 'sluttet',
+    perfektumForm: 'har sluttet',
+
+    betydning: 'End, Close',
+  },
+  {
+    infinitivForm: 'å slå',
+    presensForm: 'slår',
+    preteritumForm: 'slo',
+    perfektumForm: 'har slått',
+
+    betydning: 'Hit',
+  },
+  {
+    infinitivForm: 'å slåss',
+    presensForm: 'slåss',
+    preteritumForm: 'sloss',
+    perfektumForm: 'har slåss',
+
+    betydning: 'Fight',
+  },
+  {
+    infinitivForm: 'å smake',
+    presensForm: 'smaker',
+    preteritumForm: 'smaket',
+    perfektumForm: 'har smaket',
+    betydning: 'Taste',
+  },
+  {
+    infinitivForm: 'å smelle',
+    presensForm: 'smeller',
+    preteritumForm: 'smelte',
+    perfektumForm: 'har smelt',
+
+    betydning: 'Bang, Smack',
+  },
+  {
+    infinitivForm: 'å smile',
+    presensForm: 'smiler',
+    preteritumForm: 'smilte',
+    perfektumForm: 'har smilt',
+
+    betydning: 'Smile',
+  },
+  {
+    infinitivForm: 'å smitte',
+    presensForm: 'smitter',
+    preteritumForm: 'smittet',
+    perfektumForm: 'har smittet',
+
+    betydning: 'Infect',
+  },
+  {
+    infinitivForm: 'å sminke',
+    presensForm: 'sminker',
+    preteritumForm: 'sminket',
+    perfektumForm: 'har sminket',
+
+    betydning: 'Apply make up',
+  },
+  {
+    infinitivForm: 'å smøre',
+    presensForm: 'smører',
+    preteritumForm: 'smurte',
+    perfektumForm: 'har smurt',
+
+    betydning: 'Oil, Lubricate',
+  },
+  {
+    infinitivForm: 'å snakke',
+    presensForm: 'snakker',
+    preteritumForm: 'snakket',
+    perfektumForm: 'har snakket',
+    betydning: 'Speak, Talk',
+  },
+  {
+    infinitivForm: 'å snegle',
+    presensForm: 'snegler',
+    preteritumForm: 'sneglet',
+    perfektumForm: 'har sneglet',
+
+    betydning: 'Move slowly',
+  },
+  {
+    infinitivForm: 'å snike',
+    presensForm: 'sniker',
+    preteritumForm: 'snek',
+    perfektumForm: 'har sneket',
+
+    betydning: 'Sneak',
+  },
+  {
+    infinitivForm: 'å snyte',
+    presensForm: 'snyter',
+    preteritumForm: 'snøt',
+    perfektumForm: 'har snytt',
+
+    betydning: 'Cheat',
+  },
+  {
+    infinitivForm: 'å snø',
+    presensForm: 'snør',
+    preteritumForm: 'snødde',
+    perfektumForm: 'har snødd',
+
+    betydning: 'Snow',
+  },
+  {
+    infinitivForm: 'å sove',
+    presensForm: 'sover',
+    preteritumForm: 'sov',
+    perfektumForm: 'har sovet',
+
+    betydning: 'Sleep',
+  },
+  {
+    infinitivForm: 'å sovne',
+    presensForm: 'sovner',
+    preteritumForm: 'sovnet',
+    perfektumForm: 'har sovnet',
+
+    betydning: 'Fall asleep',
+  },
+  {
+    infinitivForm: 'å spandere',
+    presensForm: 'spanderer',
+    preteritumForm: 'spanderte',
+    perfektumForm: 'har spandert',
+    betydning: 'Spend',
+  },
+  {
+    infinitivForm: 'å spare',
+    presensForm: 'sparer',
+    preteritumForm: 'sparte',
+    perfektumForm: 'har spart',
+    betydning: 'Save, Be economical',
+  },
+  {
+    infinitivForm: 'å sparke',
+    presensForm: 'sparker',
+    preteritumForm: 'sparket',
+    perfektumForm: 'har sparket',
+    betydning: 'Kick',
+  },
+  {
+    infinitivForm: 'å spikre',
+    presensForm: 'spikrer',
+    preteritumForm: 'spikret',
+    perfektumForm: 'har spikret',
+    betydning: 'Nail',
+  },
+  {
+    infinitivForm: 'å spille',
+    presensForm: 'spiller',
+    preteritumForm: 'spilte',
+    perfektumForm: 'har spilt',
+
+    betydning: 'Play',
+  },
+  {
+    infinitivForm: 'å spinne',
+    presensForm: 'spinner',
+    preteritumForm: 'spant',
+    perfektumForm: 'har spunnet',
+
+    betydning: 'Spin',
+  },
+  {
+    infinitivForm: 'å spise',
+    presensForm: 'spiser',
+    preteritumForm: 'spiste',
+    perfektumForm: 'har spist',
+
+    betydning: 'Eat',
+  },
+  {
+    infinitivForm: 'å sprekke',
+    presensForm: 'sprekker',
+    preteritumForm: 'sprakk',
+    perfektumForm: 'har sprukket',
+
+    betydning: 'Crack, Burst',
+  },
+  {
+    infinitivForm: 'å sprette',
+    presensForm: 'spretter',
+    preteritumForm: 'spratt',
+    perfektumForm: 'har sprettet',
+
+    betydning: 'Bounce',
+  },
+  {
+    infinitivForm: 'å springe',
+    presensForm: 'springer',
+    preteritumForm: 'sprang',
+    perfektumForm: 'har sprunget',
+
+    betydning: 'Spring, Leap',
+  },
+  {
+    infinitivForm: 'å spørre',
+    presensForm: 'spør',
+    preteritumForm: 'spurte',
+    perfektumForm: 'har spurt',
+
+    betydning: 'Ask',
+  },
+  {
+    infinitivForm: 'å starte',
+    presensForm: 'starter',
+    preteritumForm: 'startet',
+    perfektumForm: 'har startet',
+
+    betydning: 'Start',
+  },
+  {
+    infinitivForm: 'å steke',
+    presensForm: 'steker',
+    preteritumForm: 'stekte',
+    perfektumForm: 'har stekt',
+
+    betydning: 'Roast, Fry, Bake',
+  },
+  {
+    infinitivForm: 'å stelle',
+    presensForm: 'steller',
+    preteritumForm: 'stelte',
+    perfektumForm: 'har stelt',
+
+    betydning: 'Manage',
+  },
+  {
+    infinitivForm: 'å stemme',
+    presensForm: 'stemmer',
+    preteritumForm: 'stemte',
+    perfektumForm: 'har stemt',
+
+    betydning: 'Vote, Agree',
+  },
+  {
+    infinitivForm: 'å stevne',
+    presensForm: 'stevner',
+    preteritumForm: 'stevnet',
+    perfektumForm: 'har stevnet',
+
+    betydning: 'Summon',
+  },
+  {
+    infinitivForm: 'å stige',
+    presensForm: 'stiger',
+    preteritumForm: 'steg',
+    perfektumForm: 'har steget',
+
+    betydning: 'Climb',
+  },
+  {
+    infinitivForm: 'å stikke',
+    presensForm: 'stikker',
+    preteritumForm: 'stakk',
+    perfektumForm: 'har stukket',
+
+    betydning: 'Stick',
+  },
+  {
+    infinitivForm: 'å stille',
+    presensForm: 'stiller',
+    preteritumForm: 'stilte',
+    perfektumForm: 'har stilt',
+
+    betydning: 'Put, Place',
+  },
+  {
+    infinitivForm: 'å stjele',
+    presensForm: 'stjeler',
+    preteritumForm: 'stjal',
+    perfektumForm: 'har stjålet',
+
+    betydning: 'Steal',
+  },
+  {
+    infinitivForm: 'å stoppe',
+    presensForm: 'stopper',
+    preteritumForm: 'stoppet',
+    perfektumForm: 'har stoppet',
+    betydning: 'Stop',
+  },
+  {
+    infinitivForm: 'å strekke',
+    presensForm: 'strekker',
+    preteritumForm: 'strakk',
+    perfektumForm: 'har strukket',
+
+    betydning: 'Stretch',
+  },
+  {
+    infinitivForm: 'å stri',
+    presensForm: 'strir',
+    preteritumForm: 'stred',
+    perfektumForm: 'har stridd',
+
+    betydning: 'Struggle',
+  },
+  {
+    infinitivForm: 'å strikke',
+    presensForm: 'strikker',
+    preteritumForm: 'strikket',
+    perfektumForm: 'har strikket',
+
+    betydning: 'Knit',
+  },
+  {
+    infinitivForm: 'å stryke',
+    presensForm: 'stryker',
+    preteritumForm: 'strøk',
+    perfektumForm: 'har strøket',
+
+    betydning: 'Stroke',
+  },
+  {
+    infinitivForm: 'å studere',
+    presensForm: 'studerer',
+    preteritumForm: 'studerte',
+    perfektumForm: 'har studert',
+
+    betydning: 'Study',
+  },
+  {
+    infinitivForm: 'å stå',
+    presensForm: 'står',
+    preteritumForm: 'stod',
+    perfektumForm: 'har stått',
+    betydning: 'Stand',
+  },
+  {
+    infinitivForm: 'å svare',
+    presensForm: 'svarer',
+    preteritumForm: 'svarte',
+    perfektumForm: 'har svart',
+
+    betydning: 'Answer, Reply',
+  },
+  {
+    infinitivForm: 'å sverge',
+    presensForm: 'sverger',
+    preteritumForm: 'sverget',
+    perfektumForm: 'har sverget',
+
+    betydning: 'Swear',
+  },
+  {
+    infinitivForm: 'å svi',
+    presensForm: 'svir',
+    preteritumForm: 'sved',
+    perfektumForm: 'har svidd',
+
+    betydning: 'Burn',
+  },
+  {
+    infinitivForm: 'å svike',
+    presensForm: 'sviker',
+    preteritumForm: 'svek',
+    perfektumForm: 'har sveket',
+
+    betydning: 'Defraud, Deceive',
+  },
+  {
+    infinitivForm: 'å svinge',
+    presensForm: 'svinger',
+    preteritumForm: 'svingte',
+    perfektumForm: 'har svingt',
+
+    betydning: 'Swing, Brandish',
+  },
+  {
+    infinitivForm: 'å svømme',
+    presensForm: 'svømmer',
+    preteritumForm: 'svømte',
+    perfektumForm: 'har svømt',
+
+    betydning: 'Swim',
+  },
+  {
+    infinitivForm: 'å sy',
+    presensForm: 'syr',
+    preteritumForm: 'sydde',
+    perfektumForm: 'har sydd',
+
+    betydning: 'Sew, Make',
+  },
+  {
+    infinitivForm: 'å sykle',
+    presensForm: 'sykler',
+    preteritumForm: 'syklet',
+    perfektumForm: 'har syklet',
+    betydning: 'Cycle',
+  },
+  {
+    infinitivForm: 'å synes',
+    presensForm: 'syn(e)s',
+    preteritumForm: 'syntes',
+    perfektumForm: 'har syn(e)s',
+
+    betydning: 'Think',
+  },
+  {
+    infinitivForm: 'å synge',
+    presensForm: 'synger',
+    preteritumForm: 'sang',
+    perfektumForm: 'har sunget',
+
+    betydning: 'Sing',
+  },
+  {
+    infinitivForm: 'å synke',
+    presensForm: 'synker',
+    preteritumForm: 'sank',
+    perfektumForm: 'har sunket',
+
+    betydning: 'Sink',
+  },
+  {
+    infinitivForm: 'å søke',
+    presensForm: 'søker',
+    preteritumForm: 'søkte',
+    perfektumForm: 'har søkt',
+
+    betydning: 'Apply, Seek',
+  },
+];
+
+const T: VerbsNO = [
+  {
+    infinitivForm: 'å ta',
+    presensForm: 'tar',
+    preteritumForm: 'tok',
+    perfektumForm: 'har tatt',
+    betydning: 'Take',
+  },
+  {
+    infinitivForm: 'å takke',
+    presensForm: 'takker',
+    preteritumForm: 'takket',
+    perfektumForm: 'har takket',
+
+    betydning: 'Thank',
+  },
+  {
+    infinitivForm: 'å tape',
+    presensForm: 'taper',
+    preteritumForm: 'tapte',
+    perfektumForm: 'har tapt',
+
+    betydning: 'Lose',
+  },
+  {
+    infinitivForm: 'å tappe',
+    presensForm: 'tapper',
+    preteritumForm: 'tappet',
+    perfektumForm: 'har tappet',
+
+    betydning: 'Tap, Draw',
+  },
+  {
+    infinitivForm: 'å telle',
+    presensForm: 'teller',
+    preteritumForm: 'talte',
+    perfektumForm: 'har talt',
+
+    betydning: 'Count',
+  },
+  {
+    infinitivForm: 'å tenke',
+    presensForm: 'tenker',
+    preteritumForm: 'tenkte',
+    perfektumForm: 'har tenkt',
+
+    betydning: 'Think',
+  },
+  {
+    infinitivForm: 'å tenne',
+    presensForm: 'tenner',
+    preteritumForm: 'tente',
+    perfektumForm: 'har tent',
+
+    betydning: 'Light, Ignite',
+  },
+  {
+    infinitivForm: 'å tigge',
+    presensForm: 'tigger',
+    preteritumForm: 'tagg',
+    perfektumForm: 'har tigget',
+
+    betydning: 'Beg',
+  },
+  {
+    infinitivForm: 'å tilby',
+    presensForm: 'tilbyr',
+    preteritumForm: 'tilbød',
+    perfektumForm: 'har tilbudt',
+
+    betydning: 'Offer',
+  },
+  {
+    infinitivForm: 'å tjene',
+    presensForm: 'tjener',
+    preteritumForm: 'tjente',
+    perfektumForm: 'har tjent',
+
+    betydning: 'Earn',
+  },
+  {
+    infinitivForm: 'å tore',
+    presensForm: 'tør',
+    preteritumForm: 'tord',
+    perfektumForm: 'har tort',
+
+    betydning: 'Dare',
+  },
+  {
+    infinitivForm: 'å torturere',
+    presensForm: 'torturerer',
+    preteritumForm: 'torturerte',
+    perfektumForm: 'har torturert',
+
+    betydning: 'Torture',
+  },
+  {
+    infinitivForm: 'å tre',
+    presensForm: 'trer',
+    preteritumForm: 'trådte',
+    perfektumForm: 'har trådt',
+
+    betydning: 'Tread, Step',
+  },
+  {
+    infinitivForm: 'å treffe',
+    presensForm: 'treffer',
+    preteritumForm: 'traff',
+    perfektumForm: 'har truffet',
+
+    betydning: 'Meet',
+  },
+  {
+    infinitivForm: 'å trene',
+    presensForm: 'trener',
+    preteritumForm: 'trente',
+    perfektumForm: 'har trent',
+
+    betydning: 'Train, Work out',
+  },
+  {
+    infinitivForm: 'å trenge',
+    presensForm: 'trenger',
+    preteritumForm: 'trengte',
+    perfektumForm: 'har trengt',
+
+    betydning: 'Need',
+  },
+  {
+    infinitivForm: 'å trive',
+    presensForm: 'triver',
+    preteritumForm: 'treiv',
+    perfektumForm: 'har trevet',
+
+    betydning: 'Catch up, Grab',
+  },
+  {
+    infinitivForm: 'å trives',
+    presensForm: 'triv(e)s',
+    preteritumForm: 'trivdes',
+    perfektumForm: 'har triv(e)s',
+
+    betydning: 'Thrive, Happy',
+  },
+  {
+    infinitivForm: 'å tro',
+    presensForm: 'tror',
+    preteritumForm: 'trodde',
+    perfektumForm: 'har trodd',
+
+    betydning: 'Think',
+  },
+  {
+    infinitivForm: 'å tvinge',
+    presensForm: 'tvinger',
+    preteritumForm: 'tvang',
+    perfektumForm: 'har tvunget',
+
+    betydning: 'Force, Compel',
+  },
+  {
+    infinitivForm: 'å tørke',
+    presensForm: 'tørker',
+    preteritumForm: 'tørket',
+    perfektumForm: 'har tørket',
+
+    betydning: 'Dry',
+  },
+];
+
+const U: VerbsNO = [
+  {
+    infinitivForm: 'å underskrive',
+    presensForm: 'underskriver',
+    preteritumForm: 'underskrev',
+    perfektumForm: 'har underskrevet',
+
+    betydning: 'Sign',
+  },
+  {
+    infinitivForm: 'å undersøke',
+    presensForm: 'undersøker',
+    preteritumForm: 'undersøkte',
+    perfektumForm: 'har undersøkt',
+
+    betydning: 'Examine',
+  },
+  {
+    infinitivForm: 'å unnskylde',
+    presensForm: 'unnskylder',
+    preteritumForm: 'unnskyldte',
+    perfektumForm: 'har unnskyldt',
+
+    betydning: 'Excuse',
+  },
+  {
+    infinitivForm: 'å utarbeide',
+    presensForm: 'utarbeider',
+    preteritumForm: 'utarbeidet',
+    perfektumForm: 'har utarbeidet',
+
+    betydning: 'Prepare, Work out',
+  },
+  {
+    infinitivForm: 'å utføre',
+    presensForm: 'utfører',
+    preteritumForm: 'utførte',
+    perfektumForm: 'har utført',
+
+    betydning: 'Export, Perform',
+  },
+  {
+    infinitivForm: 'å utslå',
+    presensForm: 'utslår',
+    preteritumForm: 'utslo',
+    perfektumForm: 'har utslått',
+
+    betydning: 'Hanging down, Down',
+  },
+];
+
+const V: VerbsNO = [
+  {
+    infinitivForm: 'å varme',
+    presensForm: 'varmer',
+    preteritumForm: 'varmet',
+    perfektumForm: 'har varmet',
+
+    betydning: 'Warm',
+  },
+  {
+    infinitivForm: 'å vaske',
+    presensForm: 'vasker',
+    preteritumForm: 'vasket',
+    perfektumForm: 'har vasket',
+    betydning: 'Wash',
+  },
+  {
+    infinitivForm: 'å veie',
+    presensForm: 'veier',
+    preteritumForm: 'veide',
+    perfektumForm: 'har veid',
+
+    betydning: 'Weigh',
+  },
+  {
+    infinitivForm: 'å vekke',
+    presensForm: 'vekker',
+    preteritumForm: 'vekket',
+    perfektumForm: 'har vekket',
+
+    betydning: 'Wake',
+  },
+  {
+    infinitivForm: 'å velge',
+    presensForm: 'velger',
+    preteritumForm: 'valgte',
+    perfektumForm: 'har valgt',
+
+    betydning: 'Select',
+  },
+  {
+    infinitivForm: 'å vente',
+    presensForm: 'venter',
+    preteritumForm: 'ventet',
+    perfektumForm: 'har ventet',
+    betydning: 'Wait',
+  },
+  {
+    infinitivForm: 'å verne',
+    presensForm: 'verner',
+    preteritumForm: 'vernet',
+    perfektumForm: 'har vernet',
+
+    betydning: 'Preserve, Defend',
+  },
+  {
+    infinitivForm: 'å vike',
+    presensForm: 'viker',
+    preteritumForm: 'vekket',
+    perfektumForm: 'har veket',
+
+    betydning: 'Yield',
+  },
+  {
+    infinitivForm: 'å ville',
+    presensForm: 'vil',
+    preteritumForm: 'ville',
+    perfektumForm: 'har villet',
+
+    betydning: 'Want to, Will',
+  },
+  {
+    infinitivForm: 'å vinke',
+    presensForm: 'vinker',
+    preteritumForm: 'vinket',
+    perfektumForm: 'har vinket',
+
+    betydning: 'Wave',
+  },
+  {
+    infinitivForm: 'å vinne',
+    presensForm: 'vinner',
+    preteritumForm: 'vant',
+    perfektumForm: 'har vunnet',
+
+    betydning: 'Win',
+  },
+  {
+    infinitivForm: 'å vise',
+    presensForm: 'viser',
+    preteritumForm: 'viste',
+    perfektumForm: 'har vist',
+    betydning: 'Indicate, Point out',
+  },
+  {
+    infinitivForm: 'å vite',
+    presensForm: 'vet',
+    preteritumForm: 'visste',
+    perfektumForm: 'har visst',
+    betydning: 'Know',
+  },
+  {
+    infinitivForm: 'å vokse',
+    presensForm: 'vokser',
+    preteritumForm: 'vokste',
+    perfektumForm: 'har vokst',
+    betydning: 'Grow, Increase',
+  },
+  {
+    infinitivForm: 'å voldta',
+    presensForm: 'voldtar',
+    preteritumForm: 'voldtok',
+    perfektumForm: 'har voldtatt',
+    betydning: 'Rape',
+  },
+  {
+    infinitivForm: 'å vri',
+    presensForm: 'vrir',
+    preteritumForm: 'vred',
+    perfektumForm: 'har vridd',
+    betydning: 'Twist',
+  },
+  {
+    infinitivForm: 'å være',
+    presensForm: 'er',
+    preteritumForm: 'varmet',
+    perfektumForm: 'har vært',
+    betydning: 'Be, Exist',
+  },
+  {
+    infinitivForm: 'å våkne',
+    presensForm: 'våkner',
+    preteritumForm: 'våknet',
+    perfektumForm: 'har våknet',
+    betydning: 'Wake, Awaken',
+  },
+];
+
+const W: VerbsNO = [
+  {
+    infinitivForm: '',
+    presensForm: '',
+    preteritumForm: '',
+    perfektumForm: '',
+    betydning: '',
+  },
+];
+
+const X: VerbsNO = [
+  {
+    infinitivForm: '',
+    presensForm: '',
+    preteritumForm: '',
+    perfektumForm: '',
+    betydning: '',
+  },
+];
+
+const Y: VerbsNO = [
+  {
+    infinitivForm: '',
+    presensForm: '',
+    preteritumForm: '',
+    perfektumForm: '',
+    betydning: '',
+  },
+];
+
+const Z: VerbsNO = [
+  {
+    infinitivForm: '',
+    presensForm: '',
+    preteritumForm: '',
+    perfektumForm: '',
+    betydning: '',
+  },
+];
+
+const Ø: VerbsNO = [
+  {
+    infinitivForm: 'å øke',
+    presensForm: 'øker',
+    preteritumForm: 'økte',
+    perfektumForm: 'har økt',
+    betydning: 'Increase',
+  },
+  {
+    infinitivForm: 'å ønske',
+    presensForm: 'ønsker',
+    preteritumForm: 'ønsket',
+    perfektumForm: 'har ønsket',
+    betydning: 'Wish',
+  },
+  {
+    infinitivForm: 'å øve',
+    presensForm: 'øver',
+    preteritumForm: 'øvde',
+    perfektumForm: 'har øvd',
+    betydning: 'Practice',
   },
 ];
 
