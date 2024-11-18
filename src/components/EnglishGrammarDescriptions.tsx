@@ -16,10 +16,17 @@ import {
 import Grid from '@mui/material/Grid2';
 
 const EnglishGrammarDescriptions = () => {
+  const headers: string[] = [
+    'Type',
+    'Example in English',
+    'Example in Norwegian',
+    'Example in Farsi',
+  ];
+
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
+    <Container maxWidth="lg">
       {/* Title Section */}
-      <Box textAlign="center" sx={{ mb: 4 }}>
+      <Box textAlign="center" sx={{ py: 4 }}>
         <Typography variant="h3" component="h1" gutterBottom>
           English and Norwegian Tenses
         </Typography>
@@ -30,11 +37,11 @@ const EnglishGrammarDescriptions = () => {
       </Box>
 
       {/* Section: Simple Present */}
-      <Box>
+      <Box component={Paper} sx={{ p: { xs: 1, md: 2 }, bgcolor: '#eceff1' }}>
         <Typography
           variant="h4"
           component="h2"
-          sx={{ my: 4, color: 'primary.main' }}
+          sx={{ pb: 4, color: '#263238' }}
           textAlign="center"
         >
           Simple Present
@@ -43,15 +50,20 @@ const EnglishGrammarDescriptions = () => {
         <Grid container spacing={2}>
           {/* English Section */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#90a4ae' }}>
+            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#78909c' }}>
               <CardContent>
-                <Typography variant="h6" component="h3" gutterBottom>
+                <Typography
+                  variant="h6"
+                  component="h3"
+                  gutterBottom
+                  sx={{ color: 'white' }}
+                >
                   English
                 </Typography>
-                <Typography variant="subtitle1">
+                <Typography variant="subtitle1" sx={{ color: 'white' }}>
                   Formula: Subject + base verb
                 </Typography>
-                <Typography variant="subtitle1">
+                <Typography variant="subtitle1" sx={{ color: 'white' }}>
                   Passive formula: Subject + am/is/are + past participle
                 </Typography>
               </CardContent>
@@ -60,15 +72,20 @@ const EnglishGrammarDescriptions = () => {
 
           {/* Norwegian Section */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#78909c' }}>
+            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#607d8b' }}>
               <CardContent>
-                <Typography variant="h6" component="h3" gutterBottom>
+                <Typography
+                  variant="h6"
+                  component="h3"
+                  gutterBottom
+                  sx={{ color: 'white' }}
+                >
                   Norsk
                 </Typography>
-                <Typography variant="subtitle1">
+                <Typography variant="subtitle1" sx={{ color: 'white' }}>
                   Formula: Subjekt + verb (presens)
                 </Typography>
-                <Typography variant="subtitle1">
+                <Typography variant="subtitle1" sx={{ color: 'white' }}>
                   Passive formula: Subjekt + er + partisipp av verb
                 </Typography>
               </CardContent>
@@ -78,9 +95,9 @@ const EnglishGrammarDescriptions = () => {
 
         {/* Signs Section */}
         <Grid size={{ xs: 12, md: 12 }} sx={{ py: 2 }}>
-          <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#b0bec5' }}>
+          <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#546e7a' }}>
             <CardContent>
-              <Typography variant="subtitle1">
+              <Typography variant="subtitle1" sx={{ color: 'white' }}>
                 Signs: Habitual actions, routines, facts, general truths.
               </Typography>
             </CardContent>
@@ -94,12 +111,13 @@ const EnglishGrammarDescriptions = () => {
           sx={{ borderRadius: 2 }}
         >
           <Table>
-            <TableHead sx={{ bgcolor: 'secondary.light' }}>
+            <TableHead sx={{ bgcolor: '#263238' }}>
               <TableRow>
-                <TableCell>Type</TableCell>
-                <TableCell>Example in English</TableCell>
-                <TableCell>Example in Norwegian</TableCell>
-                <TableCell>Example in Farsi</TableCell>
+                {headers.map((header) => (
+                  <TableCell key={header} sx={{ color: 'white' }}>
+                    {header}
+                  </TableCell>
+                ))}
               </TableRow>
             </TableHead>
             <TableBody>
@@ -141,11 +159,14 @@ const EnglishGrammarDescriptions = () => {
       </Box>
 
       {/* Section: Present Continuous */}
-      <Box>
+      <Box
+        component={Paper}
+        sx={{ p: { xs: 1, md: 2 }, mt: 4, bgcolor: '#c8e6c9' }}
+      >
         <Typography
           variant="h4"
           component="h2"
-          sx={{ my: 4, color: 'primary.main' }}
+          sx={{ my: 4, color: '#1b5e20' }}
           textAlign="center"
         >
           Present Continuous
@@ -154,7 +175,7 @@ const EnglishGrammarDescriptions = () => {
         <Grid container spacing={2}>
           {/* English Section */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#90a4ae' }}>
+            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#66bb6a' }}>
               <CardContent>
                 <Typography variant="h6" component="h3" gutterBottom>
                   English
@@ -171,7 +192,7 @@ const EnglishGrammarDescriptions = () => {
 
           {/* Norwegian Section */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#78909c' }}>
+            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#4caf50' }}>
               <CardContent>
                 <Typography variant="h6" component="h3" gutterBottom>
                   Norsk
@@ -189,7 +210,7 @@ const EnglishGrammarDescriptions = () => {
 
         {/* Signs Section */}
         <Grid size={{ xs: 12, md: 12 }} sx={{ py: 2 }}>
-          <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#b0bec5' }}>
+          <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#43a047' }}>
             <CardContent>
               <Typography variant="subtitle1">
                 Signs: Actions happening now or around the present moment.
@@ -205,12 +226,13 @@ const EnglishGrammarDescriptions = () => {
           sx={{ borderRadius: 2 }}
         >
           <Table>
-            <TableHead sx={{ bgcolor: 'secondary.light' }}>
+            <TableHead sx={{ bgcolor: '#1b5e20' }}>
               <TableRow>
-                <TableCell>Type</TableCell>
-                <TableCell>Example in English</TableCell>
-                <TableCell>Example in Farsi</TableCell>
-                <TableCell>Example in Norwegian</TableCell>
+                {headers.map((header) => (
+                  <TableCell key={header} sx={{ color: 'white' }}>
+                    {header}
+                  </TableCell>
+                ))}
               </TableRow>
             </TableHead>
             <TableBody>
@@ -252,11 +274,14 @@ const EnglishGrammarDescriptions = () => {
       </Box>
 
       {/* Section: Present Perfect */}
-      <Box>
+      <Box
+        component={Paper}
+        sx={{ p: { xs: 1, md: 2 }, mt: 4, bgcolor: '#e0f7fa' }}
+      >
         <Typography
           variant="h4"
           component="h2"
-          sx={{ my: 4, color: 'primary.main' }}
+          sx={{ my: 4, color: '#006064' }}
           textAlign="center"
         >
           Present Perfect
@@ -265,7 +290,7 @@ const EnglishGrammarDescriptions = () => {
         <Grid container spacing={2}>
           {/* English Section */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#90a4ae' }}>
+            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#26c6da' }}>
               <CardContent>
                 <Typography variant="h6" component="h3" gutterBottom>
                   English
@@ -282,7 +307,7 @@ const EnglishGrammarDescriptions = () => {
 
           {/* Norwegian Section */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#78909c' }}>
+            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#00bcd4' }}>
               <CardContent>
                 <Typography variant="h6" component="h3" gutterBottom>
                   Norsk
@@ -300,7 +325,7 @@ const EnglishGrammarDescriptions = () => {
 
         {/* Signs Section */}
         <Grid size={{ xs: 12, md: 12 }} sx={{ py: 2 }}>
-          <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#b0bec5' }}>
+          <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#00acc1' }}>
             <CardContent>
               <Typography variant="subtitle1">
                 Signs: Actions that have been completed at some point in the
@@ -317,12 +342,13 @@ const EnglishGrammarDescriptions = () => {
           sx={{ borderRadius: 2 }}
         >
           <Table>
-            <TableHead sx={{ bgcolor: 'secondary.light' }}>
+            <TableHead sx={{ bgcolor: '#006064' }}>
               <TableRow>
-                <TableCell>Type</TableCell>
-                <TableCell>Example in English</TableCell>
-                <TableCell>Example in Farsi</TableCell>
-                <TableCell>Example in Norwegian</TableCell>
+                {headers.map((header) => (
+                  <TableCell key={header} sx={{ color: 'white' }}>
+                    {header}
+                  </TableCell>
+                ))}
               </TableRow>
             </TableHead>
             <TableBody>
@@ -364,11 +390,11 @@ const EnglishGrammarDescriptions = () => {
       </Box>
 
       {/* Section: Simple Past */}
-      <Box>
+      <Box sx={{ p: { xs: 1, md: 2 }, mt: 4, bgcolor: '#e0f2f1' }}>
         <Typography
           variant="h4"
           component="h2"
-          sx={{ my: 4, color: 'primary.main' }}
+          sx={{ my: 4, color: '#004d40' }}
           textAlign="center"
         >
           Simple Past
@@ -377,7 +403,7 @@ const EnglishGrammarDescriptions = () => {
         <Grid container spacing={2}>
           {/* English Section */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#90a4ae' }}>
+            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#26a69a' }}>
               <CardContent>
                 <Typography variant="h6" component="h3" gutterBottom>
                   English
@@ -394,7 +420,7 @@ const EnglishGrammarDescriptions = () => {
 
           {/* Norwegian Section */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#78909c' }}>
+            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#009688' }}>
               <CardContent>
                 <Typography variant="h6" component="h3" gutterBottom>
                   Norsk
@@ -412,7 +438,7 @@ const EnglishGrammarDescriptions = () => {
 
         {/* Signs Section */}
         <Grid size={{ xs: 12, md: 12 }} sx={{ py: 2 }}>
-          <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#b0bec5' }}>
+          <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#00897b' }}>
             <CardContent>
               <Typography variant="subtitle1">
                 Signs: Actions that were completed in the past.
@@ -428,12 +454,13 @@ const EnglishGrammarDescriptions = () => {
           sx={{ borderRadius: 2 }}
         >
           <Table>
-            <TableHead sx={{ bgcolor: 'secondary.light' }}>
+            <TableHead sx={{ bgcolor: '#004d40' }}>
               <TableRow>
-                <TableCell>Type</TableCell>
-                <TableCell>Example in English</TableCell>
-                <TableCell>Example in Farsi</TableCell>
-                <TableCell>Example in Norwegian</TableCell>
+                {headers.map((header) => (
+                  <TableCell key={header} sx={{ color: 'white' }}>
+                    {header}
+                  </TableCell>
+                ))}
               </TableRow>
             </TableHead>
             <TableBody>
@@ -475,11 +502,11 @@ const EnglishGrammarDescriptions = () => {
       </Box>
 
       {/* Section: Past Continuous */}
-      <Box>
+      <Box sx={{ p: { xs: 1, md: 2 }, mt: 4, bgcolor: '#e3f2fd' }}>
         <Typography
           variant="h4"
           component="h2"
-          sx={{ my: 4, color: 'primary.main' }}
+          sx={{ my: 4, color: '#0d47a1' }}
           textAlign="center"
         >
           Past Continuous
@@ -488,7 +515,7 @@ const EnglishGrammarDescriptions = () => {
         <Grid container spacing={2}>
           {/* English Section */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#90a4ae' }}>
+            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#42a5f5' }}>
               <CardContent>
                 <Typography variant="h6" component="h3" gutterBottom>
                   English
@@ -505,7 +532,7 @@ const EnglishGrammarDescriptions = () => {
 
           {/* Norwegian Section */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#78909c' }}>
+            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#2196f3' }}>
               <CardContent>
                 <Typography variant="h6" component="h3" gutterBottom>
                   Norsk
@@ -520,7 +547,7 @@ const EnglishGrammarDescriptions = () => {
 
         {/* Signs Section */}
         <Grid size={{ xs: 12, md: 12 }} sx={{ py: 2 }}>
-          <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#b0bec5' }}>
+          <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#1e88e5' }}>
             <CardContent>
               <Typography variant="subtitle1">
                 Signs: Actions that were ongoing in the past.
@@ -536,12 +563,13 @@ const EnglishGrammarDescriptions = () => {
           sx={{ borderRadius: 2 }}
         >
           <Table>
-            <TableHead sx={{ bgcolor: 'secondary.light' }}>
+            <TableHead sx={{ bgcolor: '#0d47a1' }}>
               <TableRow>
-                <TableCell>Type</TableCell>
-                <TableCell>Example in English</TableCell>
-                <TableCell>Example in Farsi</TableCell>
-                <TableCell>Example in Norwegian</TableCell>
+                {headers.map((header) => (
+                  <TableCell key={header} sx={{ color: 'white' }}>
+                    {header}
+                  </TableCell>
+                ))}
               </TableRow>
             </TableHead>
             <TableBody>
@@ -591,11 +619,11 @@ const EnglishGrammarDescriptions = () => {
       </Box>
 
       {/* Section: Past Perfect */}
-      <Box>
+      <Box sx={{ p: { xs: 1, md: 2 }, mt: 4, bgcolor: '#ede7f6' }}>
         <Typography
           variant="h4"
           component="h2"
-          sx={{ my: 4, color: 'primary.main' }}
+          sx={{ my: 4, color: '#311b92' }}
           textAlign="center"
         >
           Past Perfect
@@ -604,7 +632,7 @@ const EnglishGrammarDescriptions = () => {
         <Grid container spacing={2}>
           {/* English Section */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#90a4ae' }}>
+            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#7e57c2' }}>
               <CardContent>
                 <Typography variant="h6" component="h3" gutterBottom>
                   English
@@ -621,7 +649,7 @@ const EnglishGrammarDescriptions = () => {
 
           {/* Norwegian Section */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#78909c' }}>
+            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#673ab7' }}>
               <CardContent>
                 <Typography variant="h6" component="h3" gutterBottom>
                   Norsk
@@ -639,7 +667,7 @@ const EnglishGrammarDescriptions = () => {
 
         {/* Signs Section */}
         <Grid size={{ xs: 12, md: 12 }} sx={{ py: 2 }}>
-          <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#b0bec5' }}>
+          <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#5e35b1' }}>
             <CardContent>
               <Typography variant="subtitle1">
                 Signs: Actions that were completed before another action in the
@@ -656,12 +684,13 @@ const EnglishGrammarDescriptions = () => {
           sx={{ borderRadius: 2 }}
         >
           <Table>
-            <TableHead sx={{ bgcolor: 'secondary.light' }}>
+            <TableHead sx={{ bgcolor: '#311b92' }}>
               <TableRow>
-                <TableCell>Type</TableCell>
-                <TableCell>Example in English</TableCell>
-                <TableCell>Example in Farsi</TableCell>
-                <TableCell>Example in Norwegian</TableCell>
+                {headers.map((header) => (
+                  <TableCell key={header} sx={{ color: 'white' }}>
+                    {header}
+                  </TableCell>
+                ))}
               </TableRow>
             </TableHead>
             <TableBody>
@@ -703,11 +732,11 @@ const EnglishGrammarDescriptions = () => {
       </Box>
 
       {/* Section: Future Tense */}
-      <Box>
+      <Box sx={{ p: { xs: 1, md: 2 }, mt: 4, bgcolor: '#ffebee' }}>
         <Typography
           variant="h4"
           component="h2"
-          sx={{ my: 4, color: 'primary.main' }}
+          sx={{ my: 4, color: '#b71c1c' }}
           textAlign="center"
         >
           Future Tense
@@ -716,7 +745,7 @@ const EnglishGrammarDescriptions = () => {
         <Grid container spacing={2}>
           {/* English Section */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#90a4ae' }}>
+            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#ef5350' }}>
               <CardContent>
                 <Typography variant="h6" component="h3" gutterBottom>
                   English
@@ -733,7 +762,7 @@ const EnglishGrammarDescriptions = () => {
 
           {/* Norwegian Section */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#78909c' }}>
+            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#f44336' }}>
               <CardContent>
                 <Typography variant="h6" component="h3" gutterBottom>
                   Norsk
@@ -751,7 +780,7 @@ const EnglishGrammarDescriptions = () => {
 
         {/* Signs Section */}
         <Grid size={{ xs: 12, md: 12 }} sx={{ py: 2 }}>
-          <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#b0bec5' }}>
+          <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#e53935' }}>
             <CardContent>
               <Typography variant="subtitle1">
                 Signs: Actions that will happen in the future.
@@ -767,12 +796,13 @@ const EnglishGrammarDescriptions = () => {
           sx={{ borderRadius: 2 }}
         >
           <Table>
-            <TableHead sx={{ bgcolor: 'secondary.light' }}>
+            <TableHead sx={{ bgcolor: '#b71c1c' }}>
               <TableRow>
-                <TableCell>Type</TableCell>
-                <TableCell>Example in English</TableCell>
-                <TableCell>Example in Farsi</TableCell>
-                <TableCell>Example in Norwegian</TableCell>
+                {headers.map((header) => (
+                  <TableCell key={header} sx={{ color: 'white' }}>
+                    {header}
+                  </TableCell>
+                ))}
               </TableRow>
             </TableHead>
             <TableBody>
@@ -814,11 +844,11 @@ const EnglishGrammarDescriptions = () => {
       </Box>
 
       {/* Section: Future Perfect */}
-      <Box>
+      <Box sx={{ p: { xs: 1, md: 2 }, mt: 4, bgcolor: '#e8eaf6' }}>
         <Typography
           variant="h4"
           component="h2"
-          sx={{ my: 4, color: 'primary.main' }}
+          sx={{ my: 4, color: '#1a237e' }}
           textAlign="center"
         >
           Future Perfect
@@ -827,7 +857,7 @@ const EnglishGrammarDescriptions = () => {
         <Grid container spacing={2}>
           {/* English Section */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#90a4ae' }}>
+            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#5c6bc0' }}>
               <CardContent>
                 <Typography variant="h6" component="h3" gutterBottom>
                   English
@@ -844,7 +874,7 @@ const EnglishGrammarDescriptions = () => {
 
           {/* Norwegian Section */}
           <Grid size={{ xs: 12, md: 6 }}>
-            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#78909c' }}>
+            <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#3f51b5' }}>
               <CardContent>
                 <Typography variant="h6" component="h3" gutterBottom>
                   Norsk
@@ -862,7 +892,7 @@ const EnglishGrammarDescriptions = () => {
 
         {/* Signs Section */}
         <Grid size={{ xs: 12, md: 12 }} sx={{ py: 2 }}>
-          <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#b0bec5' }}>
+          <Card elevation={3} sx={{ borderRadius: 2, bgcolor: '#3949ab' }}>
             <CardContent>
               <Typography variant="subtitle1">
                 Signs: Actions that will be completed before a specific point in
@@ -879,12 +909,13 @@ const EnglishGrammarDescriptions = () => {
           sx={{ borderRadius: 2 }}
         >
           <Table>
-            <TableHead sx={{ bgcolor: 'secondary.light' }}>
+            <TableHead sx={{ bgcolor: '#1a237e' }}>
               <TableRow>
-                <TableCell>Type</TableCell>
-                <TableCell>Example in English</TableCell>
-                <TableCell>Example in Farsi</TableCell>
-                <TableCell>Example in Norwegian</TableCell>
+                {headers.map((header) => (
+                  <TableCell key={header} sx={{ color: 'white' }}>
+                    {header}
+                  </TableCell>
+                ))}
               </TableRow>
             </TableHead>
             <TableBody>
