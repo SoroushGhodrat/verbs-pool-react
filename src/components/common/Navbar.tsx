@@ -15,9 +15,10 @@ import { useState } from 'react';
 import icon from '../../assets/icon.svg';
 import { useLanguage } from '../../context/LanguageContext';
 import { useNavigate } from 'react-router-dom';
+import SettingsSuggestIcon from '@mui/icons-material/SettingsSuggest';
 
 const pages = ['Norwegian Verbs', 'English Verbs', 'English Grammar'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['About'];
 
 function ResponsiveAppBar() {
   const navigate = useNavigate();
@@ -29,21 +30,29 @@ function ResponsiveAppBar() {
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
+
   const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = (page: string) => () => {
-    if (page === 'English Verbs') {
-      setLanguage('English');
-      navigate('/english-verbs');
-    }
-    if (page === 'Norwegian Verbs') {
-      setLanguage('Norsk');
-      navigate('/norwegian-verbs');
-    }
-    if (page === 'English Grammar') {
-      navigate('/english-grammar');
+    switch (page) {
+      case 'English Verbs':
+        setLanguage('English');
+        navigate('/english-verbs');
+        break;
+      case 'Norwegian Verbs':
+        setLanguage('Norsk');
+        navigate('/norwegian-verbs');
+        break;
+      case 'English Grammar':
+        navigate('/english-grammar');
+        break;
+      case 'About':
+        navigate('/about');
+        break;
+      default:
+        break;
     }
     setAnchorElNav(null);
   };
@@ -107,13 +116,13 @@ function ResponsiveAppBar() {
                 horizontal: 'left',
               }}
               open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+              onClose={handleCloseNavMenu('')}
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={() => handleCloseNavMenu(page)}>
+                <MenuItem key={page} onClick={handleCloseNavMenu(page)}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -150,10 +159,12 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
+          {/* Settings and profile options in the navbar */}
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                {/* <Avatar alt="Setting" src={SettingsSuggestIcon} /> */}
+                <SettingsSuggestIcon sx={{ color: 'white' }} />
               </IconButton>
             </Tooltip>
             <Menu
@@ -172,9 +183,9 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+              {settings.map((page) => (
+                <MenuItem key={page} onClick={handleCloseNavMenu(page)}>
+                  <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -184,4 +195,5 @@ function ResponsiveAppBar() {
     </AppBar>
   );
 }
+
 export default ResponsiveAppBar;
